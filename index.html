@@ -1,14 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>訪問介護フランチャイズ「アポロンケア」加盟店募集｜株式会社solmano</title>
 <meta name="description" content="訪問介護フランチャイズ「アポロンケア」加盟店募集。直営3店舗すべて黒字・投資回収済みの運営モデルをそのまま提供。初期投資モデル440万円（税別）・ロイヤリティ総売上5%。訪問介護から始め、3年かけて365日24時間を支える地域拠点へ。">
 <meta property="og:type" content="website">
@@ -20,846 +14,925 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#33241A">
 <link rel="icon" href="assets/web/mascot.png">
 <link rel="apple-touch-icon" href="assets/web/mascot.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap">
 <style>
+:root{
+  --bg:#FFF8EC;--card:#FFFDF8;--line:#EADCC4;--ink:#3B2A1E;--body:#5B4636;--muted:#7A6352;
+  --dark:#33241A;--dcard:#45311F;--dline:#6B5034;--dtext:#FFF3E0;--dsub:#E9D6B8;--dmuted:#D9C4A6;
+  --gold:#FFC94A;--red:#D9484A;--orange:#C2540F;--green:#3E8A3E;--blue:#2F6FB0;--ochre:#9A6A08;--soft:#FBEAD1;--line-green:#06C755;
+  --rainbow:linear-gradient(90deg,#E85D5D 0%,#F29A3A 25%,#F6CB45 50%,#6BB86A 75%,#3C8DD0 100%);
+  --r:22px;
+}
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:78px}
-body{font-family:'Noto Sans JP',"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:#33251A;background:#fff;line-height:1.85;font-size:16px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-img,svg{max-width:100%;height:auto;display:block}
+html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
+body{font-family:'Zen Maru Gothic',"Hiragino Maru Gothic ProN","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-weight:500;color:var(--ink);background:var(--bg);line-height:1.8;font-size:16px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
 a{color:inherit;text-decoration:none}
-a:hover{color:#D96C00}
-ul{list-style:none}
-@keyframes apo-spin{to{transform:rotate(360deg)}}
-@keyframes apo-ticker{to{transform:translateX(-50%)}}
-@keyframes apo-pulse{0%,100%{box-shadow:0 8px 24px rgba(6,199,85,.4)}50%{box-shadow:0 8px 24px rgba(6,199,85,.4),0 0 0 10px rgba(6,199,85,.12)}}
-@keyframes apo-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-[data-rv]{transition:opacity .7s ease,transform .7s ease}
-[data-rv].pre{opacity:0;transform:translateY(18px)}
-@media(prefers-reduced-motion:reduce){*{animation:none!important}[data-rv].pre{opacity:1!important;transform:none!important}}
-@media(max-width:760px){
-html{scroll-padding-top:66px}
-body{font-size:15.6px;line-height:1.8}
-[data-hdr-bar]{padding:8px 14px!important;gap:8px!important}
-[data-hdr-logo]{width:34px!important;height:34px!important;flex:0 0 34px!important}
-[data-hdr-name]{font-size:1.02rem!important}
-[data-hdr-sub]{display:none!important}
-[data-hdr-area]{display:none!important}
-[data-hdr-line]{font-size:.78rem!important;padding:9px 14px!important}
-[data-hero]{padding-top:74px!important}
-[data-hero-inner]{padding-top:18px!important;gap:8px!important}
-[data-hero-badge]{font-size:.72rem!important;padding:6px 13px!important;margin-bottom:14px!important}
-[data-hero-cta] > a{width:100%!important}
-[data-hero-art]{max-width:260px!important}
-[data-hero-cta]{gap:10px!important}
-section[id]{padding:54px 0!important}
-#why24{padding:62px 0 70px!important}
-#contact{padding:58px 0 66px!important}
-section[id] > div,#contact > div,footer > div{padding-left:16px!important;padding-right:16px!important}
-[data-m-stack]{grid-template-columns:minmax(0,1fr)!important;gap:14px!important;justify-items:center;text-align:center}
-[data-m-time]{grid-template-columns:62px minmax(0,1fr)!important;gap:12px!important;padding:16px 16px!important}
-[data-m-doc]{transform:rotate(-2deg) scale(.86)!important;margin-bottom:-14px!important}
-div[style*="border-radius: 18px"]{padding-left:18px!important;padding-right:18px!important}
-div[style*="border-radius: 18px"][style*="padding: 40px"],div[style*="border-radius: 18px"][style*="padding: 34px"],div[style*="border-radius: 18px"][style*="padding: 30px"],div[style*="border-radius: 18px"][style*="padding: 32px"]{padding-top:26px!important;padding-bottom:26px!important}
-[data-m-tabs]{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important}
-[data-m-tabs] button{padding:12px 4px!important;font-size:.88rem!important;width:100%}
-[data-m-chart]{gap:14px!important;height:150px!important}
-[data-m-chart] > div{width:64px!important}
-h1,h2,h3{line-height:1.45!important;letter-spacing:0!important}
-[data-m-sticky]{gap:8px!important;padding:9px 12px calc(9px + env(safe-area-inset-bottom))!important}
-[data-m-sticky] a:first-child{font-size:.88rem!important;padding:13px 14px!important}
-[data-m-sticky] a:last-child{font-size:.8rem!important;padding:12px 13px!important;flex:0 0 auto}
-footer{padding-bottom:104px!important}
+ul,ol{list-style:none}
+h1,h2,h3{font-weight:900;line-height:1.35;letter-spacing:.01em}
+h1,h2{text-wrap:balance}
+b,strong{font-weight:900}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
+.sec{position:relative;padding:72px 0}
+.sec.dark{background:var(--dark);color:var(--dtext)}
+.sec.soft{background:var(--soft)}
+.sec.cardbg{background:var(--card)}
+.rbar{height:8px;background:var(--rainbow)}
+.eyebrow{display:inline-block;font-size:.82rem;font-weight:900;letter-spacing:.12em;color:var(--red);margin-bottom:10px}
+.dark .eyebrow{color:var(--gold)}
+.h2{font-size:clamp(1.45rem,5.8vw,2.6rem);margin-bottom:18px}
+.lead{font-size:1.02rem;color:var(--body);max-width:760px}
+.dark .lead{color:var(--dsub)}
+.hl{color:var(--red)}
+.dark .hl{color:var(--gold)}
+.mark{background:linear-gradient(transparent 62%,#FFE08A 62%)}
+.note{font-size:.78rem;color:var(--muted);line-height:1.7;margin-top:18px}
+.dark .note{color:#B9A386}
+.num{font-weight:900;line-height:1.05;letter-spacing:-.01em}
+.num small{font-size:.42em;letter-spacing:0;margin-left:2px}
+.center{text-align:center}
+.center .lead{margin-left:auto;margin-right:auto}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;font-weight:900;padding:16px 28px;font-size:1.02rem;line-height:1.35;transition:transform .2s,box-shadow .2s;text-align:center}
+.btn:hover{transform:translateY(-2px)}
+.btn-line{background:var(--line-green);color:#fff;box-shadow:0 8px 22px rgba(6,199,85,.35);animation:pulse 2.6s infinite}
+.btn-line svg{flex:none}
+.btn-line .sub{display:block;font-size:.74rem;font-weight:700;opacity:.92}
+.btn-ghost{background:transparent;border:2px solid currentColor}
+.btn-gold{background:var(--gold);color:var(--dark)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 8px 22px rgba(217,72,74,.3)}
+@keyframes pulse{0%,100%{box-shadow:0 8px 22px rgba(6,199,85,.35)}50%{box-shadow:0 8px 22px rgba(6,199,85,.35),0 0 0 10px rgba(6,199,85,.12)}}
+@keyframes ticker{to{transform:translateX(-50%)}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(255,248,236,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:62px}
+.brand{display:flex;align-items:center;gap:8px;font-weight:900;font-size:1.05rem;color:var(--ink);line-height:1.2}
+.brand img{width:40px;height:40px;object-fit:contain}
+.brand small{display:block;font-size:.66rem;font-weight:700;color:var(--muted)}
+.hdr nav{display:flex;align-items:center;gap:10px}
+.hdr .nav-area{font-weight:900;font-size:.88rem;color:var(--orange);display:none}
+.hdr .btn{padding:9px 16px;font-size:.84rem;animation:none}
+
+/* hero */
+.hero{background:var(--dark);color:var(--dtext);position:relative;overflow:hidden;padding:44px 0 0}
+.hero::before{content:"";position:absolute;right:-30%;top:-10%;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,#8A5A22 0%,#5A3C20 45%,rgba(51,36,26,0) 72%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;gap:8px}
+.pill{display:inline-block;align-self:flex-start;background:var(--gold);color:var(--dark);font-weight:900;font-size:.86rem;border-radius:999px;padding:6px 16px}
+.hero h1{font-size:clamp(2.6rem,11vw,5.2rem);line-height:1.15;margin:16px 0 14px}
+.hero h1 .sun{color:var(--gold)}
+.nw{white-space:nowrap}
+.hero .catch{font-size:clamp(1.05rem,3.8vw,1.4rem);font-weight:700;color:var(--dsub);line-height:1.7}
+.hero .catch b{color:var(--dtext)}
+.hero-art{width:min(78%,360px);margin:6px auto -6px;animation:floaty 5s ease-in-out infinite;filter:drop-shadow(0 18px 30px rgba(0,0,0,.35))}
+.hero-cta{display:flex;flex-direction:column;gap:12px;margin-top:22px}
+.hero-cta .btn-ghost{color:var(--dsub);border-color:var(--dline)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px}
+.stat{background:var(--dcard);border:2px solid var(--dline);border-radius:18px;padding:14px 14px 12px}
+.stat.hot{border-color:var(--gold)}
+.stat p{font-size:.74rem;font-weight:700;color:var(--dmuted);line-height:1.4}
+.stat .num{font-size:clamp(1.9rem,8vw,2.8rem);color:var(--gold);margin:4px 0 2px}
+.stat .num small{color:var(--dtext)}
+.stat .s2{font-size:.7rem;color:var(--dsub)}
+.hero .note{margin:16px 0 28px}
+
+/* ticker */
+.ticker{background:var(--gold);color:var(--dark);overflow:hidden;white-space:nowrap;font-weight:900;font-size:.95rem;padding:11px 0}
+.ticker .track{display:inline-block;animation:ticker 38s linear infinite}
+.ticker span{margin:0 26px}
+
+/* tiles */
+.tiles{display:grid;gap:14px;margin-top:28px}
+.tile{background:var(--card);border:3px solid var(--line);border-radius:var(--r);padding:20px 22px;position:relative}
+.tile .k{font-size:.86rem;font-weight:900;color:var(--muted)}
+.tile .num{font-size:clamp(2.4rem,9vw,3.2rem);margin:6px 0 4px}
+.tile .s{font-size:.86rem;color:var(--body);line-height:1.6}
+.t-red{border-color:var(--red)} .t-red .num{color:var(--red)}
+.t-orange{border-color:var(--orange)} .t-orange .num{color:var(--orange)}
+.t-green{border-color:var(--green)} .t-green .num{color:var(--green)}
+.t-blue{border-color:var(--blue)} .t-blue .num{color:var(--blue)}
+
+/* proof */
+.proof{display:grid;gap:26px;align-items:center}
+.photo{border-radius:var(--r);overflow:hidden;border:6px solid #fff;box-shadow:0 14px 34px rgba(59,42,30,.18)}
+.photo.tilt{transform:rotate(1.5deg)}
+.photo.tilt-l{transform:rotate(-1.5deg)}
+.timeline{margin-top:20px;display:grid;gap:10px}
+.tl{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:2px solid var(--line);border-radius:16px;padding:12px 16px}
+.tl .d{flex:none;font-weight:900;font-size:.82rem;color:#fff;background:var(--muted);border-radius:999px;padding:3px 12px;margin-top:2px}
+.tl.now .d{background:var(--red)}
+.tl.next .d{background:var(--blue)}
+.tl p{font-size:.94rem;line-height:1.6}
+.tl p b{display:block;font-size:1.02rem}
+
+/* dayline */
+.dayline{display:grid;gap:12px;margin-top:28px}
+.day{display:flex;gap:16px;background:var(--dcard);border:2px solid var(--dline);border-radius:var(--r);padding:18px}
+.day .t{flex:none;width:78px;text-align:center}
+.day .t .num{font-size:1.6rem;color:var(--gold)}
+.day .t small{display:block;font-size:.76rem;color:var(--dmuted);font-weight:700}
+.day h3{font-size:1.08rem;margin-bottom:4px}
+.day p{font-size:.9rem;color:var(--dsub);line-height:1.7}
+.day.night{border-color:var(--gold)}
+.banner{margin-top:28px;background:var(--gold);color:var(--dark);border-radius:var(--r);padding:22px;display:flex;align-items:center;gap:16px}
+.banner img{width:96px;flex:none}
+.banner p{font-weight:900;font-size:clamp(1.15rem,4.4vw,1.6rem);line-height:1.45}
+.banner small{display:block;font-size:.84rem;font-weight:700}
+
+/* market */
+.mkt{display:grid;gap:14px;margin-top:28px}
+.mk{background:var(--card);border:3px solid var(--line);border-radius:var(--r);padding:22px}
+.mk .k{font-weight:900;font-size:1.02rem}
+.mk .num{font-size:clamp(2.6rem,10vw,3.4rem);color:var(--red);margin:8px 0 2px}
+.mk .num small{color:var(--ink)}
+.mk .cap{font-size:.82rem;font-weight:900;color:var(--muted)}
+.mk p.b{font-size:.9rem;color:var(--body);margin-top:8px;line-height:1.7}
+.points{display:grid;gap:12px;margin-top:20px}
+.pt{display:flex;gap:12px;align-items:flex-start;background:var(--soft);border-radius:16px;padding:14px 16px}
+.pt .ic{flex:none;width:30px;height:30px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-weight:900;font-size:.9rem}
+.pt b{display:block}
+.pt p{font-size:.88rem;color:var(--body);line-height:1.65}
+
+/* what */
+.duo{display:grid;gap:16px;margin-top:26px}
+.duo .c{background:var(--card);border:3px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.duo .c .im{height:220px;background:var(--soft);position:relative;overflow:hidden}
+.duo .c .im img{position:absolute;inset:0;height:100%;width:100%;object-fit:cover}
+.duo .c .im img.contain{object-fit:contain;padding:14px}
+.duo .c .tx{padding:18px 20px}
+.duo .c .tg{display:inline-block;font-weight:900;font-size:.8rem;color:#fff;background:var(--orange);border-radius:999px;padding:2px 14px;margin-bottom:8px}
+.duo .c:last-child .tg{background:var(--blue)}
+.duo .c p{font-weight:900;font-size:1.1rem;line-height:1.55}
+
+/* reasons */
+.reason{display:grid;gap:22px;margin-top:40px;align-items:center}
+.reason .no{display:inline-block;font-weight:900;font-size:.86rem;letter-spacing:.1em;color:#fff;background:var(--red);border-radius:999px;padding:3px 14px;margin-bottom:10px}
+.reason h3{font-size:clamp(1.35rem,4.8vw,1.9rem);margin-bottom:12px}
+.reason p{color:var(--body);font-size:.96rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{background:var(--card);border:2px solid var(--line);border-radius:999px;padding:4px 14px;font-size:.84rem;font-weight:700}
+.bigcard{background:var(--dark);color:var(--dtext);border-radius:var(--r);padding:22px;position:relative}
+.bigcard .note{color:#B9A386}
+.bigcard .k{font-size:.84rem;font-weight:900;color:var(--dmuted)}
+.bigcard .num{font-size:clamp(3rem,13vw,4.4rem);color:var(--gold)}
+.bigcard .num small{color:var(--dtext)}
+.flow{display:flex;align-items:center;gap:6px;margin-top:14px;flex-wrap:wrap}
+.flow span{background:var(--gold);color:var(--dark);font-weight:900;font-size:.84rem;border-radius:999px;padding:4px 12px}
+.flow i{color:var(--gold);font-style:normal;font-weight:900}
+.steps3{display:grid;gap:10px;margin-top:16px}
+.s3{display:flex;gap:12px;align-items:center;background:var(--card);border:2px solid var(--line);border-radius:16px;padding:12px 16px;font-weight:900}
+.s3 b{flex:none;color:#fff;border-radius:12px;padding:4px 10px;font-size:.8rem}
+.s3:nth-child(1) b{background:var(--orange)} .s3:nth-child(2) b{background:var(--green)} .s3:nth-child(3) b{background:var(--blue)}
+
+/* income */
+.pillars{display:grid;gap:14px;margin-top:26px}
+.pil{background:var(--card);border-radius:var(--r);border:3px solid var(--line);border-top-width:10px;padding:20px 22px}
+.pil:nth-child(1){border-top-color:var(--orange)} .pil:nth-child(2){border-top-color:var(--green)} .pil:nth-child(3){border-top-color:var(--blue)}
+.pil .n{font-weight:900;font-size:.8rem;color:var(--muted);letter-spacing:.1em}
+.pil h3{font-size:1.4rem}
+.pil p{font-size:.9rem;color:var(--body);margin:6px 0 10px;line-height:1.7}
+.pil li{font-size:.9rem;font-weight:700}
+.pil li::before{content:"☀ ";color:var(--orange)}
+
+/* roadmap */
+.years{display:grid;gap:14px;margin-top:28px}
+.yr{background:var(--card);border:3px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column}
+.yr .top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.yr .y{font-weight:900;color:#fff;border-radius:12px;padding:4px 12px;font-size:.92rem}
+.yr .tag{font-weight:900;font-size:.86rem;color:var(--muted)}
+.yr:nth-child(1) .y{background:var(--orange)} .yr:nth-child(2) .y{background:var(--green)} .yr:nth-child(3) .y{background:var(--blue)}
+.yr h3{font-size:1.18rem;margin-bottom:8px}
+.yr p{font-size:.9rem;color:var(--body);line-height:1.7}
+.yr ul{margin:10px 0 14px}
+.yr li{font-size:.86rem;font-weight:700;line-height:1.6;padding-left:1.2em;text-indent:-1.2em}
+.yr li::before{content:"☀ ";color:var(--orange)}
+.yr .kpi{margin-top:auto;background:var(--soft);border-radius:14px;padding:12px 16px;display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.yr .kpi span{font-size:.8rem;font-weight:900;color:var(--muted)}
+.yr .kpi .num{font-size:2rem}
+.yr:nth-child(1) .kpi .num{color:var(--orange)} .yr:nth-child(2) .kpi .num{color:var(--green)} .yr:nth-child(3) .kpi .num{color:var(--blue)}
+
+/* numbers */
+.numgrid{display:grid;gap:26px;align-items:center;margin-top:20px}
+.big{font-size:clamp(4rem,19vw,8rem);color:var(--gold)}
+.big small{color:var(--dtext)}
+.chart{background:var(--dcard);border:2px solid var(--dline);border-radius:var(--r);padding:16px 12px 10px}
+.chart svg{width:100%;height:auto;display:block}
+.chart .cap{font-size:.78rem;font-weight:700;color:var(--dmuted);text-align:center;margin-top:6px}
+.chart .cap span{color:#FF9A8F}
+.pltable{width:100%;border-collapse:separate;border-spacing:0;margin-top:26px;background:var(--dcard);border:2px solid var(--dline);border-radius:18px;overflow:hidden;font-size:.86rem}
+.pltable th,.pltable td{padding:10px 10px;text-align:right;border-bottom:1px solid var(--dline);white-space:nowrap}
+.pltable th:first-child,.pltable td:first-child{text-align:left}
+.pltable thead th{color:var(--dmuted);font-size:.8rem}
+.pltable tr.op td{color:var(--gold);font-weight:900;font-size:1rem;background:#4E3826}
+.pltable tr:last-child td{border-bottom:none}
+.pltable td{color:var(--dsub)}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.chk{display:grid;gap:10px;margin-top:20px}
+.chk div{display:flex;gap:10px;align-items:flex-start;background:var(--dcard);border:2px solid var(--dline);border-radius:14px;padding:12px 14px;font-size:.92rem;color:var(--dsub)}
+.chk b{color:var(--gold)}
+
+/* brochure */
+.bro{background:var(--card);border:4px solid var(--orange);border-radius:28px;padding:26px 22px;display:grid;gap:20px;align-items:center;position:relative;overflow:hidden}
+.bro .cover{background:var(--dark);border-radius:16px;padding:18px;color:var(--dtext);position:relative;aspect-ratio:16/9;display:flex;flex-direction:column;justify-content:center;max-width:420px;box-shadow:0 14px 30px rgba(59,42,30,.25);transform:rotate(-2deg)}
+.bro .cover::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:var(--rainbow);border-radius:16px 16px 0 0}
+.bro .cover .p{font-size:.62rem;font-weight:900;color:var(--dark);background:var(--gold);border-radius:999px;padding:2px 10px;align-self:flex-start}
+.bro .cover b{font-size:1.5rem;line-height:1.2;margin-top:8px}
+.bro .cover img{position:absolute;right:10px;bottom:8px;width:34%}
+.bro .cover{margin-top:30px}
+.bro .badge{z-index:2;position:absolute;right:-8px;top:-10px;background:var(--red);color:#fff;font-weight:900;border-radius:50%;width:84px;height:84px;display:grid;place-items:center;text-align:center;line-height:1.1;font-size:.82rem;transform:rotate(10deg);box-shadow:0 6px 14px rgba(0,0,0,.2)}
+.bro .badge b{display:block;font-size:1.5rem}
+.bro ul{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0 18px}
+.bro li{background:var(--soft);border-radius:12px;padding:8px 10px;font-weight:900;font-size:.88rem}
+.bro li::before{content:"✓ ";color:var(--green)}
+.qrbox{display:none;align-items:center;gap:14px;margin-top:14px;font-size:.84rem;font-weight:700;color:var(--muted)}
+.qrbox img{width:96px;height:96px;border:2px solid var(--line);border-radius:12px;background:#fff;padding:4px}
+
+/* terms */
+.terms{display:grid;gap:18px;margin-top:26px}
+.invest{background:var(--dark);color:var(--dtext);border-radius:var(--r);padding:24px;position:relative;overflow:hidden}
+.invest .k{font-weight:900;color:var(--dmuted);font-size:.9rem}
+.invest .num{font-size:clamp(4rem,17vw,6.4rem);color:var(--gold)}
+.invest .num small{color:var(--dtext)}
+.invest p{color:var(--dsub);font-size:.9rem;line-height:1.7;max-width:420px}
+.invest .back{color:var(--gold);font-weight:900;margin-top:10px;font-size:.98rem}
+.invest img{position:absolute;right:10px;bottom:6px;width:96px}
+.invest{padding-bottom:120px}
+.itable{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:3px solid var(--line);border-radius:18px;overflow:hidden}
+.itable td{padding:12px 16px;border-bottom:1px solid var(--line);font-weight:700;font-size:.95rem}
+.itable td:last-child{text-align:right;font-weight:900}
+.itable tr:last-child td{border-bottom:none;background:var(--soft);font-weight:900}
+.itable tr:last-child td:last-child{color:var(--red);font-size:1.1rem}
+.itable .no{color:var(--muted);margin-right:8px;font-size:.84rem}
+.roy{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.roy div{background:var(--card);border:3px solid var(--orange);border-radius:16px;padding:10px 10px;text-align:center}
+.roy p{font-size:.72rem;font-weight:700;color:var(--muted);line-height:1.4}
+.roy b{display:block;font-size:1.15rem;color:var(--orange);margin-top:2px}
+
+/* support */
+.sup{display:grid;gap:10px;margin-top:26px}
+.sp{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:16px 18px;display:flex;gap:14px}
+.sp .n{flex:none;font-weight:900;font-size:1.3rem;color:var(--orange);width:36px}
+.sp h3{font-size:1.04rem}
+.sp p{font-size:.86rem;color:var(--body);line-height:1.65;margin-top:2px}
+.sp.strong{background:var(--dark);border-color:var(--dark);color:var(--dtext)}
+.sp.strong .n{color:var(--gold)}
+.sp.strong p{color:var(--dsub)}
+.sp .tg{display:inline-block;background:var(--gold);color:var(--dark);font-size:.68rem;font-weight:900;border-radius:999px;padding:0 8px;margin-left:6px;vertical-align:2px}
+
+/* flow steps */
+.fsteps{display:grid;gap:0;margin-top:26px;position:relative}
+.fs{display:flex;gap:16px;position:relative;padding-bottom:18px}
+.fs::before{content:"";position:absolute;left:23px;top:46px;bottom:0;width:3px;background:var(--line)}
+.fs:last-child::before{display:none}
+.fs .c{flex:none;width:48px;height:48px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-weight:900;font-size:1.1rem;position:relative;z-index:1}
+.fs:last-child .c{background:var(--red)}
+.fs .b{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:12px 16px;flex:1}
+.fs .t{font-size:.8rem;font-weight:900;color:var(--orange)}
+.fs h3{font-size:1.05rem}
+.fs p{font-size:.86rem;color:var(--body);line-height:1.65}
+
+/* area */
+.area{display:grid;gap:22px;align-items:center;margin-top:24px}
+.diag{background:var(--card);border:4px solid var(--green);border-radius:26px;padding:24px 22px;position:relative}
+.diag .p{display:inline-block;background:var(--green);color:#fff;font-weight:900;font-size:.8rem;border-radius:999px;padding:2px 14px}
+.diag h3{font-size:1.7rem;margin:8px 0 12px}
+.diag li{font-weight:900;padding:8px 0;border-bottom:1px dashed var(--line);font-size:.98rem}
+.diag li::before{content:"✓";display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--green);color:#fff;font-size:.8rem;margin-right:10px}
+.diag .btn{margin-top:18px;width:100%}
+
+/* risk */
+.risks{display:grid;gap:10px;margin-top:26px}
+.rk{background:var(--card);border:2px solid var(--line);border-radius:18px;overflow:hidden;display:grid}
+.rk .r{background:#FBE3E0;color:var(--red);font-weight:900;padding:10px 16px;font-size:.98rem}
+.rk .r small{font-size:.68rem;letter-spacing:.1em;display:block;opacity:.8}
+.rk .c{padding:12px 16px;font-size:.88rem;color:var(--body);line-height:1.7}
+.rk .c small{font-size:.68rem;letter-spacing:.1em;display:block;color:var(--green);font-weight:900}
+
+/* types */
+.types{display:grid;gap:14px;margin-top:26px}
+.ty{background:var(--card);border:3px solid var(--line);border-radius:var(--r);padding:20px 22px}
+.ty .tg{font-size:.78rem;font-weight:900;color:var(--orange);letter-spacing:.04em}
+.ty h3{font-size:1.3rem;margin:2px 0 8px}
+.ty q{display:block;background:var(--soft);border-radius:12px;padding:10px 14px;font-weight:700;font-size:.92rem;quotes:none;margin-bottom:10px}
+.ty li{font-size:.9rem;font-weight:700;line-height:1.7}
+.ty li::before{content:"☀ ";color:var(--orange)}
+
+/* founder */
+.founder{display:grid;gap:24px;align-items:start;margin-top:20px}
+.pres{background:var(--card);border-radius:var(--r);overflow:hidden;border:3px solid var(--line);max-width:380px}
+.pres img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top}
+.pres div{padding:14px 18px}
+.pres b{font-size:1.3rem;display:block}
+.pres small{font-size:.82rem;color:var(--muted);font-weight:700}
+.founder blockquote{background:var(--dark);color:var(--dtext);border-radius:var(--r);padding:20px 22px;font-weight:900;font-size:1.08rem;line-height:1.7;margin:16px 0}
+.founder p{color:var(--body);margin-bottom:10px}
+.founder .end{font-weight:900;font-size:1.2rem;color:var(--ink);margin-top:8px}
+
+/* sxb */
+.sxb{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;margin-top:24px;max-width:640px;margin-left:auto;margin-right:auto}
+.sxb div{background:var(--card);border:3px solid var(--orange);border-radius:999px;aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center;font-weight:900;font-size:clamp(1.1rem,4.6vw,1.6rem);line-height:1.3}
+.sxb div:last-child{border-color:var(--blue)}
+.sxb div small{display:block;font-size:.6em;color:var(--muted)}
+.sxb i{font-style:normal;font-weight:900;font-size:2rem;color:var(--red)}
+
+/* faq */
+.faq{display:grid;gap:10px;margin-top:26px;max-width:860px}
+.faq details{background:var(--card);border:2px solid var(--line);border-radius:16px;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:16px 46px 16px 16px;font-weight:900;position:relative;display:flex;gap:10px;line-height:1.55}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";flex:none;width:28px;height:28px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-size:.9rem}
+.faq summary::after{content:"＋";position:absolute;right:16px;top:16px;color:var(--orange);font-weight:900}
+.faq details[open] summary::after{content:"－"}
+.faq .a{padding:0 18px 16px 54px;font-size:.92rem;color:var(--body);line-height:1.8}
+
+/* closing */
+.closing{text-align:center;overflow:hidden}
+.closing .hand{width:200px;margin:0 auto 8px;animation:floaty 5s ease-in-out infinite}
+.closing .lead{margin:0 auto}
+.closing h2{font-size:clamp(2rem,8vw,3.4rem);margin-bottom:12px}
+.ccards{display:grid;gap:12px;margin-top:26px;text-align:left}
+.cc{background:var(--dcard);border:2px solid var(--dline);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:6px;transition:transform .2s,border-color .2s}
+.cc:hover{transform:translateY(-3px);border-color:var(--gold)}
+.cc .k{font-size:.78rem;font-weight:900;color:var(--gold);letter-spacing:.08em}
+.cc b{font-size:1.2rem}
+.cc p{font-size:.86rem;color:var(--dsub);line-height:1.65}
+.cc .go{margin-top:6px;font-weight:900;color:var(--line-green)}
+.contact{display:grid;grid-template-columns:72px 1fr;gap:14px;margin-top:26px;background:var(--dcard);border:2px solid var(--gold);border-radius:var(--r);padding:20px;text-align:left;align-items:center}
+.contact .tel{font-size:1.6rem;font-weight:900;color:var(--gold);display:block;line-height:1.2}
+.contact .ml{font-weight:900;color:var(--dtext);word-break:break-all}
+.contact small{color:var(--dmuted);font-size:.78rem;font-weight:700;display:block}
+.contact .qr{display:none}
+
+/* footer */
+.ftr{background:#241912;color:var(--dmuted);padding:36px 0 110px;font-size:.84rem}
+.ftr .wrap{display:grid;gap:14px}
+.ftr .brand{color:var(--dtext)}
+.ftr .brand small{color:var(--dmuted)}
+.ftr nav{display:flex;flex-wrap:wrap;gap:16px;font-weight:700}
+.ftr nav a{text-decoration:underline;text-underline-offset:3px}
+
+/* sticky mobile cta */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(51,36,26,.96);transform:translateY(110%);transition:transform .3s}
+.sticky.on{transform:none}
+.sticky a{flex:1;padding:12px 10px;font-size:.9rem;animation:none}
+.sticky .btn-gold{flex:.6}
+
+/* reveal (JS only) */
+.js [data-rv]{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.js [data-rv].in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js [data-rv]{opacity:1;transform:none}}
+
+/* ≥ 760px */
+@media(min-width:760px){
+  body{font-size:17px}
+  .sec{padding:100px 0}
+  .hdr .wrap{height:70px}
+  .hdr .nav-area{display:inline}
+  .hdr .btn{padding:11px 20px;font-size:.9rem}
+  .hero{padding:70px 0 0}
+  .hero .wrap{grid-template-columns:1.15fr .85fr;align-items:center;column-gap:30px}
+  .hero .left{grid-column:1}
+  .hero-art{grid-column:2;grid-row:1/span 2;width:100%;max-width:440px;margin:0}
+  .hero-cta{flex-direction:row;flex-wrap:wrap}
+  .stats{grid-template-columns:repeat(4,1fr);grid-column:1/-1}
+  .hero .note{grid-column:1/-1}
+  .tiles{grid-template-columns:repeat(4,1fr)}
+  .proof{grid-template-columns:1fr 1fr;gap:50px}
+  .dayline{grid-template-columns:1fr 1fr}
+  .mkt{grid-template-columns:repeat(3,1fr)}
+  .points{grid-template-columns:repeat(3,1fr)}
+  .duo{grid-template-columns:1fr 1fr}
+  .duo .c .im{height:260px}
+  .reason{grid-template-columns:1fr 1fr;gap:50px}
+  .reason.rev>:first-child{order:2}
+  .pillars{grid-template-columns:repeat(3,1fr)}
+  .years{grid-template-columns:repeat(3,1fr)}
+  .numgrid{grid-template-columns:1fr 1fr;gap:40px}
+  .pltable{font-size:.95rem}
+  .chk{grid-template-columns:1fr 1fr}
+  .bro{grid-template-columns:.9fr 1.1fr;padding:40px;gap:40px}
+  .qrbox{display:flex}
+  .terms{grid-template-columns:.9fr 1.1fr;gap:26px}
+  .invest{padding-bottom:24px}.invest img{width:130px}.invest p{max-width:66%}
+  .bro .cover{margin-top:0}
+  .sup{grid-template-columns:1fr 1fr}
+  .fsteps{grid-template-columns:repeat(5,1fr);gap:12px}
+  .fs{flex-direction:column;padding-bottom:0}
+  .fs::before{left:48px;right:-12px;top:23px;bottom:auto;width:auto;height:3px}
+  .fs .b{height:100%}
+  .area{grid-template-columns:1.1fr .9fr;gap:44px}
+  .risks{grid-template-columns:1fr 1fr}
+  .types{grid-template-columns:repeat(3,1fr)}
+  .founder{grid-template-columns:340px 1fr;gap:44px}
+  .ccards{grid-template-columns:repeat(3,1fr)}
+  .contact{grid-template-columns:90px 1fr auto;gap:28px;padding:24px 30px}
+  .contact .qr{display:block;width:120px;background:#fff;border-radius:12px;padding:6px}
+  .sticky{display:none}
+  .ftr{padding-bottom:40px}
+  .ftr .wrap{grid-template-columns:1fr auto;align-items:end}
 }
-@media(max-width:400px){
-[data-hdr-name]{font-size:.95rem!important}
-[data-hdr-line]{font-size:.72rem!important;padding:8px 12px!important}
-body{font-size:15.2px}
-[data-m-chart]{gap:10px!important}
-[data-m-chart] > div{width:56px!important}
-[data-m-sticky] a:last-child{display:none!important}
-}
-@media(min-width:1100px){body{font-size:16.5px;line-height:1.9}}
+@media(min-width:760px){.hero h1{font-size:clamp(3.4rem,6.4vw,5rem)}}
 </style>
-</helmet>
+</head>
+<body id="top">
+<script>document.documentElement.classList.add('js');document.body.classList.add('js')</script>
 
-<svg width="0" height="0" style="position: absolute;" aria-hidden="true">
-  <defs>
-    <g id="sunrays" stroke="#F08300" stroke-width="6" stroke-linecap="round">
-      <line x1="50" y1="4" x2="50" y2="16"></line><line x1="50" y1="84" x2="50" y2="96"></line>
-      <line x1="4" y1="50" x2="16" y2="50"></line><line x1="84" y1="50" x2="96" y2="50"></line>
-      <line x1="18" y1="18" x2="26" y2="26"></line><line x1="74" y1="74" x2="82" y2="82"></line>
-      <line x1="18" y1="82" x2="26" y2="74"></line><line x1="74" y1="26" x2="82" y2="18"></line>
-    </g>
-    <g id="sundot">
-      <circle cx="50" cy="50" r="28" fill="#FFC93C" stroke="#F08300" stroke-width="5"></circle>
-    </g>
-    <symbol id="line-bubble" viewBox="0 0 24 24">
-      <path fill="currentColor" d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.55 7.4 8.34 8.04.33.07.77.22.88.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.02.89.56 1.09-.47 5.87-3.46 8.01-5.92C21.5 13.35 22 11.82 22 10.13 22 5.64 17.52 2 12 2z"></path>
-    </symbol>
-  </defs>
-</svg>
-
-<header style="position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,.94); backdrop-filter: blur(8px); border-bottom: 1px solid #F0E4D3;">
-  <div data-hdr-bar="1" style="max-width: 1180px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 20px;">
-    <a href="#top" aria-label="アポロンケア トップへ" style="display: flex; align-items: center; gap: 10px; min-width: 0;">
-      <img data-hdr-logo="1" src="assets/web/mascot.png" alt="アポロンケアのキャラクター アポロン君" style="width: 42px; height: 42px; flex: 0 0 42px; border-radius: 50%; object-fit: cover;">
-      <span style="line-height: 1.25; min-width: 0;"><b data-hdr-name="1" style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: 1.2rem; color: #D96C00; display: block; white-space: nowrap;">アポロンケア</b><span data-hdr-sub="1" style="font-size: .68rem; color: #6B5A48; font-weight: 700; letter-spacing: .06em;">訪問介護フランチャイズ｜株式会社solmano</span></span>
-    </a>
-    <nav style="display: flex; gap: 10px; align-items: center; flex: 0 0 auto;">
-      <a data-hdr-area="1" href="#area" style="font-weight: 700; font-size: .86rem; padding: 10px 18px; border-radius: 999px; white-space: nowrap; border: 2px solid #F08300; color: #D96C00; background: #fff; transition: transform .15s ease;" style-hover="transform: translateY(-1px)">無料エリア診断</a>
-      <a data-hdr-line="1" href="https://lin.ee/5WIT6C7" style="font-weight: 700; font-size: .86rem; padding: 10px 18px; border-radius: 999px; white-space: nowrap; background: #06C755; color: #fff; box-shadow: 0 4px 14px rgba(6,199,85,.35); transition: transform .15s ease;" style-hover="transform: translateY(-1px); color: #fff">＼ LINEで資料を見る ／</a>
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="アポロンケア トップへ"><img src="assets/web/mascot.png" alt="アポロンケアのキャラクター アポロン君" width="40" height="40"><span>アポロンケア<small>訪問介護フランチャイズ｜株式会社solmano</small></span></a>
+    <nav>
+      <a class="nav-area" href="#area">無料エリア診断</a>
+      <a class="btn btn-line" href="https://lin.ee/5WIT6C7">LINEで資料を見る</a>
     </nav>
   </div>
 </header>
 
-<div id="top" data-hero="1" style="position: relative; padding: 112px 0 0; background: radial-gradient(1200px 600px at 85% -10%,#FFE7C4 0%,rgba(255,231,196,0) 60%), linear-gradient(180deg,#FFFDF9 0%,#FFF6E7 100%); overflow: hidden;">
-  <div data-hero-inner="1" style="max-width: 1180px; margin: 0 auto; padding: 24px 20px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; align-items: center;">
-    <div style="min-width: 0;">
-      <span data-hero-badge="1" style="display: inline-flex; align-items: center; gap: 8px; background: #E8503A; color: #fff; font-weight: 900; font-size: .82rem; letter-spacing: .06em; padding: 7px 16px; border-radius: 999px; margin-bottom: 18px;">訪問介護フランチャイズ｜加盟店 大募集!!</span>
-      <h1 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(2.1rem, 5.2vw, 3.7rem); line-height: 1.35; letter-spacing: .02em; margin-bottom: 16px;">地域に<br><span style="color: rgb(217, 108, 0);">小さな太陽</span>を。</h1>
-      <p style="font-size: clamp(1rem, 1.6vw, 1.14rem); font-weight: 500; color: #6B5A48; margin-bottom: 8px;">人生の最期まで、<b style="color: #33251A;">「自宅で暮らしたい」</b>を選べる地域へ。</p>
-      <p style="font-weight: 900; font-size: clamp(1.02rem, 2vw, 1.3rem); margin-bottom: 26px; text-wrap: pretty;">訪問介護から始め、<span style="background: linear-gradient(transparent 58%,#FFE38A 58%); padding: 0 .1em;">3年かけて365日24時間を支える地域拠点</span>へ。<br>社会に必要とされ、事業としても続けられる介護経営を。</p>
-      <div data-hero-cta="1" style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center;">
-        <a href="https://lin.ee/5WIT6C7" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-weight: 900; border-radius: 999px; background: #06C755; color: #fff; font-size: 1.04rem; padding: 17px 32px; line-height: 1.4; animation: apo-pulse 2.4s ease-in-out infinite; transition: transform .15s ease;" style-hover="transform: translateY(-2px); color: #fff"><svg aria-hidden="true" style="width: 22px; height: 22px; flex: 0 0 22px;"><use href="#line-bubble"></use></svg><span>＼ まずは加盟資料をLINEで見る ／<small style="display: block; font-size: .72rem; font-weight: 700; opacity: .92;">全20ページの加盟資料を無料でお届け</small></span></a>
-        <a href="#area" style="display: inline-flex; align-items: center; justify-content: center; font-weight: 900; border-radius: 999px; background: #fff; border: 2px solid #F08300; color: #D96C00; font-size: .98rem; padding: 15px 26px; transition: transform .15s ease;" style-hover="transform: translateY(-2px)">無料エリア診断について</a>
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="rbar" style="position:absolute;left:0;right:0;top:0"></div>
+  <div class="wrap">
+    <div class="left">
+      <span class="pill">訪問介護フランチャイズ｜加盟店 大募集</span>
+      <h1>地域に、<br><span class="nw"><span class="sun">小さな太陽</span>を。</span></h1>
+      <p class="catch">人生の最期まで、<b>「自宅で暮らしたい」</b>を選べる地域へ。<br>訪問介護から始め、<b>3年かけて<span class="nw">365日24時間</span>を支える</b><span class="nw"><b>地域拠点</b>へ。</span></p>
+      <div class="hero-cta">
+        <a class="btn btn-line" href="https://lin.ee/5WIT6C7"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6s5.9-3.5 8-6C21.4 14.4 22 12.8 22 11c0-4.4-4.5-8-10-8z"/></svg><span>まずは加盟資料をLINEで見る<span class="sub">全24ページの資料を無料でお届け</span></span></a>
+        <a class="btn btn-ghost" href="#area">無料エリア診断について</a>
       </div>
     </div>
-    <div style="position: relative; align-self: end;">
-      <img data-hero-art="1" src="assets/web/mascot-rainbow.png" alt="アポロンケアのキャラクター アポロン君" style="width: min(420px, 92%); margin: 0 auto; animation: apo-float 6s ease-in-out infinite;">
+    <img class="hero-art" src="assets/lp/mascot-sun-hug.webp" alt="太陽を抱えて手を広げるアポロン君" width="795" height="900" fetchpriority="high">
+    <div class="stats">
+      <div class="stat"><p>直営店舗の実績</p><div class="num">3<small>店舗</small></div><p class="s2">すべて黒字・投資回収済み</p></div>
+      <div class="stat"><p>初期投資（税別）</p><div class="num">440<small>万円</small></div><p class="s2">加盟金150万円を含む</p></div>
+      <div class="stat"><p>ロイヤリティ</p><div class="num">5<small>%</small></div><p class="s2">総売上に対して</p></div>
+      <div class="stat hot"><p>3年累計 営業利益（モデル）</p><div class="num">2,791<small>万円</small></div><p class="s2">初期投資の約6.3倍</p></div>
     </div>
+    <p class="note">※黒字化・投資回収・応募数は直営実績です。初期投資・ロイヤリティは加盟条件、営業利益は一定条件によるシミュレーションであり、成果・収益を保証するものではありません。</p>
   </div>
-</div>
+</section>
 
-<sc-if value="{{ showKpi }}" hint-placeholder-val="{{ true }}">
-<div style="position: relative; z-index: 2; margin-top: -8px;">
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; max-width: 1180px; margin: 0 auto; padding: 22px 20px 8px;">
-    <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 20px 14px 16px; text-align: center;">
-      <span style="font-size: .8rem; font-weight: 700; color: #6B5A48; display: block; margin-bottom: 4px;">直営店舗の実績</span>
-      <span style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: clamp(1.7rem, 2.6vw, 2.15rem); color: #D96C00; line-height: 1.15;">3<small style="font-size: .55em; font-weight: 900;">店舗</small></span>
-      <span style="display: inline-block; margin-top: 8px; font-size: .68rem; font-weight: 700; background: #FFF3E0; color: #D96C00; border-radius: 999px; padding: 2px 12px;">すべて黒字・投資回収済み</span>
-    </div>
-    <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 20px 14px 16px; text-align: center;">
-      <span style="font-size: .8rem; font-weight: 700; color: #6B5A48; display: block; margin-bottom: 4px;">初期投資モデル</span>
-      <span style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: clamp(1.7rem, 2.6vw, 2.15rem); color: #D96C00; line-height: 1.15;">440<small style="font-size: .55em; font-weight: 900;">万円</small></span>
-      <span style="display: inline-block; margin-top: 8px; font-size: .68rem; font-weight: 700; background: #FFF3E0; color: #D96C00; border-radius: 999px; padding: 2px 12px;">税別・加盟金150万円を含む</span>
-    </div>
-    <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 20px 14px 16px; text-align: center;">
-      <span style="font-size: .8rem; font-weight: 700; color: #6B5A48; display: block; margin-bottom: 4px;">ロイヤリティ</span>
-      <span style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: clamp(1.7rem, 2.6vw, 2.15rem); color: #D96C00; line-height: 1.15;">5<small style="font-size: .55em; font-weight: 900;">%</small></span>
-      <span style="display: inline-block; margin-top: 8px; font-size: .68rem; font-weight: 700; background: #FFF3E0; color: #D96C00; border-radius: 999px; padding: 2px 12px;">総売上に対して</span>
-    </div>
-    <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 20px 14px 16px; text-align: center;">
-      <span style="font-size: .8rem; font-weight: 700; color: #6B5A48; display: block; margin-bottom: 4px;">3年累計営業利益モデル</span>
-      <span style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: clamp(1.7rem, 2.6vw, 2.15rem); color: #D96C00; line-height: 1.15;">2,791<small style="font-size: .55em; font-weight: 900;">万円</small></span>
-      <span style="display: inline-block; margin-top: 8px; font-size: .68rem; font-weight: 700; background: #FFF3E0; color: #D96C00; border-radius: 999px; padding: 2px 12px;">初期投資の約6.3倍相当</span>
-    </div>
-  </div>
-  <p style="max-width: 1180px; margin: 0 auto; padding: 10px 20px 26px; font-size: .7rem; color: #9a8a76; line-height: 1.7;">※黒字化・応募数は直営実績です。初期投資・ロイヤリティは加盟条件、営業利益は一定条件によるシミュレーションであり、成果・収益を保証するものではありません。</p>
-</div>
-</sc-if>
+<div class="ticker" aria-hidden="true"><div class="track">
+  <span>★ 訪問介護フランチャイズ「アポロンケア」加盟店募集中</span><span>★ 直営3店舗すべて黒字・投資回収済み</span><span>★ 2026年10月 吉川市に4店舗目オープン</span><span>★ 初期投資モデル440万円（税別）</span><span>★ ロイヤリティ 総売上5%</span><span>★ 定期巡回を追加しても追加加盟金0円</span><span>★ 加盟前の無料エリア診断 実施中</span>
+  <span>★ 訪問介護フランチャイズ「アポロンケア」加盟店募集中</span><span>★ 直営3店舗すべて黒字・投資回収済み</span><span>★ 2026年10月 吉川市に4店舗目オープン</span><span>★ 初期投資モデル440万円（税別）</span><span>★ ロイヤリティ 総売上5%</span><span>★ 定期巡回を追加しても追加加盟金0円</span><span>★ 加盟前の無料エリア診断 実施中</span>
+</div></div>
 
-<div aria-hidden="true" style="background: #F08300; color: #fff; overflow: hidden; padding: 12px 0; font-weight: 900; font-size: .95rem; letter-spacing: .04em;">
-  <div style="display: flex; width: max-content; animation: apo-ticker 28s linear infinite;">
-    <span style="display: inline-flex; white-space: nowrap; padding: 0 .9em;"><span style="color: #FFE38A;">★</span>　訪問介護フランチャイズ「アポロンケア」加盟店募集中!!　</span>
-    <span style="display: inline-flex; white-space: nowrap; padding: 0 .9em;"><span style="color: #FFE38A;">★</span>　直営3店舗すべて黒字・投資回収済みの運営モデルをそのまま提供　</span>
-    <span style="display: inline-flex; white-space: nowrap; padding: 0 .9em;"><span style="color: #FFE38A;">★</span>　初期投資モデル440万円（税別）　</span>
-    <span style="display: inline-flex; white-space: nowrap; padding: 0 .9em;"><span style="color: #FFE38A;">★</span>　ロイヤリティ 総売上5%　</span>
-    <span style="display: inline-flex; white-space: nowrap; padding: 0 .9em;"><span style="color: #FFE38A;">★</span>　定期巡回を追加しても追加加盟金0円　</span>
-    <span style="display: inline-flex; white-space: nowrap; padding: 0 .9em;"><span style="color: #FFE38A;">★</span>　加盟前の無料エリア診断 実施中　</span>
-    <span style="display: inline-flex; white-space: nowrap; padding: 0 .9em;"><span style="color: #FFE38A;">★</span>　訪問介護フランチャイズ「アポロンケア」加盟店募集中!!　</span>
-    <span style="display: inline-flex; white-space: nowrap; padding: 0 .9em;"><span style="color: #FFE38A;">★</span>　直営3店舗すべて黒字・投資回収済みの運営モデルをそのまま提供　</span>
-    <span style="display: inline-flex; white-space: nowrap; padding: 0 .9em;"><span style="color: #FFE38A;">★</span>　初期投資モデル440万円（税別）　</span>
-    <span style="display: inline-flex; white-space: nowrap; padding: 0 .9em;"><span style="color: #FFE38A;">★</span>　ロイヤリティ 総売上5%　</span>
-    <span style="display: inline-flex; white-space: nowrap; padding: 0 .9em;"><span style="color: #FFE38A;">★</span>　定期巡回を追加しても追加加盟金0円　</span>
-    <span style="display: inline-flex; white-space: nowrap; padding: 0 .9em;"><span style="color: #FFE38A;">★</span>　加盟前の無料エリア診断 実施中　</span>
-  </div>
-</div>
-
-<div style="background: linear-gradient(135deg,#F08300 0%,#D96C00 100%); color: #fff; padding: 60px 0;">
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; align-items: center; max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1" data-m-stack="1" style="display: grid; grid-template-columns: 150px minmax(0,1fr); gap: 22px; align-items: center;">
-      <div style="width: 150px; height: 150px; background: #fff; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #D96C00; box-shadow: 0 8px 24px rgba(0,0,0,.16); text-align: center; line-height: 1.3;">
-        <span style="font-size: .78rem; font-weight: 900;">直営実績</span>
-        <span style="font-size: 1.9rem; font-family: 'Outfit', sans-serif; font-weight: 800;">3店舗</span>
-        <span style="font-size: .82rem; font-weight: 900;">すべて黒字・投資回収済み</span>
-      </div>
-      <img src="assets/web/staff-group.jpg" alt="アポロンケア直営店のスタッフ集合写真" loading="lazy" style="width: 100%; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,.18); object-fit: cover; aspect-ratio: 4/3;">
-    </div>
-    <div data-rv="1">
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.45rem, 3.4vw, 2.1rem); line-height: 1.5; color: #fff; margin-bottom: 12px; text-wrap: pretty;">机上の計画ではなく、<br>直営でやってきた形を、そのまま渡します。</h2>
-      <p style="font-weight: 500; opacity: .95;">本部の直営3店舗はすべて黒字で、開業時の投資も回収済みです。2026年10月には吉川市で4店舗目を開設し、訪問介護と定期巡回の組み合わせを始めました。11月には上尾市で訪問介護を開始し、5店舗体制になる予定です。採用・営業・請求・教育まで、実際に回している運営の型を、加盟店にそのままお渡しします。</p>
-    </div>
-  </div>
-</div>
-
-<section id="why24" style="background: linear-gradient(180deg,#111C33 0%,#1B2A4A 62%,#5A3A63 84%,#C4593B 96%,#F08300 100%); color: #fff; position: relative; overflow: hidden; padding: 92px 0 104px;">
-  <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMin slice" aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; opacity: .7;">
-    <g fill="#FFFFFF">
-      <circle cx="90" cy="70" r="2" opacity=".8"></circle><circle cx="240" cy="140" r="1.4" opacity=".6"></circle>
-      <circle cx="420" cy="60" r="1.8" opacity=".7"></circle><circle cx="610" cy="120" r="1.3" opacity=".5"></circle>
-      <circle cx="760" cy="50" r="2.2" opacity=".8"></circle><circle cx="920" cy="150" r="1.5" opacity=".6"></circle>
-      <circle cx="1080" cy="80" r="1.8" opacity=".7"></circle><circle cx="180" cy="230" r="1.2" opacity=".5"></circle>
-      <circle cx="520" cy="210" r="1.6" opacity=".6"></circle><circle cx="860" cy="240" r="1.2" opacity=".5"></circle>
-      <circle cx="1130" cy="200" r="1.5" opacity=".6"></circle><circle cx="330" cy="300" r="1.2" opacity=".4"></circle>
-      <path d="M980 90a26 26 0 1 1-14-33 21 21 0 1 0 14 33z" fill="#FFE9B8" opacity=".9"></path>
-    </g>
-  </svg>
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px; position: relative;">
-    <div data-rv="1" style="text-align: center; margin-bottom: 40px;">
-      <span style="display: inline-flex; align-items: center; gap: 7px; background: rgba(255,255,255,.12); color: #FFD98E; font-weight: 900; font-size: .82rem; letter-spacing: .05em; border-radius: 999px; padding: 6px 18px; margin-bottom: 16px;"><svg viewBox="0 0 100 100" aria-hidden="true" style="width: 15px; height: 15px;"><use href="#sunrays"></use><use href="#sundot"></use></svg>なぜ、24時間・365日なのか</span>
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5; color: #fff;">介護は、<span style="color: #FFD98E;">24時間365日</span>必要です。</h2>
-      <p style="max-width: 720px; margin: 16px auto 0; color: rgba(255,255,255,.85); font-weight: 500;">いつ介護が必要になるかは、選べません。一日の中でも、急に人の手が必要になる瞬間は何度も訪れます。</p>
-    </div>
-    <div style="max-width: 880px; margin: 0 auto; display: grid; gap: 16px;">
-      <sc-for list="{{ dayline }}" as="d" hint-placeholder-count="4">
-        <div data-rv="1" data-m-time="1" style="display: grid; grid-template-columns: 96px minmax(0,1fr); gap: 18px; align-items: start; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); border-radius: 16px; padding: 20px 22px;">
-          <div style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.35rem; color: #FFD98E; line-height: 1.2;">{{ d.time }}<small style="display: block; font-family: 'Noto Sans JP', sans-serif; font-size: .72rem; font-weight: 700; color: rgba(255,255,255,.7);">{{ d.jp }}</small></div>
-          <div>
-            <b style="display: block; font-size: 1.02rem; margin-bottom: 2px;">{{ d.title }}</b>
-            <p style="font-size: .9rem; color: rgba(255,255,255,.84);">{{ d.body }}</p>
-          </div>
-        </div>
-      </sc-for>
-    </div>
-    <div data-rv="1" style="text-align: center; margin-top: 50px;">
-      <p style="font-weight: 700; color: rgba(255,255,255,.9); margin-bottom: 10px;">だから、必要なのが──</p>
-      <p style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.45rem, 3.6vw, 2.35rem); line-height: 1.6; color: #fff;"><span style="color: #FFD98E;">365日24時間</span>、地域を支える介護。</p>
+<!-- 4 NUMBERS -->
+<section class="sec">
+  <div class="wrap">
+    <span class="eyebrow">SUMMARY ｜ この事業の4つの数字</span>
+    <h2 class="h2">直営で証明した数字を、<br><span class="hl">そのまま</span>お渡しします。</h2>
+    <div class="tiles">
+      <div class="tile t-red" data-rv><p class="k">直営の実績</p><p class="num">3<small>店舗</small></p><p class="s">すべて黒字・投資回収済み<br>10月 吉川に4店舗目</p></div>
+      <div class="tile t-orange" data-rv><p class="k">直営の応募数</p><p class="num">15〜20<small>件/月</small></p><p class="s">訪問介護最大の壁「採用」を仕組みで突破</p></div>
+      <div class="tile t-green" data-rv><p class="k">1人あたり月商</p><p class="num">77<small>万円</small></p><p class="s">立ち上げ期の62.6万円から、定期巡回で引き上げ（3年目モデル）</p></div>
+      <div class="tile t-blue" data-rv><p class="k">3年累計 営業利益</p><p class="num">2,791<small>万円</small></p><p class="s">初期投資440万円の約6.3倍（モデル）</p></div>
     </div>
   </div>
 </section>
 
-<section id="market" style="background: #FFF8EE; padding: 80px 0;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1" style="text-align: center; margin-bottom: 42px;">
-      <span style="display: inline-flex; align-items: center; gap: 7px; background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .82rem; border-radius: 999px; padding: 6px 18px; margin-bottom: 16px;"><svg viewBox="0 0 100 100" aria-hidden="true" style="width: 15px; height: 15px;"><use href="#sunrays"></use><use href="#sundot"></use></svg>なぜ、いまなのか</span>
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5;">これは、<span style="color: #D96C00;">机上の空論</span>ではありません。</h2>
-      <p style="max-width: 720px; margin: 16px auto 0; color: #6B5A48; font-weight: 500;">在宅介護をめぐる3つの構造的な事実が、この事業の必要性を示しています。</p>
+<!-- PROOF -->
+<section class="sec cardbg">
+  <div class="wrap proof">
+    <div data-rv>
+      <div class="photo tilt"><img src="assets/web/staff-group.jpg" alt="アポロンケア直営店のスタッフ集合写真" loading="lazy"></div>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px;">
-      <sc-for list="{{ market }}" as="m" hint-placeholder-count="3">
-        <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 30px 24px; text-align: center;">
-          <p style="font-weight: 900; font-size: 1.06rem; margin-bottom: 12px; line-height: 1.6;">{{ m.title }}</p>
-          <p style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: clamp(2rem, 3.2vw, 2.6rem); color: #D96C00; line-height: 1.15;">{{ m.num }}<small style="font-size: .5em; font-weight: 900;">{{ m.unit }}</small></p>
-          <span style="display: inline-block; margin: 10px 0 12px; font-size: .74rem; font-weight: 700; background: #FFF3E0; color: #D96C00; padding: 3px 14px; border-radius: 999px;">{{ m.cap }}</span>
-          <p style="font-size: .88rem; color: #6B5A48; text-align: left;">{{ m.body }}</p>
-        </div>
-      </sc-for>
-    </div>
-    <p style="margin-top: 22px; text-align: center; font-size: .72rem; color: #9a8a76;">※内閣府「高齢社会白書」、厚生労働省公表資料、東京商工リサーチ調査等をもとに本部作成。加盟資料に掲載の市場環境と併せてご覧ください。</p>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 26px;">
-      <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 16px; padding: 22px 22px;">
-        <b style="display: block; font-weight: 900; font-size: .98rem; color: #D96C00; margin-bottom: 6px;">国が推進する地域包括ケア</b>
-        <p style="font-size: .86rem; color: #6B5A48;">国は施設中心から在宅中心の支援へ方針を移しており、訪問介護は地域包括ケアの中核を担うサービスとして位置づけられています。</p>
-      </div>
-      <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 16px; padding: 22px 22px;">
-        <b style="display: block; font-weight: 900; font-size: .98rem; color: #D96C00; margin-bottom: 6px;">不可欠な「地域インフラ」</b>
-        <p style="font-size: .86rem; color: #6B5A48;">利用者・家族・ケアマネジャー・行政・医療機関と連携しながら、地域に根を張って運営する事業です。</p>
-      </div>
-      <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 16px; padding: 22px 22px;">
-        <b style="display: block; font-weight: 900; font-size: .98rem; color: #D96C00; margin-bottom: 6px;">公的給付ベースの収益構造</b>
-        <p style="font-size: .86rem; color: #6B5A48;">売上の多くは公的制度に基づく給付で構成され、一般消費型ビジネスと比較して景気変動の影響を受けにくい構造です。<span style="font-size: .78rem; color: #9a8a76;">※制度改定・人件費高騰・採用環境の変化等への対応は必要です。</span></p>
-      </div>
-    </div>
-    <div data-rv="1" style="max-width: 820px; margin: 40px auto 0; text-align: center; background: #fff; border: 2px solid #F08300; border-radius: 18px; padding: 30px 26px; box-shadow: 0 8px 28px rgba(120,72,10,.10);">
-      <p style="font-weight: 500; color: #6B5A48; margin-bottom: 6px;">需要はある。でも、届けられるリソースが足りない。</p>
-      <p style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.15rem, 2.6vw, 1.6rem); color: #D96C00; line-height: 1.6; text-wrap: pretty;">足りていないものを、地域に一つずつ増やしていく。<br>それが、この事業の在り方そのものです。</p>
-    </div>
-  </div>
-</section>
-
-<section id="what" style="padding: 80px 0;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1" style="text-align: center; margin-bottom: 42px;">
-      <span style="display: inline-flex; align-items: center; gap: 7px; background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .82rem; border-radius: 999px; padding: 6px 18px; margin-bottom: 16px;"><svg viewBox="0 0 100 100" aria-hidden="true" style="width: 15px; height: 15px;"><use href="#sunrays"></use><use href="#sundot"></use></svg>アポロンケアとは</span>
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5; text-wrap: pretty;">訪問介護から始め、3年かけて<br><span style="color: #D96C00;">365日24時間を支える地域拠点</span>へ。</h2>
-      <p style="max-width: 760px; margin: 16px auto 0; color: #6B5A48; font-weight: 500;">アポロンケアは、単純な訪問介護FCではありません。訪問介護で地域の基盤をつくり、採用・営業・請求・組織を安定させたうえで、定期巡回・随時対応型訪問介護看護を段階的に組み込みます。</p>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px;">
-      <div data-rv="1" style="background: #fff; border-radius: 18px; border: 1px solid #F0E4D3; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 32px 28px; text-align: center;">
-        <img src="assets/web/mascot.png" alt="アポロン君" style="width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin: 0 auto 14px;">
-        <b style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: 1.2rem; color: #D96C00; display: block; margin-bottom: 10px;">思想</b>
-        <p style="color: #6B5A48; font-weight: 500;">人生の最期の選択肢を、地域資源が足りないという理由で狭めない。</p>
-      </div>
-      <div data-rv="1" style="background: #fff; border-radius: 18px; border: 1px solid #F0E4D3; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 32px 28px; text-align: center;">
-        <img src="assets/web/staff-street.jpg" alt="地域を訪問するスタッフ" style="width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin: 0 auto 14px;">
-        <b style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: 1.2rem; color: #D96C00; display: block; margin-bottom: 10px;">経営</b>
-        <p style="color: #6B5A48; font-weight: 500;">社会性だけで終わらせず、事業として続く仕組みをつくる。</p>
+    <div data-rv>
+      <span class="eyebrow">TRACK RECORD ｜ 直営実績</span>
+      <h2 class="h2">机上の計画ではなく、<br>直営で回してきた<span class="hl">「型」</span>を。</h2>
+      <p class="lead">本部の直営3店舗は<span class="mark"><b>すべて黒字・投資回収済み</b></span>。採用・営業・請求・教育まで、実際に回している運営の型を、加盟店にそのままお渡しします。</p>
+      <div class="timeline">
+        <div class="tl"><span class="d">直営</span><p><b>3店舗すべて黒字</b>開業時の投資も回収済み</p></div>
+        <div class="tl now"><span class="d">2026.10</span><p><b>吉川市に4店舗目がオープン</b>訪問介護＋定期巡回の組み合わせを開始</p></div>
+        <div class="tl next"><span class="d">2026.11</span><p><b>上尾市で訪問介護を開始（予定）</b>5店舗体制へ</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="reasons" style="background: #FFF8EE; padding: 80px 0;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1" style="text-align: center; margin-bottom: 42px;">
-      <span style="display: inline-flex; align-items: center; gap: 7px; background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .82rem; border-radius: 999px; padding: 6px 18px; margin-bottom: 16px;"><svg viewBox="0 0 100 100" aria-hidden="true" style="width: 15px; height: 15px;"><use href="#sunrays"></use><use href="#sundot"></use></svg>選ばれる理由</span>
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5;">アポロンケアが選ばれる、<span style="color: #D96C00;">3つの理由</span>。</h2>
+<!-- WHY 24 -->
+<section class="sec dark" id="why24">
+  <div class="wrap">
+    <span class="eyebrow">WHY 24H ｜ なぜ、24時間・365日なのか</span>
+    <h2 class="h2">介護は、<span class="hl">24時間365日</span>必要です。</h2>
+    <p class="lead">いつ介護が必要になるかは、選べません。一日の中でも、急に人の手が必要になる瞬間は何度も訪れます。</p>
+    <div class="dayline">
+      <div class="day" data-rv><div class="t"><span class="num">6:00</span><small>早朝</small></div><div><h3>起床・排泄の介助</h3><p>ベッドから起き上がるところから、一日が始まる方がいます。朝の数十分の支えが、その日一日を左右します。</p></div></div>
+      <div class="day" data-rv><div class="t"><span class="num">12:00</span><small>日中</small></div><div><h3>食事・服薬・体調の見守り</h3><p>一人では食事や服薬が難しい方に、昼の訪問が欠かせません。一日に何度も支援が必要になることは、珍しくありません。</p></div></div>
+      <div class="day" data-rv><div class="t"><span class="num">18:00</span><small>夕方</small></div><div><h3>夕食・就寝前の支援</h3><p>家族が仕事から戻るまでの時間、夕方の訪問が在宅生活の橋渡しになります。</p></div></div>
+      <div class="day night" data-rv><div class="t"><span class="num">23:00</span><small>深夜</small></div><div><h3>体位変換・緊急のコール</h3><p>夜間にも介護が必要になったとき、地域に十分なサービスがなければ、「自宅で暮らしたい」という選択肢そのものを諦めなければならない時がきます。</p></div></div>
     </div>
+    <div class="banner" data-rv><img src="assets/lp/mascot-sunmoon.webp" alt="太陽と月を持つアポロン君" loading="lazy"><p><small>だから、必要なのが</small>365日24時間、地域を支える介護。</p></div>
+  </div>
+</section>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; align-items: center;">
-      <div data-rv="1">
-        <p style="font-family: 'Outfit', sans-serif; font-weight: 800; color: #F08300; font-size: .95rem; letter-spacing: .14em; display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">REASON 01<span style="height: 2px; width: 44px; background: #F08300; border-radius: 2px;"></span></p>
-        <h3 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.2rem, 2.4vw, 1.6rem); line-height: 1.55; margin-bottom: 14px;">机上の空論ゼロ。<br>直営で検証したモデル。</h3>
-        <p style="color: #6B5A48; font-size: .95rem;">直営店を実際に運営している本部です。「こうすれば上手くいくはず」ではなく、実際の介護現場で試したものだけをFC化しています。代表自身は介護業界経験12年。定期巡回事業を0から2店舗立ち上げ、両店を黒字化し、公募・指定から夜勤、収支管理まで3年間の実務経験があります。現場を知る本部が伴走します。</p>
-      </div>
-      <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 28px 24px; text-align: center;">
-        <img src="assets/web/staff-team.jpg" alt="直営店のスタッフ" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
-        <span style="font-size: .84rem; font-weight: 700; color: #6B5A48;">直営実績</span>
-        <p style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: clamp(1.9rem, 4vw, 2.7rem); color: #D96C00; line-height: 1.2; margin: 4px 0;">3店舗<small style="font-size: .45em; font-weight: 900;">　すべて黒字・投資回収済み</small></p>
-        <div style="display: grid; gap: 10px; margin-top: 6px;">
-          <div style="display: flex; align-items: center; gap: 12px; background: #FFF3E0; border-radius: 12px; padding: 12px 16px; font-weight: 700; font-size: .9rem; text-align: left;"><span style="width: 10px; height: 10px; border-radius: 50%; background: #F08300; flex: 0 0 10px;"></span>実際の現場で試したものだけをFC化</div>
-          <div style="display: flex; align-items: center; gap: 12px; background: #FFF3E0; border-radius: 12px; padding: 12px 16px; font-weight: 700; font-size: .9rem; text-align: left;"><span style="width: 10px; height: 10px; border-radius: 50%; background: #F08300; flex: 0 0 10px;"></span>指定・公募・夜勤・請求まで、現場を知る本部</div>
-        </div>
-      </div>
+<!-- MARKET -->
+<section class="sec" id="market">
+  <div class="wrap">
+    <span class="eyebrow">MARKET ｜ なぜ、いまなのか</span>
+    <h2 class="h2">需要はある。でも、<br><span class="hl">届けられる人が足りない。</span></h2>
+    <p class="lead">在宅介護をめぐる3つの構造的な事実が、この事業の必要性を示しています。</p>
+    <div class="mkt">
+      <div class="mk" data-rv><p class="k">高齢化は、これからが本番</p><p class="num">29<small>%超</small></p><p class="cap">日本の高齢化率</p><p class="b">65歳以上人口は3,600万人を超え、85歳以上の人口は今後さらに増加します。在宅介護のニーズは、2040年代に向けて拡大が続きます。</p></div>
+      <div class="mk" data-rv><p class="k">担い手が、圧倒的に足りない</p><p class="num">約15<small>倍</small></p><p class="cap">訪問介護員の有効求人倍率</p><p class="b">全職業平均の10倍以上という水準で、ヘルパーの高齢化も進んでいます。</p></div>
+      <div class="mk" data-rv><p class="k">供給は、むしろ減っている</p><p class="num">過去最多<small>水準</small></p><p class="cap">訪問介護事業者の倒産・休廃業</p><p class="b">人手不足と経営難で、地域からサービスが消え始めています。</p></div>
     </div>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; align-items: center; margin-top: 46px;">
-      <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 28px 24px; text-align: center;">
-        <img src="assets/web/staff-selfie.jpg" alt="直営店のスタッフ" loading="lazy" style="display: block; width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 12px; margin-bottom: 16px;">
-        <span style="font-size: .84rem; font-weight: 700; color: #6B5A48;">直営の応募数（実績）</span>
-        <p style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: clamp(1.9rem, 4vw, 2.7rem); color: #D96C00; line-height: 1.2; margin: 4px 0;">月15〜20<small style="font-size: .45em; font-weight: 900;">件</small></p>
-        <p style="font-size: .72rem; color: #9a8a76;">※媒体・地域・時期により変動します。</p>
-        <div style="display: flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; margin-top: 18px;">
-          <span style="background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .86rem; border-radius: 12px; padding: 10px 14px;">応募</span><span style="color: #F08300; font-weight: 900;">→</span>
-          <span style="background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .86rem; border-radius: 12px; padding: 10px 14px;">面接</span><span style="color: #F08300; font-weight: 900;">→</span>
-          <span style="background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .86rem; border-radius: 12px; padding: 10px 14px;">採用</span><span style="color: #F08300; font-weight: 900;">→</span>
-          <span style="background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .86rem; border-radius: 12px; padding: 10px 14px;">定着</span>
-        </div>
-      </div>
-      <div data-rv="1">
-        <p style="font-family: 'Outfit', sans-serif; font-weight: 800; color: #F08300; font-size: .95rem; letter-spacing: .14em; display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">REASON 02<span style="height: 2px; width: 44px; background: #F08300; border-radius: 2px;"></span></p>
-        <h3 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.2rem, 2.4vw, 1.6rem); line-height: 1.55; margin-bottom: 14px;">訪問介護最大の壁<br>「採用」をサポート。</h3>
-        <p style="color: #6B5A48; font-size: .95rem;">訪問介護は需要はありますが、働く人が集まらなければ売上を作れません。直営では月15〜20件程度の応募を継続獲得する仕組みを構築。求人広告を出すだけでなく、<span style="background: linear-gradient(transparent 58%, rgb(255, 227, 138) 58%); padding: 0px 0.1em; font-weight: 700;">応募から面接・採用・定着まで</span>をサポートします。</p>
-      </div>
+    <div class="points">
+      <div class="pt"><span class="ic">1</span><div><b>国が推進する地域包括ケア</b><p>国は施設中心から在宅中心へ方針を移し、訪問介護は地域包括ケアの中核サービスです。</p></div></div>
+      <div class="pt"><span class="ic">2</span><div><b>不可欠な「地域インフラ」</b><p>利用者・家族・ケアマネジャー・行政・医療機関と連携し、地域に根を張って運営します。</p></div></div>
+      <div class="pt"><span class="ic">3</span><div><b>公的給付ベースの収益構造</b><p>売上の多くは公的制度に基づく給付で、景気変動の影響を受けにくい構造です。※制度改定・人件費・採用環境への対応は必要です。</p></div></div>
     </div>
+    <p class="note">※内閣府「高齢社会白書」、厚生労働省公表資料、東京商工リサーチ調査等をもとに本部作成。</p>
+  </div>
+</section>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; align-items: center; margin-top: 46px;">
-      <div data-rv="1">
-        <p style="font-family: 'Outfit', sans-serif; font-weight: 800; color: #F08300; font-size: .95rem; letter-spacing: .14em; display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">REASON 03<span style="height: 2px; width: 44px; background: #F08300; border-radius: 2px;"></span></p>
-        <h3 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.2rem, 2.4vw, 1.6rem); line-height: 1.55; margin-bottom: 14px;">訪問介護だけで終わらない。<br>3年間の「統合運営モデル」。</h3>
-        <p style="color: #6B5A48; font-size: .95rem;">いきなり24時間事業を始めるのではありません。まず訪問介護を立ち上げ、採用・営業・地域連携・請求・組織運営を安定させる。その上で地域・自治体の状況を確認しながら、定期巡回・随時対応型訪問介護看護を組み込みます。同じ地域、同じ拠点、可能な範囲で同じ人材資源へ、定期巡回機能を追加していきます。</p>
-      </div>
-      <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 28px 24px;">
-        <div style="display: grid; gap: 10px;">
-          <div style="display: flex; align-items: center; gap: 12px; background: #FFF3E0; border-radius: 12px; padding: 12px 16px; font-weight: 700; font-size: .9rem;"><span style="width: 10px; height: 10px; border-radius: 50%; background: #F08300; flex: 0 0 10px;"></span><span><b>STEP 1</b>　訪問介護で地域の基盤をつくる</span></div>
-          <div style="display: flex; align-items: center; gap: 12px; background: #FFF3E0; border-radius: 12px; padding: 12px 16px; font-weight: 700; font-size: .9rem;"><span style="width: 10px; height: 10px; border-radius: 50%; background: #F08300; flex: 0 0 10px;"></span><span><b>STEP 2</b>　採用・営業・請求・組織を安定させる</span></div>
-          <div style="display: flex; align-items: center; gap: 12px; background: #FFF3E0; border-radius: 12px; padding: 12px 16px; font-weight: 700; font-size: .9rem;"><span style="width: 10px; height: 10px; border-radius: 50%; background: #F08300; flex: 0 0 10px;"></span><span><b>STEP 3</b>　定期巡回を組み込み、24時間対応へ</span></div>
-        </div>
-      </div>
+<!-- WHAT -->
+<section class="sec soft" id="what">
+  <div class="wrap">
+    <span class="eyebrow">ABOUT ｜ アポロンケアとは</span>
+    <h2 class="h2">訪問介護から始め、3年かけて<br><span class="hl">365日24時間を支える地域拠点</span>へ。</h2>
+    <p class="lead">単純な訪問介護FCではありません。訪問介護で地域の基盤をつくり、採用・営業・請求・組織を安定させたうえで、定期巡回・随時対応型訪問介護看護を段階的に組み込みます。</p>
+    <div class="duo">
+      <div class="c" data-rv><div class="im"><img class="contain" src="assets/lp/mascot-heart.webp" alt="ハートを持つアポロン君" loading="lazy"></div><div class="tx"><span class="tg">思想</span><p>人生の最期の選択肢を、地域資源が足りないという理由で狭めない。</p></div></div>
+      <div class="c" data-rv><div class="im"><img src="assets/web/staff-street.jpg" alt="地域を訪問するスタッフ" loading="lazy"></div><div class="tx"><span class="tg">経営</span><p>社会性だけで終わらせず、事業として続く仕組みをつくる。</p></div></div>
     </div>
   </div>
 </section>
 
-<section id="income" style="padding: 80px 0;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1" style="text-align: center; margin-bottom: 42px;">
-      <span style="display: inline-flex; align-items: center; gap: 7px; background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .82rem; border-radius: 999px; padding: 6px 18px; margin-bottom: 16px;"><svg viewBox="0 0 100 100" aria-hidden="true" style="width: 15px; height: 15px;"><use href="#sunrays"></use><use href="#sundot"></use></svg>収益モデル</span>
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5; text-wrap: pretty;">介護保険 × 障害福祉 × 自費。<br><span style="color: #D96C00;">3つの収益源</span>で訪問介護の基盤をつくる。</h2>
-      <p style="max-width: 740px; margin: 16px auto 0; color: #6B5A48; font-weight: 500;">定期巡回を組み込む前に、訪問介護事業所として3本の収益源を立てます。別事業を立ち上げるのではなく、同じ職員・同じ事務所・同じ地域基盤で育てる統合運営モデルです。</p>
+<!-- REASONS -->
+<section class="sec" id="reasons">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">REASONS ｜ 選ばれる理由</span>
+      <h2 class="h2">アポロンケアが選ばれる、<span class="hl">3つの理由</span>。</h2>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px;">
-      <sc-for list="{{ incomes }}" as="i" hint-placeholder-count="3">
-        <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 30px 26px;">
-          <span style="font-family: 'Outfit', sans-serif; font-weight: 800; color: #fff; background: #F08300; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .9rem; margin-bottom: 12px;">{{ i.no }}</span>
-          <b style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: 1.2rem; color: #D96C00; display: block;">{{ i.title }}</b>
-          <span style="font-family: 'Outfit', sans-serif; font-size: .68rem; font-weight: 700; letter-spacing: .1em; color: #A79379; display: block; margin-bottom: 10px;">{{ i.en }}</span>
-          <p style="color: #6B5A48; font-size: .9rem; margin-bottom: 12px;">{{ i.body }}</p>
-          <ul style="display: grid; gap: 6px;">
-            <sc-for list="{{ i.items }}" as="ii" hint-placeholder-count="3">
-              <li style="font-size: .84rem; font-weight: 700; display: flex; gap: 8px;"><span style="color: #F08300;">☀</span>{{ ii }}</li>
-            </sc-for>
-          </ul>
+
+    <div class="reason">
+      <div data-rv>
+        <span class="no">REASON 01</span>
+        <h3>机上の空論ゼロ。<br>直営で検証したモデル。</h3>
+        <p>直営店を実際に運営している本部です。「こうすれば上手くいくはず」ではなく、実際の介護現場で試したものだけをFC化しています。代表自身は介護業界12年。定期巡回事業を0から2店舗立ち上げ、両店を黒字化し、公募・指定から夜勤、収支管理まで3年間の実務経験があります。</p>
+        <div class="chips"><span class="chip">直営3店舗すべて黒字</span><span class="chip">投資回収済み</span><span class="chip">指定・公募・夜勤・請求まで</span></div>
+      </div>
+      <div data-rv><div class="photo tilt-l"><img src="assets/web/staff-team.jpg" alt="直営店のスタッフ" loading="lazy"></div></div>
+    </div>
+
+    <div class="reason rev">
+      <div data-rv>
+        <span class="no">REASON 02</span>
+        <h3>訪問介護最大の壁<br>「採用」をサポート。</h3>
+        <p>訪問介護は需要があっても、働く人が集まらなければ売上を作れません。直営では月15〜20件程度の応募を継続獲得する仕組みを構築。求人広告を出すだけでなく、<b>応募から面接・採用・定着まで</b>をサポートします。</p>
+      </div>
+      <div data-rv style="display:grid;gap:14px">
+        <div class="photo tilt"><img src="assets/web/staff-selfie.jpg" alt="直営店のスタッフ" loading="lazy"></div>
+        <div class="bigcard">
+          <p class="k">直営の応募数（実績）</p>
+          <p class="num">月15〜20<small>件</small></p>
+          <div class="flow"><span>応募</span><i>→</i><span>面接</span><i>→</i><span>採用</span><i>→</i><span>定着</span></div>
+          <p class="note">※媒体・地域・時期により変動します。</p>
         </div>
-      </sc-for>
+      </div>
     </div>
-    <div data-rv="1" style="max-width: 860px; margin: 34px auto 0; background: #FFF8EE; border: 2px solid #F08300; border-radius: 18px; padding: 26px 28px; text-align: center;">
-      <p style="font-weight: 700; color: #6B5A48;">この3つで職員・営業・請求の基盤をつくり、<b style="color: #33251A;">その同じ拠点に定期巡回を組み込みます。</b></p>
+
+    <div class="reason">
+      <div data-rv>
+        <span class="no">REASON 03</span>
+        <h3>訪問介護だけで終わらない。<br>3年間の「統合運営モデル」。</h3>
+        <p>いきなり24時間事業を始めるのではありません。まず訪問介護を立ち上げ、採用・営業・地域連携・請求・組織運営を安定させる。その上で地域・自治体の状況を確認しながら、同じ地域・同じ拠点に定期巡回を組み込みます。</p>
+        <div class="steps3">
+          <div class="s3"><b>STEP 1</b>訪問介護で地域の基盤をつくる</div>
+          <div class="s3"><b>STEP 2</b>採用・営業・請求・組織を安定させる</div>
+          <div class="s3"><b>STEP 3</b>定期巡回を組み込み、24時間対応へ</div>
+        </div>
+      </div>
+      <div data-rv style="text-align:center"><img src="assets/lp/mascot-run.webp" alt="走るアポロン君" loading="lazy" style="width:min(60%,260px);margin:0 auto"></div>
     </div>
   </div>
 </section>
 
-<section id="roadmap" style="padding: 80px 0; background: #FFF8EE;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1" style="text-align: center; margin-bottom: 32px;">
-      <span style="display: inline-flex; align-items: center; gap: 7px; background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .82rem; border-radius: 999px; padding: 6px 18px; margin-bottom: 16px;"><svg viewBox="0 0 100 100" aria-hidden="true" style="width: 15px; height: 15px;"><use href="#sunrays"></use><use href="#sundot"></use></svg>3年間の統合運営モデル</span>
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5;">3年間の<span style="color: #D96C00;">成長ロードマップ</span>。</h2>
+<!-- INCOME -->
+<section class="sec soft" id="income">
+  <div class="wrap">
+    <span class="eyebrow">MODEL ｜ 収益モデル</span>
+    <h2 class="h2">介護保険 × 障害福祉 × 自費。<br><span class="hl">3つの収益源</span>で基盤をつくる。</h2>
+    <p class="lead">別事業を立ち上げるのではなく、同じ職員・同じ事務所・同じ地域基盤で育てる統合運営モデルです。</p>
+    <div class="pillars">
+      <div class="pil" data-rv><p class="n">01 ｜ LONG-TERM CARE</p><h3>介護保険</h3><p>高齢者向けの訪問介護サービス。制度に基づく中核の収益源です。</p><ul><li>身体介護</li><li>生活援助</li><li>総合事業 など</li></ul></div>
+      <div class="pil" data-rv><p class="n">02 ｜ DISABILITY WELFARE</p><h3>障害福祉</h3><p>障がいのある方への支援。長時間支援・継続利用につながりやすい領域です。</p><ul><li>居宅介護</li><li>重度訪問介護</li><li>移動支援 など</li></ul></div>
+      <div class="pil" data-rv><p class="n">03 ｜ PRIVATE-PAY</p><h3>自費サービス</h3><p>制度の枠で対応しきれない、地域の小さな困りごとに応えるサービス。</p><ul><li>買い物・外出支援</li><li>生活支援</li><li>家族支援 など</li></ul></div>
     </div>
-    <div data-m-tabs="1" style="display: flex; gap: 8px; justify-content: center; margin-bottom: 26px; flex-wrap: wrap;">
-      <sc-for list="{{ years }}" as="y" hint-placeholder-count="3">
-        <sc-if value="{{ y.active }}" hint-placeholder-val="{{ true }}">
-          <button type="button" onClick="{{ y.select }}" style="border: 2px solid #F08300; background: #F08300; color: #fff; font-weight: 900; font-size: .95rem; border-radius: 999px; padding: 10px 26px; cursor: pointer; font-family: inherit; box-shadow: 0 6px 18px rgba(240,131,0,.35);">{{ y.tab }}</button>
-        </sc-if>
-        <sc-if value="{{ y.inactive }}" hint-placeholder-val="{{ false }}">
-          <button type="button" onClick="{{ y.select }}" style="border: 2px solid #F08300; background: #fff; color: #D96C00; font-weight: 900; font-size: .95rem; border-radius: 999px; padding: 10px 26px; cursor: pointer; font-family: inherit;">{{ y.tab }}</button>
-        </sc-if>
-      </sc-for>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="sec" id="roadmap">
+  <div class="wrap">
+    <span class="eyebrow">ROADMAP ｜ 3年間の統合運営モデル</span>
+    <h2 class="h2">1人あたり月商 <span class="hl"><span class="nw">62.6万円</span> → <span class="nw">77万円</span></span>。<br>3年間の成長ロードマップ。</h2>
+    <div class="years">
+      <div class="yr" data-rv>
+        <div class="top"><span class="y">1年目</span><span class="tag">基盤構築期</span></div>
+        <h3>訪問介護を立ち上げ、地域の信頼をつくる。</h3>
+        <p>指定申請から開業、初期の採用・営業を本部と一緒に進めます。常勤換算3名から5名へ体制を広げる立ち上げ期で、12ヶ月目には1人あたり月商71万円を目指します。</p>
+        <ul><li>指定申請・開業準備を本部が伴走</li><li>採用モデルでヘルパー体制を構築</li><li>ケアマネジャー・地域包括との連携づくり</li></ul>
+        <div class="kpi"><span>1人月商（年平均）</span><b class="num">62.6<small>万円</small></b></div>
+      </div>
+      <div class="yr" data-rv>
+        <div class="top"><span class="y">2年目</span><span class="tag">移行期</span></div>
+        <h3>1年半頃を目安に、定期巡回を追加する。</h3>
+        <p>前半は訪問介護中心に稼働と組織を固め、後半で既存運営に定期巡回を組み込みます。年間平均では訪問介護63.3%／定期巡回36.7%の売上構成です。</p>
+        <ul><li>稼働率と人員体制を最適化</li><li>定期巡回を追加（公募・指定対応を本部が支援）</li><li>夜勤体制・オペレーションの構築</li></ul>
+        <div class="kpi"><span>1人月商</span><b class="num">73.5<small>万円</small></b></div>
+      </div>
+      <div class="yr" data-rv>
+        <div class="top"><span class="y">3年目</span><span class="tag">統合期</span></div>
+        <h3>定期巡回を丸1年運営し、24時間対応を安定させる。</h3>
+        <p>売上構成は訪問介護30%／定期巡回70%。同じ拠点・同じ人材資源で、365日24時間を支える地域拠点へ。</p>
+        <ul><li>定期巡回53.9万円＋訪問介護23.1万円／人月</li><li>夜勤の内製化と近隣加盟店でのオペレーター集約</li><li>統合運営の安定運用フェーズ</li></ul>
+        <div class="kpi"><span>1人月商</span><b class="num">77<small>万円</small></b></div>
+      </div>
     </div>
-    <div style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 34px 30px; max-width: 880px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 26px; align-items: center;">
+    <p class="note">※62.6万円／73.5万円／77万円はいずれもモデル値であり、実績を保証するものではありません。</p>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section class="sec dark" id="simulation">
+  <div class="rbar" style="position:absolute;left:0;right:0;top:0"></div>
+  <div class="wrap">
+    <span class="eyebrow">NUMBERS ｜ 3年間の収支モデル</span>
+    <div class="numgrid">
+      <div data-rv>
+        <h2 class="h2">3年で、初期投資の<span class="hl nw">約6.3倍</span>。</h2>
+        <p style="font-weight:700;color:var(--dmuted)">3年累計 営業利益（立ち上げ期を含むモデル）</p>
+        <p class="num big">2,791<small>万円</small></p>
+        <p style="color:var(--dsub);font-weight:700;margin-top:10px">初期投資440万円（税別）は<b style="color:var(--gold)">11ヶ月目に累計で回収</b>。12ヶ月目には月商355万円（1人71万円）に届きます。</p>
+      </div>
+      <div class="chart" data-rv>
+        <svg viewBox="0 0 720 480" role="img" aria-label="営業利益の累計：1年目549万円、2年目まで1,679万円、3年目まで2,791万円。初期投資440万円の水準を点線で表示"><line x1="40" y1="420" x2="700" y2="420" stroke="#6B5034" stroke-width="2"/><rect x="90" y="345" width="150" height="75" rx="12" fill="#8A6A3E"/><rect x="300" y="192" width="150" height="228" rx="12" fill="#D9A23A"/><rect x="510" y="40" width="150" height="380" rx="12" fill="#FFC94A"/><line x1="40" y1="360" x2="700" y2="360" stroke="#FF9A8F" stroke-width="3" stroke-dasharray="12 10"/><text x="165" y="326" text-anchor="middle" font-size="36" font-weight="900" fill="#FFF3E0">549</text><text x="375" y="176" text-anchor="middle" font-size="36" font-weight="900" fill="#FFF3E0">1,679</text><text x="585" y="94" text-anchor="middle" font-size="38" font-weight="900" fill="#33241A">2,791</text><text x="165" y="462" text-anchor="middle" font-size="26" font-weight="900" fill="#D9C4A6">1年目</text><text x="375" y="462" text-anchor="middle" font-size="26" font-weight="900" fill="#D9C4A6">2年目まで</text><text x="585" y="462" text-anchor="middle" font-size="26" font-weight="900" fill="#D9C4A6">3年目まで</text></svg>
+        <p class="cap">営業利益の累計（万円）　<span>┅ 初期投資 440万円</span></p>
+      </div>
+    </div>
+    <div class="tscroll" data-rv>
+      <table class="pltable">
+        <thead><tr><th>統合収支（万円）</th><th>1年目</th><th>2年目</th><th>3年目</th></tr></thead>
+        <tbody>
+          <tr><td>売上</td><td>3,004</td><td>4,410</td><td>4,620</td></tr>
+          <tr><td>常勤換算（平均）</td><td>4.0名</td><td>5名</td><td>5名</td></tr>
+          <tr><td>1人あたり月商</td><td>62.6</td><td>73.5</td><td>77</td></tr>
+          <tr class="op"><td>営業利益</td><td>549</td><td>1,130</td><td>1,113</td></tr>
+          <tr><td>営業利益率</td><td>18.3%</td><td>25.6%</td><td>24.1%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="chk">
+      <div><b>✓</b>1年目は常勤換算3→5名の立ち上げ期。それでも黒字のモデルです。</div>
+      <div><b>✓</b>2年目以降は定期巡回の組み込みで、営業利益1,100万円台へ。</div>
+    </div>
+    <p class="note">※一定条件による事業シミュレーションであり、売上・利益・投資回収等を保証するものではありません。累計は端数処理のため表示値の和と1万円ずれます。地域、採用、人員配置、利用者数、加算取得状況その他の条件により結果は変動します。年次の内訳は加盟資料P.14〜15に掲載しています。</p>
+  </div>
+</section>
+
+<!-- BROCHURE -->
+<section class="sec">
+  <div class="wrap">
+    <div class="bro" data-rv>
+      <div class="badge"><span>たっぷり<b>24P</b></span></div>
+      <div class="cover">
+        <span class="p">訪問介護フランチャイズ 加盟店様用資料 2026</span>
+        <b>地域に、<br>小さな太陽を。</b>
+        <img src="assets/lp/mascot-paper.webp" alt="" loading="lazy">
+      </div>
       <div>
-        <span style="display: inline-block; background: #E8503A; color: #fff; font-weight: 900; font-size: .78rem; border-radius: 999px; padding: 4px 16px; margin-bottom: 10px;">{{ active.tag }}</span>
-        <h3 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: 1.3rem; margin-bottom: 10px; line-height: 1.5;">{{ active.title }}</h3>
-        <p style="color: #6B5A48; font-size: .93rem;">{{ active.body }}</p>
-        <div style="margin-top: 14px; display: grid; gap: 8px;">
-          <sc-for list="{{ active.items }}" as="it" hint-placeholder-count="3">
-            <div style="display: flex; gap: 10px; align-items: flex-start; font-size: .9rem; font-weight: 500;"><span style="color: #F08300;">☀</span>{{ it }}</div>
-          </sc-for>
-        </div>
-      </div>
-      <div style="background: #FFF3E0; border-radius: 16px; padding: 22px 26px; text-align: center;">
-        <span style="font-size: .76rem; font-weight: 700; color: #6B5A48;">生産性目安（1人月商）</span>
-        <p style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 2rem; color: #D96C00; line-height: 1.2; margin-top: 2px;">{{ active.kpi }}<small style="font-size: .5em; font-weight: 900;">万円</small></p>
-      </div>
-    </div>
-    <p style="max-width: 880px; margin: 16px auto 0; font-size: .72rem; color: #9a8a76; text-align: center;">※70万円／73.5万円／77万円はいずれもモデル値であり、実績を保証するものではありません。</p>
-  </div>
-</section>
-
-<div style="background: linear-gradient(135deg,#FFB800 0%,#F08300 55%,#D96C00 100%); color: #fff; padding: 66px 0; position: relative; overflow: hidden;">
-  <div style="max-width: 960px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 38px; align-items: center;">
-    <div data-rv="1" data-m-doc="1" aria-hidden="true" style="width: 210px; height: 280px; background: #fff; border-radius: 6px 14px 14px 6px; box-shadow: 14px 18px 34px rgba(0,0,0,.28); position: relative; transform: rotate(-3deg); padding: 24px 18px; display: flex; flex-direction: column; justify-content: space-between; margin: 0 auto;">
-      <span style="position: absolute; top: -16px; right: -16px; background: #E8503A; color: #fff; width: 74px; height: 74px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: 900; font-size: .7rem; box-shadow: 0 6px 14px rgba(0,0,0,.24); transform: rotate(8deg); line-height: 1.2;">たっぷり<b style="font-size: 1rem;">全20P</b></span>
-      <span style="font-size: .66rem; font-weight: 900; color: #D96C00; letter-spacing: .08em;">訪問介護フランチャイズ</span>
-      <p style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; color: #33251A; font-size: 1.14rem; line-height: 1.5;">アポロンケア<br><span style="color: #D96C00;">加盟資料</span><br>2026年版</p>
-      <img src="assets/web/mascot.png" alt="" style="width: 74px; height: 74px; border-radius: 50%; object-fit: cover; margin: 4px auto;">
-      <span style="font-size: .62rem; font-weight: 700; color: #6B5A48; text-align: center;">株式会社solmano</span>
-    </div>
-    <div data-rv="1">
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.45rem, 3.4vw, 2.1rem); line-height: 1.5; color: #fff; margin-bottom: 8px; text-wrap: pretty;">ご自身の地域で成立するか、<br>まず数字を見てみませんか。</h2>
-      <ul style="display: flex; gap: 8px; flex-wrap: wrap; margin: 14px 0 22px;">
-        <li style="background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.4); border-radius: 999px; font-size: .82rem; font-weight: 900; padding: 6px 16px;">3年間の収支モデル</li>
-        <li style="background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.4); border-radius: 999px; font-size: .82rem; font-weight: 900; padding: 6px 16px;">初期投資の内訳</li>
-        <li style="background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.4); border-radius: 999px; font-size: .82rem; font-weight: 900; padding: 6px 16px;">開業までの流れ</li>
-        <li style="background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.4); border-radius: 999px; font-size: .82rem; font-weight: 900; padding: 6px 16px;">本部サポートの全体像</li>
-      </ul>
-      <a href="https://lin.ee/5WIT6C7" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-weight: 900; border-radius: 999px; background: #fff; color: #D96C00; font-size: 1.02rem; padding: 17px 32px; box-shadow: 0 8px 24px rgba(0,0,0,.18); transition: transform .15s ease;" style-hover="transform: translateY(-2px)"><svg aria-hidden="true" style="width: 22px; height: 22px; flex: 0 0 22px; color: #06C755;"><use href="#line-bubble"></use></svg>＼ 20ページの加盟資料を無料で受け取る ／</a>
-    </div>
-  </div>
-</div>
-
-<section id="simulation" style="padding: 80px 0;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1" style="text-align: center; margin-bottom: 42px;">
-      <span style="display: inline-flex; align-items: center; gap: 7px; background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .82rem; border-radius: 999px; padding: 6px 18px; margin-bottom: 16px;"><svg viewBox="0 0 100 100" aria-hidden="true" style="width: 15px; height: 15px;"><use href="#sunrays"></use><use href="#sundot"></use></svg>収支シミュレーション</span>
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5;">3年間の<span style="color: #D96C00;">収支モデル</span>。</h2>
-      <p style="max-width: 720px; margin: 16px auto 0; color: #6B5A48; font-weight: 500;">常勤換算5名程度を想定した、一定条件でのシミュレーションです。</p>
-    </div>
-    <div data-rv="1" style="max-width: 760px; margin: 0 auto; background: #fff; border: 2px solid #F08300; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 40px 30px; text-align: center;">
-      <p style="font-weight: 900; font-size: 1rem; color: #6B5A48;">3年累計営業利益モデル</p>
-      <p style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: clamp(2.6rem, 7vw, 4.4rem); color: #D96C00; line-height: 1.1; margin: 6px 0 4px;">2,791<small style="font-size: .4em; font-weight: 900;">万円</small></p>
-      <p style="font-weight: 700; font-size: .95rem;">初期投資440万円（税別）に対して <b style="color: #E8503A; font-size: 1.3em; font-family: 'Outfit', sans-serif;">約6.3倍</b> 相当、11ヶ月目に累計回収というシミュレーション上の数値です。</p>
-      <p style="margin: 30px 0 34px; font-size: .8rem; font-weight: 900; color: #6B5A48;">累計営業利益の推移（万円）</p>
-      <div data-m-chart="1" aria-hidden="true" style="display: flex; align-items: flex-end; justify-content: center; gap: 28px; height: 170px; margin: 0 auto 8px; max-width: 420px;">
-        <div style="width: 82px; height: 20%; background: linear-gradient(180deg,#FFB800,#D96C00); border-radius: 10px 10px 4px 4px; position: relative; display: flex; align-items: flex-end; justify-content: center;"><span style="position: absolute; top: -30px; font-weight: 900; font-size: .85rem; color: #D96C00; white-space: nowrap;">1年目</span><i style="font-style: normal; color: #fff; font-weight: 900; font-size: .78rem; padding-bottom: 8px;">549</i></div>
-        <div style="width: 82px; height: 60%; background: linear-gradient(180deg,#FFB800,#D96C00); border-radius: 10px 10px 4px 4px; position: relative; display: flex; align-items: flex-end; justify-content: center;"><span style="position: absolute; top: -30px; font-weight: 900; font-size: .85rem; color: #D96C00; white-space: nowrap;">2年目</span><i style="font-style: normal; color: #fff; font-weight: 900; font-size: .78rem; padding-bottom: 8px;">1,679</i></div>
-        <div style="width: 82px; height: 100%; background: linear-gradient(180deg,#FFB800,#D96C00); border-radius: 10px 10px 4px 4px; position: relative; display: flex; align-items: flex-end; justify-content: center;"><span style="position: absolute; top: -30px; font-weight: 900; font-size: .85rem; color: #D96C00; white-space: nowrap;">3年目</span><i style="font-style: normal; color: #fff; font-weight: 900; font-size: .78rem; padding-bottom: 8px;">2,791</i></div>
-      </div>
-      <p style="margin-top: 22px; font-weight: 700;">年次ごとの売上・営業利益の内訳は、<span style="background: linear-gradient(transparent 58%,#FFE38A 58%); padding: 0 .1em;">20ページの加盟資料</span>に収支モデルとして掲載しています。</p>
-    </div>
-    <p style="max-width: 760px; margin: 20px auto 0; font-size: .74rem; color: #9a8a76; line-height: 1.8; text-align: center;">※これは一定条件による事業シミュレーションであり、売上・利益・投資回収等を保証するものではありません。地域、採用、人員配置、利用者数、加算取得状況その他の条件により結果は変動します。</p>
-  </div>
-</section>
-
-<section id="terms" style="background: #FFF8EE; padding: 80px 0;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1" style="text-align: center; margin-bottom: 42px;">
-      <span style="display: inline-flex; align-items: center; gap: 7px; background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .82rem; border-radius: 999px; padding: 6px 18px; margin-bottom: 16px;"><svg viewBox="0 0 100 100" aria-hidden="true" style="width: 15px; height: 15px;"><use href="#sunrays"></use><use href="#sundot"></use></svg>初期投資と加盟条件</span>
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5; text-wrap: pretty;">施設も、在庫もいらない。<br><span style="color: #D96C00;">アセットライト型</span>の介護経営。</h2>
-      <p style="max-width: 740px; margin: 16px auto 0; color: #6B5A48; font-weight: 500;">訪問介護は、大型施設や商品在庫などを必要としにくい事業です。ただし物件条件、地域、採用状況、車両、設備などにより、実際に必要となる資金は変わります。</p>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 22px; align-items: stretch;">
-      <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 34px 28px; text-align: center;">
-        <h3 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: 1.15rem; margin-bottom: 14px;">初期投資モデル</h3>
-        <p style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: clamp(2.2rem, 4.4vw, 3.1rem); color: #D96C00; line-height: 1.15;">440<small style="font-size: .42em; font-weight: 900;">万円（税別）</small></p>
-        <div style="display: grid; gap: 8px; margin-top: 18px;">
-          <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; background: #FFF3E0; border-radius: 12px; padding: 11px 16px; font-weight: 700; font-size: .88rem;"><span>加盟金</span><b style="font-family: 'Outfit', sans-serif; color: #D96C00;">150万円</b></div>
-          <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; background: #FFF3E0; border-radius: 12px; padding: 11px 16px; font-weight: 700; font-size: .88rem;"><span>敷金・礼金</span><b style="font-family: 'Outfit', sans-serif; color: #D96C00;">40万円</b></div>
-          <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; background: #FFF3E0; border-radius: 12px; padding: 11px 16px; font-weight: 700; font-size: .88rem;"><span>人材採用費</span><b style="font-family: 'Outfit', sans-serif; color: #D96C00;">50万円</b></div>
-          <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; background: #FFF3E0; border-radius: 12px; padding: 11px 16px; font-weight: 700; font-size: .88rem;"><span>什器備品</span><b style="font-family: 'Outfit', sans-serif; color: #D96C00;">100万円</b></div>
-          <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; background: #FFF3E0; border-radius: 12px; padding: 11px 16px; font-weight: 700; font-size: .88rem;"><span>開設前運転費用</span><b style="font-family: 'Outfit', sans-serif; color: #D96C00;">100万円</b></div>
-        </div>
-        <p style="font-size: .86rem; color: #6B5A48; margin-top: 16px; text-align: left;">指定申請・開設支援は本部支援内で完結するモデルです。※物件条件、地域、採用状況、備品内容、開設準備の進捗等により実際の初期費用は変動します。</p>
-      </div>
-      <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 34px 28px; text-align: center;">
-        <h3 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: 1.15rem; margin-bottom: 14px;">ロイヤリティ／定期巡回の追加条件</h3>
-        <p style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: clamp(2.2rem, 4.4vw, 3.1rem); color: #D96C00; line-height: 1.15;">5<small style="font-size: .42em; font-weight: 900;">%</small></p>
-        <p style="text-align: center; font-weight: 900; margin-top: 2px;">総売上に対するロイヤリティ</p>
-        <div style="display: grid; gap: 10px; margin-top: 16px;">
-          <div style="display: flex; align-items: center; justify-content: space-between; background: #FFF3E0; border-radius: 12px; padding: 12px 18px; font-weight: 900; font-size: .92rem;"><span>定期巡回の追加加盟金</span><b style="color: #E8503A; font-family: 'Outfit', sans-serif; font-size: 1.3rem;">0円</b></div>
-          <div style="display: flex; align-items: center; justify-content: space-between; background: #FFF3E0; border-radius: 12px; padding: 12px 18px; font-weight: 900; font-size: .92rem;"><span>追加パッケージ費用</span><b style="color: #E8503A; font-family: 'Outfit', sans-serif; font-size: 1.3rem;">0円</b></div>
-          <div style="display: flex; align-items: center; justify-content: space-between; background: #FFF3E0; border-radius: 12px; padding: 12px 18px; font-weight: 900; font-size: .92rem;"><span>追加後のロイヤリティ</span><b style="color: #E8503A; font-family: 'Outfit', sans-serif; font-size: 1.3rem;">5%のまま</b></div>
-        </div>
-        <p style="font-size: .86rem; color: #6B5A48; margin-top: 16px; text-align: left;">※定期巡回開始に必要となる人件費、車両、通信、夜勤体制その他の通常事業経費は別途発生します。</p>
+        <span class="eyebrow">FREE ｜ 加盟資料（全24ページ）</span>
+        <h2 class="h2" style="font-size:clamp(1.4rem,5vw,2.1rem)">ご自身の地域で成立するか、<br>まず数字を見てみませんか。</h2>
+        <ul><li>3年間の収支モデル</li><li>初期投資の内訳</li><li>開業までの流れ</li><li>本部サポートの全体像</li></ul>
+        <a class="btn btn-line" href="https://lin.ee/5WIT6C7"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6s5.9-3.5 8-6C21.4 14.4 22 12.8 22 11c0-4.4-4.5-8-10-8z"/></svg>24ページの加盟資料を無料で受け取る</a>
+        <div class="qrbox"><img src="assets/lp/line-qr.png" alt="アポロンケア公式LINEのQRコード" loading="lazy"><span>スマホのカメラで読み取ると、<br>公式LINEから資料をお届けします。</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="support" style="padding: 80px 0;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1" style="text-align: center; margin-bottom: 42px;">
-      <span style="display: inline-flex; align-items: center; gap: 7px; background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .82rem; border-radius: 999px; padding: 6px 18px; margin-bottom: 16px;"><svg viewBox="0 0 100 100" aria-hidden="true" style="width: 15px; height: 15px;"><use href="#sunrays"></use><use href="#sundot"></use></svg>本部サポート</span>
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5; text-wrap: pretty;">開業して終わりにしません。<br><span style="color: #D96C00;">3年間、一緒に経営します</span>。</h2>
-      <p style="max-width: 720px; margin: 16px auto 0; color: #6B5A48; font-weight: 500;">訪問介護と定期巡回を分けず、3年間を一つの事業成長として支援します。</p>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px;">
-      <sc-for list="{{ support }}" as="s" hint-placeholder-count="10">
-        <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 16px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 22px 14px; text-align: center;">
-          <span style="font-family: 'Outfit', sans-serif; font-weight: 800; color: #fff; background: #F08300; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: .9rem;">{{ s.no }}</span>
-          <b style="display: block; font-size: .92rem; font-weight: 900; line-height: 1.5; margin-bottom: 6px;">{{ s.title }}</b>
-          <p style="font-size: .76rem; color: #6B5A48; line-height: 1.65; text-align: left;">{{ s.body }}</p>
-        </div>
-      </sc-for>
-    </div>
-  </div>
-</section>
-
-<section id="open" style="background: #FFF8EE; padding: 80px 0;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1" style="text-align: center; margin-bottom: 42px;">
-      <span style="display: inline-flex; align-items: center; gap: 7px; background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .82rem; border-radius: 999px; padding: 6px 18px; margin-bottom: 16px;"><svg viewBox="0 0 100 100" aria-hidden="true" style="width: 15px; height: 15px;"><use href="#sunrays"></use><use href="#sundot"></use></svg>開業までの流れ</span>
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5;">加盟契約から開業まで、<span style="color: #D96C00;">目安6ヶ月</span>。</h2>
-    </div>
-    <div style="max-width: 820px; margin: 0 auto; display: grid; gap: 14px;">
-      <sc-for list="{{ steps }}" as="st" hint-placeholder-count="5">
-        <div data-rv="1" style="display: grid; grid-template-columns: 104px minmax(0,1fr); gap: 18px; align-items: center;">
-          <div style="text-align: center;">
-            <span style="display: block; width: 18px; height: 18px; border-radius: 50%; background: #F08300; border: 4px solid #FFF3E0; margin: 0 auto 6px;"></span>
-            <span style="font-weight: 900; font-size: .82rem; color: #D96C00; line-height: 1.4;">{{ st.term }}</span>
-          </div>
-          <div style="background: #fff; border: 1px solid #F0E4D3; border-radius: 16px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 20px 24px;">
-            <b style="display: block; font-size: 1.02rem; font-weight: 900; margin-bottom: 4px;">{{ st.title }}</b>
-            <p style="font-size: .88rem; color: #6B5A48;">{{ st.body }}</p>
-          </div>
-        </div>
-      </sc-for>
-    </div>
-    <p style="max-width: 820px; margin: 18px auto 0; text-align: center; font-weight: 700; color: #D96C00;">その後、1年半頃を一つの目安として、定期巡回の追加を進めます。</p>
-    <p style="max-width: 820px; margin: 6px auto 0; text-align: center; font-size: .74rem; color: #9a8a76;">※地域、採用、指定申請、物件等により期間は変動します。</p>
-  </div>
-</section>
-
-<section id="area" style="padding: 80px 0;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1" style="text-align: center; margin-bottom: 34px;">
-      <span style="display: inline-flex; align-items: center; gap: 7px; background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .82rem; border-radius: 999px; padding: 6px 18px; margin-bottom: 16px;"><svg viewBox="0 0 100 100" aria-hidden="true" style="width: 15px; height: 15px;"><use href="#sunrays"></use><use href="#sundot"></use></svg>都合のいい話だけ、しません</span>
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5; text-wrap: pretty;">「どこでも必ず定期巡回ができる」<br>わけでは<span style="color: #D96C00;">ありません</span>。</h2>
-    </div>
-    <p data-rv="1" style="max-width: 760px; margin: 0 auto 34px; text-align: center; font-weight: 500; color: #6B5A48;">都合のいいことだけを言いません。定期巡回は、好きな地域で自由に開設できるサービスではありません。自治体ごとに、<b style="color: #33251A;">整備方針・公募時期・公募枠・既存事業所数・地域ニーズ</b>などが異なります。だからアポロンケアでは、<b style="color: #33251A;">加盟前に本部が地域ごとの可能性を調べます。</b></p>
-    <div data-rv="1" style="max-width: 860px; margin: 0 auto; background: #fff; border: 2px solid #F08300; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 36px 30px; text-align: center;">
-      <span style="display: inline-block; background: #E8503A; color: #fff; font-weight: 900; font-size: .8rem; border-radius: 999px; padding: 5px 18px; margin-bottom: 10px;">加盟前に実施</span>
-      <h3 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.4rem, 3vw, 1.9rem); color: #D96C00; margin-bottom: 18px;">無料エリア診断</h3>
-      <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin: 0 auto 26px; max-width: 640px;">
-        <li style="display: flex; align-items: center; gap: 10px; background: #FFF3E0; border-radius: 12px; padding: 12px 16px; font-weight: 700; font-size: .9rem; text-align: left;"><span style="width: 20px; height: 20px; flex: 0 0 20px; border-radius: 50%; background: #F08300; color: #fff; display: flex; align-items: center; justify-content: center; font-size: .7rem; font-weight: 900;">✓</span>自治体の整備方針</li>
-        <li style="display: flex; align-items: center; gap: 10px; background: #FFF3E0; border-radius: 12px; padding: 12px 16px; font-weight: 700; font-size: .9rem; text-align: left;"><span style="width: 20px; height: 20px; flex: 0 0 20px; border-radius: 50%; background: #F08300; color: #fff; display: flex; align-items: center; justify-content: center; font-size: .7rem; font-weight: 900;">✓</span>公募の時期と枠</li>
-        <li style="display: flex; align-items: center; gap: 10px; background: #FFF3E0; border-radius: 12px; padding: 12px 16px; font-weight: 700; font-size: .9rem; text-align: left;"><span style="width: 20px; height: 20px; flex: 0 0 20px; border-radius: 50%; background: #F08300; color: #fff; display: flex; align-items: center; justify-content: center; font-size: .7rem; font-weight: 900;">✓</span>既存事業所数・競合状況</li>
-        <li style="display: flex; align-items: center; gap: 10px; background: #FFF3E0; border-radius: 12px; padding: 12px 16px; font-weight: 700; font-size: .9rem; text-align: left;"><span style="width: 20px; height: 20px; flex: 0 0 20px; border-radius: 50%; background: #F08300; color: #fff; display: flex; align-items: center; justify-content: center; font-size: .7rem; font-weight: 900;">✓</span>地域の高齢者人口・ニーズ</li>
-      </ul>
-      <a href="https://lin.ee/5WIT6C7" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-weight: 900; border-radius: 999px; background: #06C755; color: #fff; font-size: 1.02rem; padding: 17px 32px; animation: apo-pulse 2.4s ease-in-out infinite; transition: transform .15s ease;" style-hover="transform: translateY(-2px); color: #fff"><svg aria-hidden="true" style="width: 22px; height: 22px; flex: 0 0 22px;"><use href="#line-bubble"></use></svg>＼ ご自身の地域を診断してもらう ／</a>
-    </div>
-  </div>
-</section>
-
-<sc-if value="{{ showRisk }}" hint-placeholder-val="{{ true }}">
-<section id="risk" style="background: #FFF8EE; padding: 80px 0;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1" style="text-align: center; margin-bottom: 42px;">
-      <span style="display: inline-flex; align-items: center; gap: 7px; background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .82rem; border-radius: 999px; padding: 6px 18px; margin-bottom: 16px;"><svg viewBox="0 0 100 100" aria-hidden="true" style="width: 15px; height: 15px;"><use href="#sunrays"></use><use href="#sundot"></use></svg>リスクと備え</span>
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5; text-wrap: pretty;">リスクを隠さず、<br><span style="color: #D96C00;">現場が崩れない経営</span>を。</h2>
-      <p style="max-width: 720px; margin: 16px auto 0; color: #6B5A48; font-weight: 500;">良いことだけを並べるフランチャイズにはしません。<br>起こりうることと、その備えを先に共有します。</p>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px;">
-      <sc-for list="{{ risks }}" as="r" hint-placeholder-count="8">
-        <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); overflow: hidden;">
-          <div style="background: #5C4A38; color: #fff; font-weight: 900; font-size: .95rem; padding: 14px 20px; display: flex; gap: 10px; align-items: center;"><span style="background: #E8503A; border-radius: 6px; font-size: .68rem; padding: 2px 8px; flex: 0 0 auto;">RISK</span>{{ r.risk }}</div>
-          <div style="padding: 18px 20px;">
-            <span style="display: inline-block; background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .68rem; border-radius: 6px; padding: 2px 10px; margin-bottom: 8px;">COUNTERMEASURE</span>
-            <p style="font-size: .88rem; color: #6B5A48;">{{ r.counter }}</p>
-          </div>
-        </div>
-      </sc-for>
-    </div>
-    <div data-rv="1" style="max-width: 820px; margin: 40px auto 0; text-align: center; background: #fff; border: 2px solid #F08300; border-radius: 18px; padding: 30px 26px; box-shadow: 0 8px 28px rgba(120,72,10,.10);">
-      <p style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.15rem, 2.6vw, 1.6rem); color: #D96C00; line-height: 1.6;">売上だけを追わない。<br>現場を崩さず、長く続く事業をつくる。</p>
-    </div>
-  </div>
-</section>
-</sc-if>
-
-<section id="types" style="padding: 80px 0;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1" style="text-align: center; margin-bottom: 42px;">
-      <span style="display: inline-flex; align-items: center; gap: 7px; background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .82rem; border-radius: 999px; padding: 6px 18px; margin-bottom: 16px;"><svg viewBox="0 0 100 100" aria-hidden="true" style="width: 15px; height: 15px;"><use href="#sunrays"></use><use href="#sundot"></use></svg>向いている方</span>
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5;">こんな経営者・法人に<span style="color: #D96C00;">向いています</span>。</h2>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px;">
-      <sc-for list="{{ types }}" as="t" hint-placeholder-count="3">
-        <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 28px 24px; text-align: center; display: flex; flex-direction: column;">
-          <span style="font-weight: 900; font-size: .74rem; color: #D96C00; background: #FFF3E0; border-radius: 999px; padding: 4px 16px; align-self: center; margin-bottom: 12px;">{{ t.tag }}</span>
-          <h3 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: 1.16rem; margin-bottom: 12px;">{{ t.title }}</h3>
-          <p style="background: #FFF8EE; border-radius: 12px; padding: 14px 16px; font-weight: 700; font-size: .9rem; margin-bottom: 14px;">{{ t.quote }}</p>
-          <ul style="text-align: left; display: grid; gap: 6px;">
-            <sc-for list="{{ t.items }}" as="ti" hint-placeholder-count="3">
-              <li style="font-size: .84rem; color: #6B5A48; display: flex; gap: 8px;"><span style="color: #F08300;">☀</span>{{ ti }}</li>
-            </sc-for>
-          </ul>
-        </div>
-      </sc-for>
-    </div>
-  </div>
-</section>
-
-<section id="founder" style="background: #FFF8EE; padding: 80px 0;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1" style="text-align: center; margin-bottom: 42px;">
-      <span style="display: inline-flex; align-items: center; gap: 7px; background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .82rem; border-radius: 999px; padding: 6px 18px; margin-bottom: 16px;"><svg viewBox="0 0 100 100" aria-hidden="true" style="width: 15px; height: 15px;"><use href="#sunrays"></use><use href="#sundot"></use></svg>創業の想い</span>
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5; text-wrap: pretty;">子供の頃にもらった希望を、<br>今度は<span style="color: #D96C00;">自分が届ける側</span>に。</h2>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 34px; align-items: center;">
-      <div data-rv="1">
-        <p style="color: #6B5A48; font-size: .95rem; margin-bottom: 16px;">代表・大西晃志は、幼少期に母親が不在がちな家庭環境で育ちました。<br>それでも将来に希望を持つことができたのは、周囲の大人たちが温かく関わってくれたからです。</p>
-        <div style="background: #fff; border-left: 5px solid #F08300; border-radius: 0 12px 12px 0; padding: 18px 22px; font-weight: 700; color: #33251A; box-shadow: 0 8px 28px rgba(120,72,10,.10);">「あの時、自分に希望をくれた大人たちのように、今度は自分が地域や次の世代へ希望を届ける側になりたい。」</div>
-        <p style="color: #6B5A48; font-size: .95rem; margin-top: 16px;">その想いが、株式会社solmano、そしてアポロンケアの原点です。私たちが目指しているのは、単に訪問介護事業所の数を増やすことではありません。</p>
-        <p style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.2rem, 2.6vw, 1.65rem); line-height: 1.7; margin: 22px 0 0; color: #D96C00;">地域に、安心して頼れる大人と、<br>介護のインフラを増やすこと。</p>
+<!-- TERMS -->
+<section class="sec soft" id="terms">
+  <div class="wrap">
+    <span class="eyebrow">START ｜ 初期投資と加盟条件</span>
+    <h2 class="h2">施設も、在庫もいらない。<br>初期投資<span class="hl">440万円</span>（税別）から。</h2>
+    <div class="terms">
+      <div class="invest" data-rv>
+        <p class="k">初期投資 合計（税別）</p>
+        <p class="num">440<small>万円</small></p>
+        <p>指定申請・開設支援は本部支援内で完結。不動産・大型設備・在庫は不要です。</p>
+        <p class="back">11ヶ月目に累計回収（モデル）<br>3年累計2,791万円（約6.3倍）</p>
+        <img src="assets/lp/mascot-calc.webp" alt="電卓を持つアポロン君" loading="lazy">
       </div>
-      <div data-rv="1" style="text-align: center;">
-        <div style="background: #fff; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 16px; border: 1px solid #F0E4D3;">
-          <img src="assets/web/staff-call.jpg" alt="利用者からの連絡に応じるスタッフ" style="width: 100%; border-radius: 12px; object-fit: cover; aspect-ratio: 4/3;">
+      <div data-rv>
+        <table class="itable">
+          <tr><td><span class="no">01</span>加盟金</td><td>150万円</td></tr>
+          <tr><td><span class="no">02</span>敷金・礼金</td><td>40万円</td></tr>
+          <tr><td><span class="no">03</span>人材採用費</td><td>50万円</td></tr>
+          <tr><td><span class="no">04</span>什器備品</td><td>100万円</td></tr>
+          <tr><td><span class="no">05</span>開設前運転費用</td><td>100万円</td></tr>
+          <tr><td>合計（税別）</td><td>440万円</td></tr>
+        </table>
+        <div class="roy">
+          <div><p>ロイヤリティ</p><b>総売上5%</b></div>
+          <div><p>定期巡回の追加加盟金</p><b>0円</b></div>
+          <div><p>追加後のロイヤリティ</p><b>5%のまま</b></div>
         </div>
-        <div style="margin-top: 16px; line-height: 1.6;">
-          <b style="font-size: 1.1rem; display: block;">大西 晃志</b>
-          <span style="font-size: .8rem; color: #6B5A48; font-weight: 700;">株式会社solmano 代表取締役</span>
-          <p style="font-size: .8rem; color: #6B5A48; margin-top: 6px;">介護現場から事業を立ち上げ、現在も介護事業の経営・拡大に取り組んでいます。</p>
-        </div>
+        <p class="note">※追加パッケージ費用も0円。定期巡回開始に必要な人件費、車両、通信、夜勤体制その他の通常事業経費は別途発生します。物件条件、地域、採用状況、備品内容等により実際の初期費用は変動します。</p>
       </div>
     </div>
   </div>
 </section>
 
-<div style="background: linear-gradient(135deg,#D96C00,#F08300); color: #fff; text-align: center; padding: 62px 0;">
-  <div data-rv="1" style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <p style="font-weight: 900; letter-spacing: .1em; font-size: .86rem; opacity: .9; margin-bottom: 12px;">SOCIALITY × BUSINESS</p>
-    <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5; color: #fff; margin-bottom: 14px;">社会性 × 事業性</h2>
-    <p style="max-width: 640px; margin: 0 auto; font-weight: 500; opacity: .95;">志だけでは続きません。事業として成立するからこそ、地域に残せる。この両立が、アポロンケアです。</p>
-  </div>
-</div>
-
-<section id="faq" style="padding: 80px 0;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1" style="text-align: center; margin-bottom: 42px;">
-      <span style="display: inline-flex; align-items: center; gap: 7px; background: #FFF3E0; color: #D96C00; font-weight: 900; font-size: .82rem; border-radius: 999px; padding: 6px 18px; margin-bottom: 16px;"><svg viewBox="0 0 100 100" aria-hidden="true" style="width: 15px; height: 15px;"><use href="#sunrays"></use><use href="#sundot"></use></svg>よくあるご質問</span>
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5;">よくある<span style="color: #D96C00;">ご質問</span>。</h2>
-    </div>
-    <div style="max-width: 820px; margin: 0 auto; display: grid; gap: 12px;">
-      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="6">
-        <div data-rv="1" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 16px; box-shadow: 0 8px 28px rgba(120,72,10,.10); overflow: hidden;">
-          <button type="button" onClick="{{ f.toggle }}" style="width: 100%; display: flex; align-items: center; gap: 14px; padding: 20px 22px; background: none; border: none; cursor: pointer; text-align: left; font-family: inherit; font-size: 1rem; font-weight: 900; color: #33251A; line-height: 1.6;">
-            <span style="flex: 0 0 30px; width: 30px; height: 30px; border-radius: 50%; background: #F08300; color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Outfit', sans-serif; font-weight: 800; font-size: .9rem;">Q</span>
-            {{ f.q }}
-            <span style="margin-left: auto; flex: 0 0 auto; color: #F08300; font-weight: 900;">{{ f.mark }}</span>
-          </button>
-          <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
-            <div style="padding: 0 22px 22px; font-size: .92rem; color: #6B5A48;">{{ f.a }}</div>
-          </sc-if>
-        </div>
-      </sc-for>
+<!-- SUPPORT -->
+<section class="sec" id="support">
+  <div class="wrap">
+    <span class="eyebrow">SUPPORT ｜ 本部サポート</span>
+    <h2 class="h2">開業して終わりにしません。<br><span class="hl">3年間、一緒に経営します。</span></h2>
+    <p class="lead">訪問介護と定期巡回を分けず、3年間を一つの事業成長として支援します。</p>
+    <div class="sup">
+      <div class="sp" data-rv><span class="n">01</span><div><h3>開業支援</h3><p>事業計画・資金計画・物件選定・指定申請・開業前チェックまで。指定申請も本部支援内で進めます。</p></div></div>
+      <div class="sp" data-rv><span class="n">02</span><div><h3>採用支援</h3><p>月15〜20件応募モデルの導入、面接資料、定着設計、夜勤採用計画まで。※直近は30件超</p></div></div>
+      <div class="sp" data-rv><span class="n">03</span><div><h3>営業支援</h3><p>ケアマネジャー・相談支援・病院・地域包括への営業導線を設計します。</p></div></div>
+      <div class="sp" data-rv><span class="n">04</span><div><h3>請求・加算指導</h3><p>カイポケ／ZEST運用、加算取得、返戻対応、月次確認をサポートします。</p></div></div>
+      <div class="sp strong" data-rv><span class="n">05</span><div><h3>定期巡回の公募支援<span class="tg">強み</span></h3><p>市役所・自治体交渉、指定可能性の診断、申請準備まで伴走します。</p></div></div>
+      <div class="sp strong" data-rv><span class="n">06</span><div><h3>夜勤体制設計<span class="tg">強み</span></h3><p>夜勤内製化計画、深夜割増の設計、緊急時対応フローを整えます。</p></div></div>
+      <div class="sp strong" data-rv><span class="n">07</span><div><h3>オペレーター集約<span class="tg">強み</span></h3><p>近隣加盟店との連携、Hub運用、夜間コール受付の設計。</p></div></div>
+      <div class="sp" data-rv><span class="n">08</span><div><h3>収支管理</h3><p>統合収支シミュレーション、訪問介護と定期巡回の合算設計。</p></div></div>
+      <div class="sp" data-rv><span class="n">09</span><div><h3>月次KPI管理</h3><p>売上・人件費・稼働率・採用状況・生産性を月次で確認します。</p></div></div>
+      <div class="sp" data-rv><span class="n">10</span><div><h3>近隣加盟店連携</h3><p>夜勤ローテ、情報共有、エリア設計、人材の相互支援。</p></div></div>
     </div>
   </div>
 </section>
 
-<div id="contact" style="background: radial-gradient(900px 500px at 50% 115%,#FFDFAE 0%,rgba(255,223,174,0) 70%), linear-gradient(180deg,#FFF8EE,#FFF1DC); text-align: center; padding: 86px 0 96px;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px;">
-    <div data-rv="1">
-      <img src="assets/web/mascot.png" alt="アポロン君" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 18px;">
-      <h2 style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: clamp(1.55rem, 3.4vw, 2.3rem); line-height: 1.5; margin-bottom: 10px; text-wrap: pretty;">あなたの地域に<span style="color: rgb(217, 108, 0);">小さな太陽</span>を。</h2>
-      <p style="color: #6B5A48; font-weight: 500; margin-bottom: 36px;">まずは、ご自身の地域の数字を見てみませんか。ご相談はすべて無料です。</p>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; max-width: 920px; margin: 0 auto 20px;">
-      <a data-rv="1" href="https://lin.ee/5WIT6C7" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 28px 20px; display: flex; flex-direction: column; align-items: center; gap: 12px; transition: transform .18s ease;" style-hover="transform: translateY(-4px); color: #33251A">
-        <svg viewBox="0 0 100 100" aria-hidden="true" style="width: 52px; height: 52px;"><rect x="24" y="14" width="52" height="72" rx="6" fill="#fff" stroke="#F08300" stroke-width="4"></rect><line x1="34" y1="32" x2="66" y2="32" stroke="#F08300" stroke-width="4" stroke-linecap="round"></line><line x1="34" y1="46" x2="66" y2="46" stroke="#FFC93C" stroke-width="4" stroke-linecap="round"></line><line x1="34" y1="60" x2="58" y2="60" stroke="#FFC93C" stroke-width="4" stroke-linecap="round"></line></svg>
-        <b style="font-weight: 900; font-size: 1.02rem; line-height: 1.5;">20ページの加盟資料</b>
-        <span style="font-size: .8rem; color: #6B5A48;">事業モデル・収支・サポートの全体像を無料でお届けします。</span>
-        <span style="margin-top: auto; background: #06C755; color: #fff; font-weight: 900; font-size: .88rem; border-radius: 999px; padding: 11px 24px; box-shadow: 0 5px 14px rgba(6,199,85,.35);">LINEで無料資料を受け取る</span>
-      </a>
-      <a data-rv="1" href="https://lin.ee/5WIT6C7" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 28px 20px; display: flex; flex-direction: column; align-items: center; gap: 12px; transition: transform .18s ease;" style-hover="transform: translateY(-4px); color: #33251A">
-        <svg viewBox="0 0 100 100" aria-hidden="true" style="width: 52px; height: 52px;"><rect x="26" y="52" width="12" height="30" rx="3" fill="#FFC93C"></rect><rect x="44" y="38" width="12" height="44" rx="3" fill="#F08300"></rect><rect x="62" y="22" width="12" height="60" rx="3" fill="#D96C00"></rect></svg>
-        <b style="font-weight: 900; font-size: 1.02rem; line-height: 1.5;">3年間の収支モデル</b>
-        <span style="font-size: .8rem; color: #6B5A48;">年次の売上・利益の内訳を、前提条件つきでご覧いただけます。</span>
-        <span style="margin-top: auto; background: #06C755; color: #fff; font-weight: 900; font-size: .88rem; border-radius: 999px; padding: 11px 24px; box-shadow: 0 5px 14px rgba(6,199,85,.35);">収支モデルを見る</span>
-      </a>
-      <a data-rv="1" href="https://lin.ee/5WIT6C7" style="background: #fff; border: 1px solid #F0E4D3; border-radius: 18px; box-shadow: 0 8px 28px rgba(120,72,10,.10); padding: 28px 20px; display: flex; flex-direction: column; align-items: center; gap: 12px; transition: transform .18s ease;" style-hover="transform: translateY(-4px); color: #33251A">
-        <svg viewBox="0 0 100 100" aria-hidden="true" style="width: 52px; height: 52px;"><path d="M50 14c-14 0-25 11-25 25 0 18 25 45 25 45s25-27 25-45c0-14-11-25-25-25z" fill="#F08300"></path><circle cx="50" cy="39" r="11" fill="#fff"></circle></svg>
-        <b style="font-weight: 900; font-size: 1.02rem; line-height: 1.5;">無料エリア診断</b>
-        <span style="font-size: .8rem; color: #6B5A48;">ご自身の地域で成立するか、加盟前に本部が調べます。</span>
-        <span style="margin-top: auto; background: #fff; border: 2px solid #F08300; color: #D96C00; font-weight: 900; font-size: .88rem; border-radius: 999px; padding: 11px 24px;">地域を診断してもらう</span>
-      </a>
-    </div>
-    <p style="font-size: .72rem; color: #9a8a76; max-width: 760px; margin: 14px auto 0;">※本ページ内の収支・投資に関する数値は一定条件によるシミュレーションであり、成果・収益を保証するものではありません。</p>
+<!-- FLOW -->
+<section class="sec cardbg" id="open">
+  <div class="wrap">
+    <span class="eyebrow">FLOW ｜ 開業までの流れ</span>
+    <h2 class="h2">加盟契約から開業まで、<span class="hl">目安6ヶ月</span>。</h2>
+    <ol class="fsteps">
+      <li class="fs" data-rv><span class="c">1</span><div class="b"><p class="t">0〜1ヶ月</p><h3>個別相談・エリア診断・加盟契約</h3><p>事業説明と無料エリア診断で、地域の可能性を確認したうえで契約します。</p></div></li>
+      <li class="fs" data-rv><span class="c">2</span><div class="b"><p class="t">1〜3ヶ月</p><h3>法人・物件・開業準備</h3><p>事務所物件の選定、車両・備品の準備、開業計画づくりを本部と進めます。</p></div></li>
+      <li class="fs" data-rv><span class="c">3</span><div class="b"><p class="t">3〜5ヶ月</p><h3>指定申請・採用開始</h3><p>指定申請を進めながら、採用モデルに沿ってスタッフ採用を開始します。</p></div></li>
+      <li class="fs" data-rv><span class="c">4</span><div class="b"><p class="t">5〜6ヶ月</p><h3>研修・地域営業の立ち上げ</h3><p>運営の型を研修で引き継ぎ、ケアマネジャーへの挨拶回り・地域連携を始めます。</p></div></li>
+      <li class="fs" data-rv><span class="c">5</span><div class="b"><p class="t">6ヶ月〜</p><h3>開業・伴走スタート</h3><p>採用・営業・請求・収支管理を本部と定期的に確認しながら稼働を立ち上げます。</p></div></li>
+    </ol>
+    <p class="note">その後、1年半頃を一つの目安として定期巡回の追加を進めます。※地域、採用、指定申請、物件等により期間は変動します。</p>
   </div>
-</div>
+</section>
 
-<footer style="background: #3A2C1E; color: #E8DCCB; padding: 52px 0 110px; font-size: .85rem;">
-  <div style="max-width: 1080px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 26px; align-items: start;">
+<!-- AREA -->
+<section class="sec" id="area">
+  <div class="wrap area">
+    <div data-rv>
+      <span class="eyebrow">HONEST ｜ 都合のいい話だけ、しません</span>
+      <h2 class="h2" style="font-size:clamp(1.5rem,5.4vw,2.3rem)">「どこでも必ず<span class="nw">定期巡回ができる」</span><br>わけでは<span class="hl">ありません</span>。</h2>
+      <p class="lead">定期巡回は、好きな地域で自由に開設できるサービスではありません。自治体ごとに<b>整備方針・公募時期・公募枠・既存事業所数・地域ニーズ</b>が異なります。だからアポロンケアでは、<span class="mark">加盟前に本部が地域ごとの可能性を調べます。</span></p>
+      <img src="assets/lp/mascot-teacher.webp" alt="指し棒で説明するアポロン君" loading="lazy" style="width:200px;margin-top:20px">
+    </div>
+    <div class="diag" data-rv>
+      <span class="p">加盟前に実施・無料</span>
+      <h3>無料エリア診断</h3>
+      <ul><li>自治体の整備方針</li><li>公募の時期と枠</li><li>既存事業所数・競合状況</li><li>地域の高齢者人口・ニーズ</li></ul>
+      <a class="btn btn-line" href="https://lin.ee/5WIT6C7">ご自身の地域を診断してもらう</a>
+    </div>
+  </div>
+</section>
+
+<!-- RISK -->
+<section class="sec soft" id="risk">
+  <div class="wrap">
+    <span class="eyebrow">RISK ｜ リスクと備え</span>
+    <h2 class="h2">リスクを隠さず、<br><span class="hl">現場が崩れない経営</span>を。</h2>
+    <p class="lead">良いことだけを並べるフランチャイズにはしません。起こりうることと、その備えを先に共有します。</p>
+    <div class="risks">
+      <div class="rk" data-rv><p class="r"><small>RISK</small>採用不足</p><p class="c"><small>COUNTERMEASURE</small>求人原稿・媒体選定・公式LINE導線・面接資料・短時間パート採用・定着施策まで支援します。※応募数は媒体・地域・時期により変動します。</p></div>
+      <div class="rk" data-rv><p class="r"><small>RISK</small>夜勤不足</p><p class="c"><small>COUNTERMEASURE</small>夜勤採用計画を先行させ、近隣加盟店との夜勤ローテ、オペレーター集約による負荷分散を設計します。</p></div>
+      <div class="rk" data-rv><p class="r"><small>RISK</small>公募・指定が取れない</p><p class="c"><small>COUNTERMEASURE</small>出店希望地ごとに市役所へ事前相談。整備方針・公募予定・地域ニーズを調査し、代替エリアの検討も行います。</p></div>
+      <div class="rk" data-rv><p class="r"><small>RISK</small>利用者獲得の遅れ</p><p class="c"><small>COUNTERMEASURE</small>ケアマネ・相談支援・病院・地域包括への営業導線を設計。自費・障害福祉との併用契約も推進します。</p></div>
+      <div class="rk" data-rv><p class="r"><small>RISK</small>移動効率の悪化</p><p class="c"><small>COUNTERMEASURE</small>同一エリア内のドミナント設計、ルート最適化、受入エリアの絞り込みで移動時間を圧縮します。</p></div>
+      <div class="rk" data-rv><p class="r"><small>RISK</small>随時対応の増加</p><p class="c"><small>COUNTERMEASURE</small>オペレーター集約と随時対応フローの整備。利用者の受入ペースと採用スピードを連動させます。</p></div>
+      <div class="rk" data-rv><p class="r"><small>RISK</small>訪問介護とのバランス悪化</p><p class="c"><small>COUNTERMEASURE</small>1人あたり月77万円を生産性の上限目安として管理し、訪問介護・定期巡回の売上構成を月次で確認します。</p></div>
+      <div class="rk" data-rv><p class="r"><small>RISK</small>管理者への負荷集中</p><p class="c"><small>COUNTERMEASURE</small>サービス提供責任者の複数名体制、業務分解、管理者の訪問割合の可視化で、管理者依存を防ぎます。</p></div>
+    </div>
+    <div class="banner" data-rv style="margin-top:22px"><img src="assets/lp/mascot-umbrella.webp" alt="傘をさすアポロン君" loading="lazy"><p>売上だけを追わない。<br>現場を崩さず、長く続く事業をつくる。</p></div>
+  </div>
+</section>
+
+<!-- TYPES -->
+<section class="sec" id="types">
+  <div class="wrap">
+    <span class="eyebrow">FOR YOU ｜ 向いている方</span>
+    <h2 class="h2">こんな経営者・法人に<span class="hl">向いています</span>。</h2>
+    <div class="types">
+      <div class="ty" data-rv><p class="tg">TYPE A ／ 領域拡張型</p><h3>介護・福祉事業者</h3><q>「デイや施設はやっている。次は在宅・24時間の領域へ広げたい」</q><ul><li>既存の人材・地域連携がそのまま活きる</li><li>法人全体のサービスラインが広がる</li><li>定期巡回まで見据えた成長設計ができる</li></ul></div>
+      <div class="ty" data-rv><p class="tg">TYPE B ／ 事業多角化型</p><h3>異業種の経営者</h3><q>「地域に必要とされ、長く続く事業を持ちたい」</q><ul><li>直営で検証済みの運営の型からスタート</li><li>施設・在庫を持たないアセットライト型</li><li>採用から請求まで本部が伴走</li></ul></div>
+      <div class="ty" data-rv><p class="tg">TYPE C ／ 理念実現型</p><h3>現場出身の独立</h3><q>「現場で感じた『足りない』を、自分の事業所で変えたい」</q><ul><li>ヘルパー・サ責・ケアマネ経験が武器になる</li><li>開業準備から経営数値まで本部が支援</li><li>地域の「最後まで在宅」を支える側に</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="sec soft" id="founder">
+  <div class="wrap">
+    <span class="eyebrow">STORY ｜ 創業の想い</span>
+    <h2 class="h2">子供の頃にもらった希望を、<br>今度は<span class="hl">自分が届ける側</span>に。</h2>
+    <div class="founder">
+      <div class="pres" data-rv><img src="assets/lp/president.jpg" alt="株式会社solmano 代表取締役 大西晃志" loading="lazy"><div><b>大西 晃志</b><small>株式会社solmano 代表取締役／介護業界12年</small></div></div>
+      <div data-rv>
+        <p>代表・大西晃志は、幼少期に母親が不在がちな家庭環境で育ちました。それでも将来に希望を持つことができたのは、周囲の大人たちが温かく関わってくれたからです。</p>
+        <blockquote>「あの時、自分に希望をくれた大人たちのように、今度は自分が地域や次の世代へ希望を届ける側になりたい。」</blockquote>
+        <p>その想いが、株式会社solmano、そしてアポロンケアの原点です。私たちが目指しているのは、単に訪問介護事業所の数を増やすことではありません。</p>
+        <p class="end">地域に、安心して頼れる大人と、<br>介護のインフラを増やすこと。</p>
+      </div>
+    </div>
+    <div class="center" style="margin-top:60px">
+      <span class="eyebrow">SOCIALITY × BUSINESS</span>
+      <div class="sxb"><div>社会性<small>地域に必要とされる</small></div><i>×</i><div>事業性<small>事業として続く</small></div></div>
+      <p class="lead" style="margin-top:18px">志だけでは続きません。事業として成立するからこそ、地域に残せる。この両立が、アポロンケアです。</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <span class="eyebrow">FAQ ｜ よくあるご質問</span>
+    <h2 class="h2">よくある<span class="hl">ご質問</span>。</h2>
+    <div class="faq">
+      <details><summary>介護業界が未経験でも加盟できますか？</summary><p class="a">可能です。直営で検証した運営の型と本部の伴走を前提にしています。なお、訪問介護には人員基準（管理者、サービス提供責任者、常勤換算2.5名以上の訪問介護員）があり、有資格者の採用が必要です。採用モデルの提供と採用支援でここを一緒に乗り越えます。</p></details>
+      <details><summary>オーナー自身に介護の資格は必要ですか？</summary><p class="a">オーナー自身の資格は必須ではありません。ただし事業所には、サービス提供責任者（介護福祉士、実務者研修修了者等）の配置が必要です。有資格者の採用も含めて、本部の採用モデルでサポートします。</p></details>
+      <details><summary>開業までどのくらいかかりますか？</summary><p class="a">加盟契約から開業まで、目安6ヶ月です。法人の状況、物件、指定申請、採用の進み方により前後します。個別のスケジュールは事前相談でご提示します。</p></details>
+      <details><summary>どの地域でも定期巡回まで進めますか？</summary><p class="a">いいえ。定期巡回は自治体の整備方針・公募状況により、開設できるかどうかが異なります。だからこそ加盟前に無料エリア診断を実施し、地域ごとの可能性と進め方を先に確認します。</p></details>
+      <details><summary>収支モデルの数字は保証されますか？</summary><p class="a">保証はできません。本ページおよび加盟資料の数値は一定条件によるシミュレーションであり、地域・採用・稼働・加算取得状況等により変動します。前提条件は加盟資料と個別相談で開示しています。</p></details>
+      <details><summary>定期巡回を追加するとき、費用はかかりますか？</summary><p class="a">追加加盟金・追加パッケージ費用は0円で、ロイヤリティも総売上5%のままです。ただし、定期巡回の開始に必要となる人件費、車両、通信、夜勤体制などの通常の事業経費は別途発生します。</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="sec dark closing" id="contact">
+  <div class="rbar" style="position:absolute;left:0;right:0;top:0"></div>
+  <div class="wrap">
+    <img class="hand" src="assets/lp/mascot-handsup.webp" alt="両手をあげて太陽を掲げるアポロン君" loading="lazy">
+    <h2>あなたの地域に、<br><span class="hl">小さな太陽</span>を。</h2>
+    <p class="lead">まずは、ご自身の地域の数字を見てみませんか。ご相談はすべて無料です。</p>
+    <div class="ccards">
+      <a class="cc" href="https://lin.ee/5WIT6C7"><span class="k">FREE 01</span><b>24ページの加盟資料</b><p>事業モデル・収支・サポートの全体像を無料でお届けします。</p><span class="go">LINEで無料資料を受け取る →</span></a>
+      <a class="cc" href="https://lin.ee/5WIT6C7"><span class="k">FREE 02</span><b>3年間の収支モデル</b><p>年次の売上・利益の内訳を、前提条件つきでご覧いただけます。</p><span class="go">収支モデルを見る →</span></a>
+      <a class="cc" href="https://lin.ee/5WIT6C7"><span class="k">FREE 03</span><b>無料エリア診断</b><p>ご自身の地域で成立するか、加盟前に本部が調べます。</p><span class="go">地域を診断してもらう →</span></a>
+    </div>
+    <div class="contact">
+      <img src="assets/lp/mascot-phone.webp" alt="電話をするアポロン君" loading="lazy" style="width:100%;max-width:90px">
+      <div>
+        <small>お電話・メールでのご相談（担当：大西）</small>
+        <a class="tel" href="tel:09041782043">090-4178-2043</a>
+        <a class="ml" href="mailto:k.onishi@solmano24.com">k.onishi@solmano24.com</a>
+      </div>
+      <img class="qr" src="assets/lp/line-qr.png" alt="アポロンケア公式LINEのQRコード" loading="lazy">
+    </div>
+    <p class="note">※本ページ内の収支・投資に関する数値は一定条件によるシミュレーションであり、成果・収益を保証するものではありません。</p>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
     <div>
-      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
-        <img src="assets/web/mascot.png" alt="" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover;">
-        <b style="font-family: 'Zen Maru Gothic', sans-serif; font-weight: 900; font-size: 1.1rem; color: #FFD98E;">アポロンケア</b>
-      </div>
-      <p>株式会社solmano／代表取締役 大西 晃志<br>〒344-0062 埼玉県春日部市八木崎町2-12 アルカディア春日部302<br>訪問介護フランチャイズ「アポロンケア」</p>
-      <p style="margin-top: 18px; font-size: .75rem; opacity: .65;">© solmano Inc. All Rights Reserved.</p>
+      <a class="brand" href="#top"><img src="assets/web/mascot.png" alt="" width="40" height="40"><span>アポロンケア<small>訪問介護フランチャイズ</small></span></a>
+      <p style="margin-top:10px">株式会社solmano／代表取締役 大西 晃志<br>〒344-0062 埼玉県春日部市八木崎町2-12 アルカディア春日部302</p>
+      <p style="margin-top:8px">© solmano Inc. All Rights Reserved.</p>
     </div>
-    <div style="display: flex; gap: 18px; flex-wrap: wrap;">
-      <a href="tokushoho.html" style="text-decoration: underline; text-underline-offset: 3px; opacity: .85;">特定商取引法に基づく表記</a>
-      <a href="privacy.html" style="text-decoration: underline; text-underline-offset: 3px; opacity: .85;">プライバシーポリシー</a>
-    </div>
+    <nav><a href="tokushoho.html">特定商取引法に基づく表記</a><a href="privacy.html">プライバシーポリシー</a></nav>
   </div>
 </footer>
 
-<sc-if value="{{ showSticky }}" hint-placeholder-val="{{ false }}">
-<div data-m-sticky="1" style="position: fixed; left: 0; right: 0; bottom: 0; z-index: 110; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-top: 1px solid #F0E4D3; padding: 10px 14px calc(10px + env(safe-area-inset-bottom)); display: flex; gap: 10px; justify-content: center;">
-  <a href="https://lin.ee/5WIT6C7" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-weight: 900; border-radius: 999px; background: #06C755; color: #fff; font-size: .92rem; padding: 13px 22px; flex: 1; max-width: 420px;" style-hover="color: #fff"><svg aria-hidden="true" style="width: 22px; height: 22px; flex: 0 0 22px;"><use href="#line-bubble"></use></svg>＼ 加盟資料をLINEで見る ／</a>
-  <a href="#area" style="display: inline-flex; align-items: center; justify-content: center; font-weight: 900; border-radius: 999px; background: #fff; border: 2px solid #F08300; color: #D96C00; font-size: .85rem; padding: 12px 18px;">エリア診断</a>
+<div class="sticky" id="sticky">
+  <a class="btn btn-line" href="https://lin.ee/5WIT6C7">加盟資料をLINEで見る</a>
+  <a class="btn btn-gold" href="#area">エリア診断</a>
 </div>
-</sc-if>
 
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;showKpi&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;表示切替&quot;},&quot;showRisk&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;表示切替&quot;},&quot;showStickyCta&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;表示切替&quot;}}">
-class Component extends DCLogic {
-  state = { year: 0, openFaq: -1, sticky: false };
-
-  componentDidMount() {
-    // Webフォントは描画をブロックしないよう後読み
-    if (!document.getElementById('apo-fonts')) {
-      const l = document.createElement('link');
-      l.id = 'apo-fonts';
-      l.rel = 'stylesheet';
-      l.href = 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@700;900&family=Outfit:wght@600;700;800&display=swap';
-      document.head.appendChild(l);
-    }
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const run = () => {
-      if (reduce || !('IntersectionObserver' in window)) return;
-      const els = document.querySelectorAll('[data-rv]:not(.seen)');
-      if (!els.length) return;
-      this._io = this._io || new IntersectionObserver(es => {
-        es.forEach(e => {
-          if (e.isIntersecting) {
-            e.target.classList.add('seen');
-            e.target.classList.remove('pre');
-            this._io.unobserve(e.target);
-          }
-        });
-      }, { threshold: .08, rootMargin: '0px 0px -4% 0px' });
-      els.forEach(el => { el.classList.add('pre'); this._io.observe(el); });
-      // 安全弁: 3秒後に未表示要素は必ず見せる
-      clearTimeout(this._safety);
-      this._safety = setTimeout(() => {
-        document.querySelectorAll('[data-rv].pre').forEach(el => {
-          const r = el.getBoundingClientRect();
-          if (r.top < window.innerHeight * 1.2) { el.classList.add('seen'); el.classList.remove('pre'); }
-        });
-      }, 3000);
-    };
-    this._t1 = setTimeout(run, 120);
-    this._t2 = setTimeout(run, 900);
-    this._tick = setInterval(() => {
-      const el = document.scrollingElement || document.documentElement;
-      const y = window.scrollY || (el && el.scrollTop) || 0;
-      const show = y > 700;
-      if (show !== this.state.sticky) this.setState({ sticky: show });
-    }, 400);
-  }
-
-  componentWillUnmount() {
-    clearTimeout(this._t1); clearTimeout(this._t2); clearTimeout(this._safety);
-    clearInterval(this._tick);
-    if (this._io) this._io.disconnect();
-  }
-
-  renderVals() {
-    const yearData = [
-      { tab: '1年目', tag: '基盤構築期', title: '訪問介護を立ち上げ、地域の信頼をつくる。', body: '指定申請から開業、初期の採用・営業を本部と一緒に進めます。まずは訪問介護の運営を軌道に乗せ、地域での信頼と実績を積み上げる1年です。常勤換算3名から5名へ体制を広げる立ち上げ期で、12ヶ月目には1人あたり月商71万円を目指します。', items: ['指定申請・開業準備を本部が伴走', '採用モデルでヘルパー体制を構築', 'ケアマネジャー・地域包括との連携づくり'], kpi: '62.6' },
-      { tab: '2年目', tag: '移行期', title: '1年半頃を目安に、定期巡回を追加する。', body: '前半（1〜6ヶ月）は訪問介護中心に稼働と組織を固め、後半（7〜12ヶ月）で既存運営に定期巡回を組み込みます。年間平均では訪問介護63.3%／定期巡回36.7%の売上構成です。', items: ['前半は訪問介護中心に稼働率と人員体制を最適化', '後半に定期巡回を追加（公募・指定対応を本部が支援）', '夜勤体制・オペレーションの構築'], kpi: '73.5' },
-      { tab: '3年目', tag: '統合期', title: '定期巡回を丸1年運営し、24時間対応を安定させる。', body: '売上構成は訪問介護30%／定期巡回70%。1人あたり月商77万円のうち、定期巡回53.9万円＋訪問介護23.1万円という内訳です。同じ拠点・同じ人材資源で、365日24時間を支える地域拠点へ。', items: ['定期巡回53.9万円＋訪問介護23.1万円／人月', '夜勤の内製化と近隣加盟店でのオペレーター集約', '統合運営の安定運用フェーズ'], kpi: '77' }
-    ];
-    const faqData = [
-      ['介護業界が未経験でも加盟できますか？', '可能です。直営で検証した運営の型と本部の伴走を前提にしています。なお、訪問介護には人員基準（管理者、サービス提供責任者、常勤換算2.5名以上の訪問介護員）があり、有資格者の採用が必要です。採用モデルの提供と採用支援でここを一緒に乗り越えます。'],
-      ['オーナー自身に介護の資格は必要ですか？', 'オーナー自身の資格は必須ではありません。ただし事業所には、サービス提供責任者（介護福祉士、実務者研修修了者等）の配置が必要です。有資格者の採用も含めて、本部の採用モデルでサポートします。'],
-      ['開業までどのくらいかかりますか？', '加盟契約から開業まで、目安6ヶ月です。法人の状況、物件、指定申請、採用の進み方により前後します。個別のスケジュールは事前相談でご提示します。'],
-      ['どの地域でも定期巡回まで進めますか？', 'いいえ。定期巡回は自治体の整備方針・公募状況により、開設できるかどうかが異なります。だからこそ加盟前に無料エリア診断を実施し、地域ごとの可能性と進め方を先に確認します。'],
-      ['収支モデルの数字は保証されますか？', '保証はできません。本ページおよび加盟資料の数値は一定条件によるシミュレーションであり、地域・採用・稼働・加算取得状況等により変動します。前提条件は加盟資料と個別相談で開示しています。'],
-      ['定期巡回を追加するとき、費用はかかりますか？', '追加加盟金・追加パッケージ費用は0円で、ロイヤリティも総売上5%のままです。ただし、定期巡回の開始に必要となる人件費、車両、通信、夜勤体制などの通常の事業経費は別途発生します。']
-    ];
-    return {
-      showKpi: this.props.showKpi ?? true,
-      showRisk: this.props.showRisk ?? true,
-      showSticky: (this.props.showStickyCta ?? true) && this.state.sticky,
-      years: yearData.map((y, i) => ({
-        tab: y.tab,
-        active: i === this.state.year,
-        inactive: i !== this.state.year,
-        select: () => this.setState({ year: i })
-      })),
-      active: yearData[this.state.year],
-      dayline: [
-        { time: '6:00', jp: '早朝', title: '起床・排泄の介助', body: 'ベッドから起き上がるところから、一日が始まる方がいます。朝の数十分の支えが、その日一日を左右します。' },
-        { time: '12:00', jp: '日中', title: '食事・服薬・体調の見守り', body: '一人では食事や服薬が難しい方に、昼の訪問が欠かせません。一日に何度も支援が必要になることは、珍しくありません。' },
-        { time: '18:00', jp: '夕方', title: '夕食・就寝前の支援', body: '家族が仕事から戻るまでの時間、夕方の訪問が在宅生活の橋渡しになります。' },
-        { time: '23:00', jp: '深夜', title: '体位変換・緊急のコール', body: '夜間にも介護が必要になったとき、地域に十分なサービスがなければ、「自宅で暮らしたい」という選択肢そのものを諦めなければならない時がきます。' }
-      ],
-      market: [
-        { title: '高齢化は、これからが本番', num: '29', unit: '%超', cap: '日本の高齢化率', body: '65歳以上人口は3,600万人を超え、85歳以上の人口は今後さらに増加します。在宅介護のニーズは、2040年代に向けて拡大が続きます。' },
-        { title: '担い手が、圧倒的に足りない', num: '約15', unit: '倍', cap: '訪問介護員の有効求人倍率', body: '訪問介護員の有効求人倍率は約15倍。全職業平均の10倍以上という水準で、ヘルパーの高齢化も進んでいます。' },
-        { title: '供給は、むしろ減っている', num: '過去最多', unit: '水準', cap: '訪問介護事業者の倒産・休廃業', body: '人手不足と経営難で、訪問介護事業者の倒産・休廃業は過去最多水準。地域からサービスが消え始めています。' }
-      ],
-      incomes: [
-        { no: '01', title: '介護保険', en: 'LONG-TERM CARE INSURANCE', body: '高齢者向けの訪問介護サービス。制度に基づく中核の収益源です。', items: ['身体介護', '生活援助', '総合事業 など'] },
-        { no: '02', title: '障害福祉', en: 'DISABILITY WELFARE SERVICES', body: '障がいのある方への支援。長時間支援・継続利用につながりやすい領域です。', items: ['居宅介護', '重度訪問介護', '移動支援 など'] },
-        { no: '03', title: '自費サービス', en: 'PRIVATE-PAY SERVICES', body: '制度の枠で対応しきれない、地域の小さな困りごとに応えるサービス。', items: ['買い物・外出支援', '生活支援', '家族支援 など'] }
-      ],
-      support: [
-        { no: '01', title: '開業支援', body: '事業計画・資金計画・物件選定・指定申請・開業前チェックまで。指定申請も本部支援内で進めます。' },
-        { no: '02', title: '採用支援', body: '月15〜20件応募モデルの導入、面接資料、定着設計、夜勤採用計画まで。\n※直近30件越え' },
-        { no: '03', title: '営業支援', body: 'ケアマネジャー・相談支援・病院・地域包括への営業導線を設計します。' },
-        { no: '04', title: '請求・加算指導', body: 'カイポケ／ZEST運用、加算取得、返戻対応、月次確認をサポートします。' },
-        { no: '05', title: '定期巡回の公募支援', body: '市役所・自治体交渉、指定可能性の診断、申請準備まで伴走します。' },
-        { no: '06', title: '夜勤体制設計', body: '夜勤内製化計画、深夜割増の設計、緊急時対応フローを整えます。' },
-        { no: '07', title: 'オペレーター集約', body: '近隣加盟店との連携、Hub運用、夜間コール受付の設計。' },
-        { no: '08', title: '収支管理', body: '統合収支シミュレーション、訪問介護と定期巡回の合算設計。' },
-        { no: '09', title: '月次KPI管理', body: '売上・人件費・稼働率・採用状況・生産性を月次で確認します。' },
-        { no: '10', title: '近隣加盟店連携', body: '夜勤ローテ、情報共有、エリア設計、人材の相互支援。' }
-      ],
-      steps: [
-        { term: '0〜1ヶ月', title: '個別相談・エリア診断・加盟契約', body: '事業説明と無料エリア診断で、地域の可能性を確認したうえで加盟契約を締結します。' },
-        { term: '1〜3ヶ月', title: '法人・物件・開業準備', body: '事務所物件の選定、車両・備品の準備、開業計画づくりを本部と進めます。' },
-        { term: '3〜5ヶ月', title: '指定申請・採用開始', body: '訪問介護の指定申請を進めながら、採用モデルに沿ってスタッフ採用を開始します。' },
-        { term: '5〜6ヶ月', title: '研修・地域営業の立ち上げ', body: '運営の型を研修で引き継ぎ、ケアマネジャーへの挨拶回り・地域連携を始めます。' },
-        { term: '6ヶ月〜', title: '開業・伴走スタート', body: '開業後は採用・営業・請求・収支管理を本部と定期的に確認しながら、稼働を立ち上げます。' }
-      ],
-      risks: [
-        { risk: '採用不足', counter: '求人原稿・媒体選定・公式LINE導線・面接資料・短時間パート採用・定着施策まで支援します。※応募数は媒体・地域・時期により変動します。' },
-        { risk: '夜勤不足', counter: '夜勤採用計画を先行させ、近隣加盟店との夜勤ローテ、オペレーター集約による負荷分散を設計します。' },
-        { risk: '公募・指定が取れない', counter: '出店希望地ごとに市役所へ事前相談。整備方針・公募予定・地域ニーズを調査し、代替エリアの検討も行います。' },
-        { risk: '利用者獲得の遅れ', counter: 'ケアマネ・相談支援・病院・地域包括への営業導線を設計。自費・障害福祉との併用契約も推進します。' },
-        { risk: '移動効率の悪化', counter: '同一エリア内のドミナント設計、ルート最適化、受入エリアの絞り込みで移動時間を圧縮します。' },
-        { risk: '随時対応の増加', counter: 'オペレーター集約と随時対応フローの整備。利用者の受入ペースと採用スピードを連動させます。' },
-        { risk: '訪問介護とのバランス悪化', counter: '1人あたり月77万円を生産性の上限目安として管理し、訪問介護・定期巡回の売上構成を月次で確認します。' },
-        { risk: '管理者への負荷集中', counter: 'サービス提供責任者の複数名体制、業務分解、管理者の訪問割合の可視化で、管理者依存を防ぐ役割設計にします。' }
-      ],
-      types: [
-        { tag: 'TYPE A ／ 領域拡張型', title: '介護・福祉事業者', quote: '「デイや施設はやっている。次は在宅・24時間の領域へ広げたい」', items: ['既存の人材・地域連携がそのまま活きる', '法人全体のサービスラインが広がる', '定期巡回まで見据えた成長設計ができる'] },
-        { tag: 'TYPE B ／ 事業多角化型', title: '異業種の経営者', quote: '「地域に必要とされ、長く続く事業を持ちたい」', items: ['直営で検証済みの運営の型からスタート', '施設・在庫を持たないアセットライト型', '採用から請求まで本部が伴走'] },
-        { tag: 'TYPE C ／ 理念実現型', title: '現場出身の独立', quote: '「現場で感じた『足りない』を、自分の事業所で変えたい」', items: ['ヘルパー・サ責・ケアマネ経験が武器になる', '開業準備から経営数値まで本部が支援', '地域の「最後まで在宅」を支える側に'] }
-      ],
-      faqs: faqData.map((f, i) => ({
-        q: f[0], a: f[1],
-        open: this.state.openFaq === i,
-        mark: this.state.openFaq === i ? '▼' : '▶',
-        toggle: () => this.setState(s => ({ openFaq: s.openFaq === i ? -1 : i }))
-      }))
-    };
-  }
-}
+<script>
+(function(){
+  var st=document.getElementById('sticky');
+  function onS(){st.classList.toggle('on',(window.scrollY||document.documentElement.scrollTop)>600)}
+  window.addEventListener('scroll',onS,{passive:true});onS();
+  var els=document.querySelectorAll('[data-rv]');
+  if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -4% 0px'});
+  els.forEach(function(e){io.observe(e)});
+  setTimeout(function(){els.forEach(function(e){if(e.getBoundingClientRect().top<innerHeight*1.2)e.classList.add('in')})},2500);
+})();
 </script>
 </body>
 </html>
