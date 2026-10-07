@@ -14,7 +14,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#33241A">
+<meta name="theme-color" content="#FFC94A">
 <link rel="icon" href="assets/web/mascot.png">
 <link rel="apple-touch-icon" href="assets/web/mascot.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
 <style>
 :root{
   --bg:#FFF8EC;--card:#FFFDF8;--line:#EADCC4;--ink:#3B2A1E;--body:#5B4636;--muted:#7A6352;
-  --dark:#33241A;--dcard:#45311F;--dline:#6B5034;--dtext:#FFF3E0;--dsub:#E9D6B8;--dmuted:#D9C4A6;
+  --dark:#1E3A5F;--dcard:#274B75;--dline:#3F6896;--dtext:#F4F8FD;--dsub:#D3E0EF;--dmuted:#A9C0DB;--sun:#E06A0A;
   --gold:#FFC94A;--red:#D9484A;--orange:#C2540F;--green:#3E8A3E;--blue:#2F6FB0;--ochre:#9A6A08;--soft:#FBEAD1;--line-green:#06C755;
   --rainbow:linear-gradient(90deg,#E85D5D 0%,#F29A3A 25%,#F6CB45 50%,#6BB86A 75%,#3C8DD0 100%);
   --r:22px;
@@ -52,7 +52,7 @@ b,strong{font-weight:900}
 .dark .hl{color:var(--gold)}
 .mark{background:linear-gradient(transparent 62%,#FFE08A 62%)}
 .note{font-size:.78rem;color:var(--muted);line-height:1.7;margin-top:18px}
-.dark .note{color:#B9A386}
+.dark .note{color:#9FB6D1}
 .num{font-weight:900;line-height:1.05;letter-spacing:-.01em}
 .num small{font-size:.42em;letter-spacing:0;margin-left:2px}
 .center{text-align:center}
@@ -65,7 +65,7 @@ b,strong{font-weight:900}
 .btn-line svg{flex:none}
 .btn-line .sub{display:block;font-size:.74rem;font-weight:700;opacity:.92}
 .btn-ghost{background:transparent;border:2px solid currentColor}
-.btn-gold{background:var(--gold);color:var(--dark)}
+.btn-gold{background:var(--gold);color:var(--ink)}
 .btn-red{background:var(--red);color:#fff;box-shadow:0 8px 22px rgba(217,72,74,.3)}
 @keyframes pulse{0%,100%{box-shadow:0 8px 22px rgba(6,199,85,.35)}50%{box-shadow:0 8px 22px rgba(6,199,85,.35),0 0 0 10px rgba(6,199,85,.12)}}
 @keyframes ticker{to{transform:translateX(-50%)}}
@@ -82,29 +82,29 @@ b,strong{font-weight:900}
 .hdr .btn{padding:9px 16px;font-size:.84rem;animation:none}
 
 /* hero */
-.hero{background:var(--dark);color:var(--dtext);position:relative;overflow:hidden;padding:44px 0 0}
-.hero::before{content:"";position:absolute;right:-30%;top:-10%;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,#8A5A22 0%,#5A3C20 45%,rgba(51,36,26,0) 72%);pointer-events:none}
+.hero{background:linear-gradient(180deg,#FFFBF0 0%,#FFF1CC 100%);color:var(--ink);position:relative;overflow:hidden;padding:44px 0 0}
+.hero::before{content:"";position:absolute;right:-30%;top:-10%;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,rgba(255,201,74,.75) 0%,rgba(255,214,120,.35) 40%,rgba(255,241,204,0) 70%);pointer-events:none}
 .hero .wrap{position:relative;display:grid;gap:8px}
-.pill{display:inline-block;align-self:flex-start;background:var(--gold);color:var(--dark);font-weight:900;font-size:.86rem;border-radius:999px;padding:6px 16px}
+.pill{display:inline-block;align-self:flex-start;background:var(--gold);color:var(--ink);font-weight:900;font-size:.86rem;border-radius:999px;padding:6px 16px}
 .hero h1{font-size:clamp(2.6rem,11vw,5.2rem);line-height:1.15;margin:16px 0 14px}
-.hero h1 .sun{color:var(--gold)}
+.hero h1 .sun{color:var(--sun)}
 .nw{white-space:nowrap}
-.hero .catch{font-size:clamp(1.05rem,3.8vw,1.4rem);font-weight:700;color:var(--dsub);line-height:1.7}
-.hero .catch b{color:var(--dtext)}
-.hero-art{width:min(78%,360px);margin:6px auto -6px;animation:floaty 5s ease-in-out infinite;filter:drop-shadow(0 18px 30px rgba(0,0,0,.35))}
+.hero .catch{font-size:clamp(1.05rem,3.8vw,1.4rem);font-weight:700;color:var(--body);line-height:1.7}
+.hero .catch b{color:var(--ink)}
+.hero-art{width:min(78%,360px);margin:6px auto -6px;animation:floaty 5s ease-in-out infinite;filter:drop-shadow(0 18px 30px rgba(194,84,15,.22))}
 .hero-cta{display:flex;flex-direction:column;gap:12px;margin-top:22px}
-.hero-cta .btn-ghost{color:var(--dsub);border-color:var(--dline)}
+.hero-cta .btn-ghost{color:var(--orange);border-color:var(--orange);background:#fff}
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:26px}
-.stat{background:var(--dcard);border:2px solid var(--dline);border-radius:18px;padding:14px 14px 12px}
-.stat.hot{border-color:var(--gold)}
-.stat p{font-size:.74rem;font-weight:700;color:var(--dmuted);line-height:1.4}
-.stat .num{font-size:clamp(1.9rem,8vw,2.8rem);color:var(--gold);margin:4px 0 2px}
-.stat .num small{color:var(--dtext)}
-.stat .s2{font-size:.7rem;color:var(--dsub)}
+.stat{background:#fff;border:2px solid var(--line);box-shadow:0 6px 18px rgba(194,84,15,.08);border-radius:18px;padding:14px 14px 12px}
+.stat.hot{border-color:var(--sun);background:#FFF7E6}
+.stat p{font-size:.74rem;font-weight:700;color:var(--muted);line-height:1.4}
+.stat .num{font-size:clamp(1.9rem,8vw,2.8rem);color:var(--sun);margin:4px 0 2px}
+.stat .num small{color:var(--ink)}
+.stat .s2{font-size:.7rem;color:var(--body)}
 .hero .note{margin:16px 0 28px}
 
 /* ticker */
-.ticker{background:var(--gold);color:var(--dark);overflow:hidden;white-space:nowrap;font-weight:900;font-size:.95rem;padding:11px 0}
+.ticker{background:var(--gold);color:var(--ink);overflow:hidden;white-space:nowrap;font-weight:900;font-size:.95rem;padding:11px 0}
 .ticker .track{display:inline-block;animation:ticker 38s linear infinite}
 .ticker span{margin:0 26px}
 
@@ -141,7 +141,7 @@ b,strong{font-weight:900}
 .day h3{font-size:1.08rem;margin-bottom:4px}
 .day p{font-size:.9rem;color:var(--dsub);line-height:1.7}
 .day.night{border-color:var(--gold)}
-.banner{margin-top:28px;background:var(--gold);color:var(--dark);border-radius:var(--r);padding:22px;display:flex;align-items:center;gap:16px}
+.banner{margin-top:28px;background:var(--gold);color:var(--ink);border-radius:var(--r);padding:22px;display:flex;align-items:center;gap:16px}
 .banner img{width:96px;flex:none}
 .banner p{font-weight:900;font-size:clamp(1.15rem,4.4vw,1.6rem);line-height:1.45}
 .banner small{display:block;font-size:.84rem;font-weight:700}
@@ -179,12 +179,12 @@ b,strong{font-weight:900}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 .chip{background:var(--card);border:2px solid var(--line);border-radius:999px;padding:4px 14px;font-size:.84rem;font-weight:700}
 .bigcard{background:var(--dark);color:var(--dtext);border-radius:var(--r);padding:22px;position:relative}
-.bigcard .note{color:#B9A386}
+.bigcard .note{color:#9FB6D1}
 .bigcard .k{font-size:.84rem;font-weight:900;color:var(--dmuted)}
 .bigcard .num{font-size:clamp(3rem,13vw,4.4rem);color:var(--gold)}
 .bigcard .num small{color:var(--dtext)}
 .flow{display:flex;align-items:center;gap:6px;margin-top:14px;flex-wrap:wrap}
-.flow span{background:var(--gold);color:var(--dark);font-weight:900;font-size:.84rem;border-radius:999px;padding:4px 12px}
+.flow span{background:var(--gold);color:var(--ink);font-weight:900;font-size:.84rem;border-radius:999px;padding:4px 12px}
 .flow i{color:var(--gold);font-style:normal;font-weight:900}
 .steps3{display:grid;gap:10px;margin-top:16px}
 .s3{display:flex;gap:12px;align-items:center;background:var(--card);border:2px solid var(--line);border-radius:16px;padding:12px 16px;font-weight:900}
@@ -230,7 +230,7 @@ b,strong{font-weight:900}
 .pltable th,.pltable td{padding:10px 10px;text-align:right;border-bottom:1px solid var(--dline);white-space:nowrap}
 .pltable th:first-child,.pltable td:first-child{text-align:left}
 .pltable thead th{color:var(--dmuted);font-size:.8rem}
-.pltable tr.op td{color:var(--gold);font-weight:900;font-size:1rem;background:#4E3826}
+.pltable tr.op td{color:var(--gold);font-weight:900;font-size:1rem;background:#2F5785}
 .pltable tr:last-child td{border-bottom:none}
 .pltable td{color:var(--dsub)}
 .tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
@@ -284,7 +284,7 @@ b,strong{font-weight:900}
 .sp.strong{background:var(--dark);border-color:var(--dark);color:var(--dtext)}
 .sp.strong .n{color:var(--gold)}
 .sp.strong p{color:var(--dsub)}
-.sp .tg{display:inline-block;background:var(--gold);color:var(--dark);font-size:.68rem;font-weight:900;border-radius:999px;padding:0 8px;margin-left:6px;vertical-align:2px}
+.sp .tg{display:inline-block;background:var(--gold);color:var(--ink);font-size:.68rem;font-weight:900;border-radius:999px;padding:0 8px;margin-left:6px;vertical-align:2px}
 
 /* flow steps */
 .fsteps{display:grid;gap:0;margin-top:26px;position:relative}
@@ -371,7 +371,7 @@ b,strong{font-weight:900}
 .contact .qr{display:none}
 
 /* footer */
-.ftr{background:#241912;color:var(--dmuted);padding:36px 0 110px;font-size:.84rem}
+.ftr{background:#15283F;color:var(--dmuted);padding:36px 0 110px;font-size:.84rem}
 .ftr .wrap{display:grid;gap:14px}
 .ftr .brand{color:var(--dtext)}
 .ftr .brand small{color:var(--dmuted)}
@@ -379,7 +379,7 @@ b,strong{font-weight:900}
 .ftr nav a{text-decoration:underline;text-underline-offset:3px}
 
 /* sticky mobile cta */
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(51,36,26,.96);transform:translateY(110%);transition:transform .3s}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(30,58,95,.96);transform:translateY(110%);transition:transform .3s}
 .sticky.on{transform:none}
 .sticky a{flex:1;padding:12px 10px;font-size:.9rem;animation:none}
 .sticky .btn-gold{flex:.6}
@@ -670,13 +670,13 @@ b,strong{font-weight:900}
     <span class="eyebrow">NUMBERS ｜ 3年間の収支モデル</span>
     <div class="numgrid">
       <div data-rv>
-        <h2 class="h2">3年で、初期投資の<span class="hl nw">約6.3倍</span>。</h2>
+        <h2 class="h2" style="text-wrap:wrap">3年で、<span class="nw">初期投資の<span class="hl">約6.3倍</span>。</span></h2>
         <p style="font-weight:700;color:var(--dmuted)">3年累計 営業利益（立ち上げ期を含むモデル）</p>
         <p class="num big">2,791<small>万円</small></p>
         <p style="color:var(--dsub);font-weight:700;margin-top:10px">初期投資440万円（税別）は<b style="color:var(--gold)">11ヶ月目に累計で回収</b>。12ヶ月目には月商355万円（1人71万円）に届きます。</p>
       </div>
       <div class="chart" data-rv>
-        <svg viewBox="0 0 720 480" role="img" aria-label="営業利益の累計：1年目549万円、2年目まで1,679万円、3年目まで2,791万円。初期投資440万円の水準を点線で表示"><line x1="40" y1="420" x2="700" y2="420" stroke="#6B5034" stroke-width="2"/><rect x="90" y="345" width="150" height="75" rx="12" fill="#8A6A3E"/><rect x="300" y="192" width="150" height="228" rx="12" fill="#D9A23A"/><rect x="510" y="40" width="150" height="380" rx="12" fill="#FFC94A"/><line x1="40" y1="360" x2="700" y2="360" stroke="#FF9A8F" stroke-width="3" stroke-dasharray="12 10"/><text x="165" y="326" text-anchor="middle" font-size="36" font-weight="900" fill="#FFF3E0">549</text><text x="375" y="176" text-anchor="middle" font-size="36" font-weight="900" fill="#FFF3E0">1,679</text><text x="585" y="94" text-anchor="middle" font-size="38" font-weight="900" fill="#33241A">2,791</text><text x="165" y="462" text-anchor="middle" font-size="26" font-weight="900" fill="#D9C4A6">1年目</text><text x="375" y="462" text-anchor="middle" font-size="26" font-weight="900" fill="#D9C4A6">2年目まで</text><text x="585" y="462" text-anchor="middle" font-size="26" font-weight="900" fill="#D9C4A6">3年目まで</text></svg>
+        <svg viewBox="0 0 720 480" role="img" aria-label="営業利益の累計：1年目549万円、2年目まで1,679万円、3年目まで2,791万円。初期投資440万円の水準を点線で表示"><line x1="40" y1="420" x2="700" y2="420" stroke="#3F6896" stroke-width="2"/><rect x="90" y="345" width="150" height="75" rx="12" fill="#6F95C2"/><rect x="300" y="192" width="150" height="228" rx="12" fill="#D9A23A"/><rect x="510" y="40" width="150" height="380" rx="12" fill="#FFC94A"/><line x1="40" y1="360" x2="700" y2="360" stroke="#FF9A8F" stroke-width="3" stroke-dasharray="12 10"/><text x="165" y="326" text-anchor="middle" font-size="36" font-weight="900" fill="#F4F8FD">549</text><text x="375" y="176" text-anchor="middle" font-size="36" font-weight="900" fill="#F4F8FD">1,679</text><text x="585" y="94" text-anchor="middle" font-size="38" font-weight="900" fill="#1E3A5F">2,791</text><text x="165" y="462" text-anchor="middle" font-size="26" font-weight="900" fill="#C9D8EA">1年目</text><text x="375" y="462" text-anchor="middle" font-size="26" font-weight="900" fill="#C9D8EA">2年目まで</text><text x="585" y="462" text-anchor="middle" font-size="26" font-weight="900" fill="#C9D8EA">3年目まで</text></svg>
         <p class="cap">営業利益の累計（万円）　<span>┅ 初期投資 440万円</span></p>
       </div>
     </div>
