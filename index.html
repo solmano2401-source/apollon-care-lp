@@ -972,5 +972,15 @@ b,strong{font-weight:900}
   setTimeout(function(){els.forEach(function(e){if(e.getBoundingClientRect().top<innerHeight*1.2)e.classList.add('in')})},2500);
 })();
 </script>
+<script>
+/* 流入経路: ?src=xxx（または utm_source）をエントリー文面の「知ったきっかけ」に入れる */
+(function(){
+  var q=new URLSearchParams(location.search),src=q.get('src')||q.get('utm_source')||'';
+  try{if(src)sessionStorage.setItem('apsrc',src);else src=sessionStorage.getItem('apsrc')||''}catch(e){}
+  src=src.replace(/[^\w\-ぁ-んァ-ヶ一-龠ー]/g,'').slice(0,30);
+  var tag='%0A%E7%9F%A5%E3%81%A3%E3%81%9F%E3%81%8D%E3%81%A3%E3%81%8B%E3%81%91%EF%BC%9A'+encodeURIComponent(src);
+  document.querySelectorAll('a[href*="oaMessage/@033rhllu"],a[href^="mailto:"][href*="body="]').forEach(function(a){a.href=a.href+tag});
+})();
+</script>
 </body>
 </html>
