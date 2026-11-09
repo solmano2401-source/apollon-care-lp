@@ -91,6 +91,24 @@ b,strong{font-weight:900}
 .nw{white-space:nowrap}
 .hero .catch{font-size:clamp(1.05rem,3.8vw,1.4rem);font-weight:700;color:var(--body);line-height:1.7}
 .hero .catch b{color:var(--ink)}
+.hero .kpi{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.hero .kpi div{background:#fff;border:2px solid var(--line);border-radius:14px;padding:10px 12px;box-shadow:0 6px 18px rgba(194,84,15,.08)}
+.hero .kpi small{display:block;font-size:.74rem;font-weight:700;color:var(--muted)}
+.hero .kpi b{display:block;font-size:clamp(1.9rem,8.4vw,2.6rem);color:var(--sun);line-height:1.15}
+.hero .kpi i{font-style:normal;font-size:.9rem;color:var(--ink);margin-left:2px}
+.hero .kpi em{font-style:normal;font-size:.72rem;color:var(--body)}
+.hero .kpi-note{font-size:.7rem;color:var(--muted);margin-top:8px;line-height:1.5}
+@media(min-width:760px){.hero .kpi{grid-template-columns:repeat(2,1fr)}.hero .proof{grid-template-columns:1fr}}
+.hero .eyebrow{font-weight:900;color:var(--orange);font-size:clamp(1rem,3.8vw,1.2rem);margin-top:12px}
+.hero .proof{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:6px}
+.hero .proof li{background:#fff;border:2px solid var(--line);border-radius:12px;padding:5px 10px;font-size:.84rem;font-weight:700;color:var(--body)}
+.hero .proof li::before{content:"✓ ";color:var(--sun);font-weight:900}
+.hero .proof b{color:var(--ink);margin-right:4px}
+.hero-pres{display:flex;gap:12px;align-items:center;margin-top:16px;background:rgba(255,255,255,.75);border-radius:16px;padding:10px 12px}
+.hero-pres img{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:50% 15%;flex:none;border:3px solid #fff;box-shadow:0 4px 10px rgba(0,0,0,.12)}
+.hero-pres p{font-size:.85rem;line-height:1.5;color:var(--body)}
+.hero-pres small{color:var(--muted)}
+@media(max-width:759px){.hero h1{font-size:clamp(2.2rem,9.5vw,3rem);margin:6px 0 10px}.hero-art{width:min(60%,260px)}}
 .hero-art{width:min(78%,360px);margin:6px auto -6px;animation:floaty 5s ease-in-out infinite;filter:drop-shadow(0 18px 30px rgba(194,84,15,.22))}
 .hero-cta{display:flex;flex-direction:column;gap:12px;margin-top:22px}
 .hero-cta .btn-ghost{color:var(--orange);border-color:var(--orange);background:#fff}
@@ -481,22 +499,29 @@ fbq('init','1127557746664253');fbq('track','PageView');
   <div class="rbar" style="position:absolute;left:0;right:0;top:0"></div>
   <div class="wrap">
     <div class="left">
-      <a class="pill" href="#zero">0次加盟 募集中！｜創業メンバーを募集しています</a>
-      <h1>地域に、<br><span class="nw"><span class="sun">小さな太陽</span>を。</span></h1>
-      <p class="catch">人生の最期まで、<b>「自宅で暮らしたい」</b>を選べる地域へ。<br>訪問介護から始め、<b>3年かけて<span class="nw">365日24時間</span>を支える</b><span class="nw"><b>地域拠点</b>へ。</span></p>
+      <a class="pill" href="#zero">訪問介護フランチャイズ｜創業メンバー募集中</a>
+      <p class="eyebrow">訪問介護で、独立・起業を考えている方へ</p>
+      <h1>数字で選ぶ、<br><span class="nw"><span class="sun">訪問介護FC</span>。</span></h1>
+      <p class="catch">直営で黒字を出した運営の型を、そのまま使う<b>加盟店モデルの収支</b>です。</p>
+      <div class="kpi">
+        <div><small>単月黒字</small><b>3<i>ヶ月目</i></b></div>
+        <div><small>投資回収（累計黒字）</small><b>11<i>ヶ月目</i></b></div>
+        <div><small>営業利益率（3年目）</small><b>約31<i>%</i></b><em>1年目 約21%</em></div>
+        <div><small>3年累計 営業利益</small><b>5,175<i>万円</i></b></div>
+      </div>
+      <ul class="proof">
+        <li><b>直営3店舗</b>すべて黒字・投資回収済み</li>
+        <li><b>必要資金 約1,140万円</b>（運転資金込み）</li>
+        <li><b>加盟金150万円</b>（税別）・<b>ロイヤリティ5%</b></li>
+      </ul>
+      <p class="kpi-note">※収支は加盟店モデル（3年目から定期巡回を追加するプラン）のシミュレーションで、成果・収益を保証するものではありません。</p>
       <div class="hero-cta">
         <a class="btn btn-line" href="https://lin.ee/5WIT6C7"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6s5.9-3.5 8-6C21.4 14.4 22 12.8 22 11c0-4.4-4.5-8-10-8z"/></svg><span>まずは加盟資料をLINEで見る<span class="sub">全24ページの資料を無料でお届け</span></span></a>
         <a class="btn btn-ghost" href="#area">無料エリア診断について</a>
       </div>
+      <div class="hero-pres"><img src="assets/lp/president.jpg" alt="代表 大西晃志" width="720" height="885"><p><b>「まずは気軽に話しましょう」</b><br>株式会社solmano 代表 大西晃志<br><small>介護業界12年・直営5店舗を運営</small></p></div>
     </div>
     <img class="hero-art" src="assets/lp/mascot-sun-hug.webp" alt="太陽を抱えて手を広げるアポロン君" width="795" height="900" fetchpriority="high">
-    <div class="stats">
-      <div class="stat"><p>直営店舗の実績</p><div class="num">3<small>店舗</small></div><p class="s2">すべて黒字・投資回収済み</p></div>
-      <div class="stat"><p>初期費用（運転資金込み）</p><div class="num">約1,140<small>万円</small></div><p class="s2">0次加盟・モデル（加盟金など340万円＋運転資金 最大約800万円）</p></div>
-      <div class="stat"><p>ロイヤリティ</p><div class="num">5<small>%</small></div><p class="s2">総売上に対して</p></div>
-      <div class="stat hot"><p>3年累計 営業利益（モデル）</p><div class="num">5,175<small>万円</small></div><p class="s2">11ヶ月目に累計損益がプラス</p></div>
-    </div>
-    <p class="note">※黒字化・投資回収・応募数は直営実績です。加盟金・ロイヤリティは加盟条件、初期費用・営業利益は一定条件によるシミュレーションであり、成果・収益を保証するものではありません。</p>
   </div>
 </section>
 
@@ -552,8 +577,8 @@ fbq('init','1127557746664253');fbq('track','PageView');
       <p class="lead">本部の直営3店舗は<span class="mark"><b>すべて黒字・投資回収済み</b></span>。採用・営業・請求・教育まで、実際に回している運営の型を、加盟店にそのままお渡しします。</p>
       <div class="timeline">
         <div class="tl"><span class="d">直営</span><p><b>3店舗すべて黒字</b>開業時の投資も回収済み</p></div>
-        <div class="tl now"><span class="d">2026.10</span><p><b>吉川市に4店舗目がオープン</b>訪問介護＋定期巡回の組み合わせを開始</p></div>
-        <div class="tl next"><span class="d">2026.11</span><p><b>上尾市で訪問介護を開始（予定）</b>5店舗体制へ</p></div>
+        <div class="tl"><span class="d">2026.10</span><p><b>吉川市に4店舗目がオープン</b>訪問介護＋定期巡回の組み合わせを開始</p></div>
+        <div class="tl now"><span class="d">2026.11</span><p><b>上尾市で訪問介護を開業</b>5店舗体制に</p></div>
       </div>
     </div>
   </div>
