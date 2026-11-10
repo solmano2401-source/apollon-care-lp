@@ -67,6 +67,9 @@ b,strong{font-weight:900}
 .btn-ghost{background:transparent;border:2px solid currentColor}
 .btn-gold{background:var(--gold);color:var(--ink)}
 .btn-red{background:var(--red);color:#fff;box-shadow:0 8px 22px rgba(217,72,74,.3)}
+.btn-req{background:var(--sun);color:#fff;box-shadow:0 8px 22px rgba(224,106,10,.35);animation:pulse2 2.6s infinite}
+.btn-req .sub{display:block;font-size:.74rem;font-weight:700;opacity:.92}
+@keyframes pulse2{0%,100%{box-shadow:0 8px 22px rgba(224,106,10,.35)}50%{box-shadow:0 8px 22px rgba(224,106,10,.35),0 0 0 10px rgba(224,106,10,.12)}}
 @keyframes pulse{0%,100%{box-shadow:0 8px 22px rgba(6,199,85,.35)}50%{box-shadow:0 8px 22px rgba(6,199,85,.35),0 0 0 10px rgba(6,199,85,.12)}}
 @keyframes ticker{to{transform:translateX(-50%)}}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
@@ -469,6 +472,30 @@ b,strong{font-weight:900}
 .zero .zsteps{margin-top:22px;font-size:.92rem;color:var(--body)}
 @media(min-width:760px){.zero .tiles{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1000px){.zero .tiles{grid-template-columns:repeat(4,1fr)}}
+.req{max-width:760px;margin:0 auto}
+.req .h2{text-align:center}
+.req .lead{text-align:center;margin:0 auto 22px}
+.rflow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 22px;padding:0;list-style:none;font-size:.86rem;font-weight:900;text-align:center}
+.rflow li{background:var(--soft);border-radius:14px;padding:10px 6px;color:var(--ink)}
+.rflow li span{display:block;font-size:.72rem;color:var(--sun)}
+.rform{background:var(--card);border:2px solid var(--line);border-radius:var(--r);padding:22px 18px;display:grid;gap:14px}
+.rform label{display:grid;gap:6px;font-weight:900;font-size:.95rem;color:var(--ink)}
+.rform label em{font-style:normal;font-size:.72rem;font-weight:900;color:#fff;background:var(--red);border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:2px}
+.rform label i{font-style:normal;font-size:.72rem;color:var(--muted);margin-left:6px}
+.rform input,.rform select,.rform textarea{font:inherit;font-size:16px;font-weight:500;color:var(--ink);background:#fff;border:2px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
+.rform input:focus,.rform select:focus,.rform textarea:focus{outline:none;border-color:var(--sun)}
+.rform .two{display:grid;gap:14px}
+.rform .agree{display:flex;gap:8px;align-items:flex-start;font-weight:700;font-size:.86rem}
+.rform .agree input{width:auto;margin-top:4px}
+.rform .agree a{text-decoration:underline}
+.rform .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.rform button{border:0;cursor:pointer;font:inherit;font-weight:900;width:100%}
+.rform .err{color:var(--red);font-weight:900;font-size:.9rem;display:none}
+.rthanks{display:none;background:var(--card);border:2px solid var(--sun);border-radius:var(--r);padding:24px 18px;text-align:center}
+.rthanks h3{font-size:1.3rem;margin-bottom:8px;color:var(--ink)}
+.rthanks .acts{display:grid;gap:10px;margin-top:16px}
+.req.done .rform{display:none}.req.done .rthanks{display:block}
+@media(min-width:720px){.rform{padding:32px}.rform .two{grid-template-columns:1fr 1fr}.rthanks .acts{grid-template-columns:1fr 1fr}}
 </style>
 <!-- Google tag (Google Ads) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18555472637"></script>
@@ -488,7 +515,7 @@ fbq('init','1127557746664253');fbq('track','PageView');
     <a class="brand" href="#top" aria-label="アポロンケア トップへ"><img src="assets/web/mascot.png" alt="アポロンケアのキャラクター アポロン君" width="40" height="40"><span>アポロンケア<small>訪問介護フランチャイズ｜株式会社solmano</small></span></a>
     <nav>
       <a class="nav-area" href="#zero">0次加盟</a>
-      <a class="btn btn-line" href="https://lin.ee/5WIT6C7">LINEで資料を見る</a>
+      <a class="btn btn-req" href="#request">資料請求（無料）</a>
     </nav>
   </div>
 </header>
@@ -516,7 +543,7 @@ fbq('init','1127557746664253');fbq('track','PageView');
       </ul>
       <p class="kpi-note">※収支は加盟店モデル（3年目から定期巡回を追加するプラン）のシミュレーションで、成果・収益を保証するものではありません。</p>
       <div class="hero-cta">
-        <a class="btn btn-line" href="https://lin.ee/5WIT6C7"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6s5.9-3.5 8-6C21.4 14.4 22 12.8 22 11c0-4.4-4.5-8-10-8z"/></svg><span>まずは加盟資料をLINEで見る<span class="sub">全24ページの資料を無料でお届け</span></span></a>
+        <a class="btn btn-req" href="#request"><span>まずは加盟資料を請求する<span class="sub">資料24P＋収支シミュレーションをメールで無料送付</span></span></a>
         <a class="btn btn-ghost" href="#area">無料エリア診断について</a>
       </div>
       <div class="hero-pres"><img src="assets/lp/president.jpg" alt="代表 大西晃志" width="720" height="885"><p><b>「まずは気軽に話しましょう」</b><br>株式会社solmano 代表 大西晃志<br><small>介護業界12年・直営5店舗を運営</small></p></div>
@@ -544,10 +571,9 @@ fbq('init','1127557746664253');fbq('track','PageView');
       <div class="tile" data-rv><p class="k">PRIVILEGE 04</p><h3>代表と直接つながる</h3><p class="s">代表・大西が直接ご相談をお受けし、開業まで二人三脚で伴走します。</p></div>
     </div>
     <div class="zcta">
-      <a class="btn btn-line" href="https://line.me/R/oaMessage/@033rhllu/?0%E6%AC%A1%E5%8A%A0%E7%9B%9F%E3%81%AB%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%0A%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A%E6%B3%95%E4%BA%BA%E5%90%8D%EF%BC%88%E4%BA%88%E5%AE%9A%E3%81%A7%E3%82%82%E5%8F%AF%EF%BC%89%EF%BC%9A%0A%E9%96%8B%E6%A5%AD%E5%B8%8C%E6%9C%9B%E3%82%A8%E3%83%AA%E3%82%A2%EF%BC%9A%0A%E3%81%94%E9%80%A3%E7%B5%A1%E5%85%88%EF%BC%9A"><span>LINEで0次加盟にエントリー<span class="sub">エントリーは無料・加盟の義務はありません</span></span></a>
-      <a class="btn btn-ghost" href="mailto:k.onishi@solmano24.com?subject=%E3%80%900%E6%AC%A1%E5%8A%A0%E7%9B%9F%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC%E3%80%91&body=%E3%81%8A%E5%90%8D%E5%89%8D%EF%BC%9A%0A%E6%B3%95%E4%BA%BA%E5%90%8D%EF%BC%88%E4%BA%88%E5%AE%9A%E3%81%A7%E3%82%82%E5%8F%AF%EF%BC%89%EF%BC%9A%0A%E9%96%8B%E6%A5%AD%E5%B8%8C%E6%9C%9B%E3%82%A8%E3%83%AA%E3%82%A2%EF%BC%9A%0A%E3%81%8A%E9%9B%BB%E8%A9%B1%E7%95%AA%E5%8F%B7%EF%BC%9A%0A%E3%81%94%E7%B5%8C%E6%AD%B4%E3%83%BB%E3%81%94%E8%B3%AA%E5%95%8F%E3%81%AA%E3%81%A9%EF%BC%9A">メールでエントリー</a>
+      <a class="btn btn-req" href="#request"><span>資料請求・0次加盟のご相談<span class="sub">無料・加盟の義務はありません</span></span></a>
     </div>
-    <p class="zsteps">エントリー → 個別相談（オンライン可） → 無料エリア診断 → 加盟前説明書面のご説明 → ご契約、の順に進みます。</p>
+    <p class="zsteps">資料請求 → 事業説明（オンライン30分） → 無料エリア診断 → 加盟前説明書面のご説明 → ご契約、の順に進みます。</p>
   </div>
 </section>
 
@@ -768,7 +794,7 @@ fbq('init','1127557746664253');fbq('track','PageView');
       <a class="btn btn-gold" href="apollon-care-simulation.pdf" target="_blank" rel="noopener"><span>収支シミュレーションを見る（PDF）<span class="sub">前提条件と3年間の月次の内訳まで全10ページ</span></span></a>
       <a class="btn btn-ghost" href="apollon-care-fc-guide.pdf" target="_blank" rel="noopener"><span>加盟説明資料を見る（PDF）<span class="sub">事業モデル・収支・本部サポートまで全24ページ</span></span></a>
       <p>プランA・プランBの比較、前提条件、月ごとの売上・人件費・諸費用・利益をすべて掲載した試算資料です。</p>
-      <a class="btn btn-line" href="https://lin.ee/5WIT6C7"><span>LINEで説明会の案内を受け取る<span class="sub">友だち追加のみでOK・いつでもブロックできます</span></span></a>
+      <a class="btn btn-req" href="#request"><span>事業説明（オンライン30分）を申し込む<span class="sub">資料請求フォームから日程をお選びいただけます</span></span></a>
     </div>
     <p class="note">※一定条件による事業シミュレーションであり、売上・利益・投資回収等を保証するものではありません。介護報酬は約2ヶ月後に入金されるため、開業後もしばらく手元資金が減ります。準備する資金の目安は、加盟金など340万円（税別）と運転資金の最大額 約800万円を合わせて約1,140万円です（プランAのモデル。プランBは運転資金 約953万円・合計 約1,293万円）。運転資金は、開業前2ヶ月の家賃・人件費と、入金までの支出で手元資金が一番少なくなる月（6ヶ月目）の不足額です。手元資金は17ヶ月目にプラスに戻ります。人件費は処遇改善加算を含む給与、諸費用には家賃・光熱費・ソフト・ガソリン・広告・保険・車両・通勤手当などを含みます。地域、採用、人員配置、利用者数、加算取得状況その他の条件により結果は変動します。月次の内訳と前提条件は上の収支シミュレーション（PDF）でご覧いただけます。</p>
   </div>
@@ -788,8 +814,7 @@ fbq('init','1127557746664253');fbq('track','PageView');
         <span class="eyebrow">FREE ｜ 加盟資料（全24ページ）</span>
         <h2 class="h2" style="font-size:clamp(1.4rem,5vw,2.1rem)">ご自身の地域で成立するか、<br>まず数字を見てみませんか。</h2>
         <ul><li>3年間の収支モデル</li><li>初期投資の内訳</li><li>開業までの流れ</li><li>本部サポートの全体像</li></ul>
-        <a class="btn btn-line" href="https://lin.ee/5WIT6C7"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6s5.9-3.5 8-6C21.4 14.4 22 12.8 22 11c0-4.4-4.5-8-10-8z"/></svg>24ページの加盟資料を無料で受け取る</a>
-        <div class="qrbox"><img src="assets/lp/line-qr.png" alt="アポロンケア公式LINEのQRコード" loading="lazy"><span>スマホのカメラで読み取ると、<br>公式LINEから資料をお届けします。</span></div>
+        <a class="btn btn-req" href="#request">24ページの加盟資料を無料で受け取る</a>
       </div>
     </div>
   </div>
@@ -878,7 +903,7 @@ fbq('init','1127557746664253');fbq('track','PageView');
       <span class="p">加盟前に実施・無料</span>
       <h3>無料エリア診断</h3>
       <ul><li>自治体の整備方針</li><li>公募の時期と枠</li><li>既存事業所数・競合状況</li><li>地域の高齢者人口・ニーズ</li></ul>
-      <a class="btn btn-line" href="https://lin.ee/5WIT6C7"><span>ご自身の地域を<span class="nw">診断してもらう</span></span></a>
+      <a class="btn btn-req" href="#request"><span>ご自身の地域を<span class="nw">診断してもらう</span></span></a>
     </div>
   </div>
 </section>
@@ -954,6 +979,45 @@ fbq('init','1127557746664253');fbq('track','PageView');
   </div>
 </section>
 
+<!-- REQUEST FORM -->
+<section class="sec soft" id="request">
+  <div class="wrap req" id="reqbox">
+    <span class="eyebrow" style="display:block;text-align:center">FREE ｜ 資料請求・事業説明のお申し込み</span>
+    <h2 class="h2">加盟資料を、<br>メールでお送りします。</h2>
+    <p class="lead">加盟説明資料（24P）と3年間の収支シミュレーションを、すぐに自動でお届けします。あわせて、事業説明（オンライン30分）の日程もお選びいただけます。</p>
+    <ol class="rflow"><li><span>STEP 1</span>資料請求</li><li><span>STEP 2</span>メールで資料受け取り</li><li><span>STEP 3</span>事業説明（30分）</li></ol>
+    <form class="rform" id="rform" novalidate>
+      <div class="two">
+        <label>お名前<em>必須</em><input name="name" autocomplete="name" required maxlength="60" placeholder="山田 太郎"></label>
+        <label>メールアドレス<em>必須</em><input name="email" type="email" autocomplete="email" required maxlength="120" placeholder="example@mail.com"></label>
+      </div>
+      <div class="two">
+        <label>電話番号<i>任意</i><input name="tel" type="tel" autocomplete="tel" maxlength="30" placeholder="090-0000-0000"></label>
+        <label>会社名<i>任意・予定でも可</i><input name="company" autocomplete="organization" maxlength="80"></label>
+      </div>
+      <div class="two">
+        <label>開業希望エリア<em>必須</em><input name="area" required maxlength="80" placeholder="例：埼玉県さいたま市"></label>
+        <label>開業希望時期<i>任意</i><select name="timing"><option value="">選択してください</option><option>半年以内</option><option>1年以内</option><option>1年以上先</option><option>未定・情報収集中</option></select></label>
+      </div>
+      <label>現在のご状況<i>任意</i><select name="status"><option value="">選択してください</option><option>介護事業を経営している</option><option>介護以外の事業を経営している</option><option>介護の仕事をしていて独立を検討</option><option>その他・会社員など</option></select></label>
+      <label>ご質問・ご相談<i>任意</i><textarea name="message" rows="4" maxlength="2000"></textarea></label>
+      <div class="hp" aria-hidden="true"><label>website<input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <input type="hidden" name="src" id="rsrc">
+      <label class="agree"><input type="checkbox" id="ragree" required><span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意します</span></label>
+      <p class="err" id="rerr"></p>
+      <button class="btn btn-req" type="submit" id="rbtn"><span>無料で資料を受け取る<span class="sub">入力は1分・加盟の義務はありません</span></span></button>
+    </form>
+    <div class="rthanks" id="rthanks" tabindex="-1">
+      <h3>お申し込みありがとうございます</h3>
+      <p>ご入力のメールアドレスに、資料と事業説明の予約リンクをお送りしました。届かない場合は迷惑メールフォルダもご確認ください。</p>
+      <div class="acts">
+        <a class="btn btn-gold" href="apollon-care-fc-guide.pdf" target="_blank" rel="noopener">加盟説明資料を今すぐ見る</a>
+        <a class="btn btn-req" id="rbook" href="#" target="_blank" rel="noopener">事業説明（30分）の日程を選ぶ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CLOSING -->
 <section class="sec dark closing" id="contact">
   <div class="rbar" style="position:absolute;left:0;right:0;top:0"></div>
@@ -964,7 +1028,7 @@ fbq('init','1127557746664253');fbq('track','PageView');
     <div class="ccards">
       <a class="cc" href="apollon-care-fc-guide.pdf" target="_blank" rel="noopener"><span class="k">FREE 01</span><b>24ページの加盟資料</b><p>事業モデル・収支・サポートの全体像をまとめた加盟説明資料です。</p><span class="go">加盟説明資料を見る →</span></a>
       <a class="cc" href="apollon-care-simulation.pdf" target="_blank" rel="noopener"><span class="k">FREE 02</span><b>3年間の収支シミュレーション</b><p>2プランの比較と月ごとの内訳を、前提条件つきでご覧いただけます。</p><span class="go">収支シミュレーションを見る →</span></a>
-      <a class="cc" href="https://lin.ee/5WIT6C7"><span class="k">FREE 03</span><b>無料エリア診断</b><p>ご自身の地域で成立するか、加盟前に本部が調べます。</p><span class="go">地域を診断してもらう →</span></a>
+      <a class="cc" href="#request"><span class="k">FREE 03</span><b>無料エリア診断</b><p>ご自身の地域で成立するか、加盟前に本部が調べます。</p><span class="go">地域を診断してもらう →</span></a>
     </div>
     <div class="contact">
       <img src="assets/lp/mascot-phone.webp" alt="電話をするアポロン君" loading="lazy" style="width:100%;max-width:90px">
@@ -973,7 +1037,6 @@ fbq('init','1127557746664253');fbq('track','PageView');
         <a class="tel" href="tel:09041782043">090-4178-2043</a>
         <a class="ml" href="mailto:k.onishi@solmano24.com">k.onishi@solmano24.com</a>
       </div>
-      <img class="qr" src="assets/lp/line-qr.png" alt="アポロンケア公式LINEのQRコード" loading="lazy">
     </div>
     <p class="note">※本ページ内の収支・投資に関する数値は一定条件によるシミュレーションであり、成果・収益を保証するものではありません。</p>
   </div>
@@ -992,7 +1055,7 @@ fbq('init','1127557746664253');fbq('track','PageView');
 </footer>
 
 <div class="sticky" id="sticky">
-  <a class="btn btn-line" href="https://lin.ee/5WIT6C7">加盟資料をLINEで見る</a>
+  <a class="btn btn-req" href="#request">資料請求（無料）</a>
   <a class="btn btn-gold" href="#zero">0次加盟</a>
 </div>
 
@@ -1009,23 +1072,34 @@ fbq('init','1127557746664253');fbq('track','PageView');
 })();
 </script>
 <script>
-/* 流入経路: ?src=xxx（または utm_source）をエントリー文面の「知ったきっかけ」に入れる */
+/* 資料請求フォーム：Apps Script に送信 → 自動返信メール＋本部へ通知 */
 (function(){
+  var ENDPOINT='__FORM_ENDPOINT__', BOOKING='__BOOKING_URL__', CONV='__CONV_SEND_TO__';
   var q=new URLSearchParams(location.search),src=q.get('src')||q.get('utm_source')||'';
   try{if(src)sessionStorage.setItem('apsrc',src);else src=sessionStorage.getItem('apsrc')||''}catch(e){}
-  src=src.replace(/[^\w\-ぁ-んァ-ヶ一-龠ー]/g,'').slice(0,30);
-  var tag='%0A%E7%9F%A5%E3%81%A3%E3%81%9F%E3%81%8D%E3%81%A3%E3%81%8B%E3%81%91%EF%BC%9A'+encodeURIComponent(src);
-  document.querySelectorAll('a[href*="oaMessage/@033rhllu"],a[href^="mailto:"][href*="body="]').forEach(function(a){a.href=a.href+tag});
+  var f=document.getElementById('rform');if(!f)return;
+  document.getElementById('rsrc').value=src.slice(0,40);
+  var bk=document.getElementById('rbook');if(BOOKING.indexOf('http')===0)bk.href=BOOKING;else bk.style.display='none';
+  var err=document.getElementById('rerr'),btn=document.getElementById('rbtn');
+  function fail(m){err.textContent=m;err.style.display='block'}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();err.style.display='none';
+    var d=new FormData(f);
+    if(!d.get('name')||!d.get('area'))return fail('お名前と開業希望エリアをご入力ください。');
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.get('email')||''))return fail('メールアドレスをご確認ください。');
+    if(!document.getElementById('ragree').checked)return fail('プライバシーポリシーへの同意をお願いします。');
+    btn.disabled=true;btn.style.opacity=.6;
+    fetch(ENDPOINT,{method:'POST',mode:'no-cors',body:new URLSearchParams(d)}).then(function(){
+      document.getElementById('reqbox').classList.add('done');
+      document.getElementById('rthanks').focus();
+      if(window.gtag&&CONV.indexOf('AW-')===0)gtag('event','conversion',{send_to:CONV});
+      if(window.fbq)fbq('track','Lead');
+    }).catch(function(){btn.disabled=false;btn.style.opacity=1;fail('送信できませんでした。通信環境をご確認のうえ、もう一度お試しいただくか、k.onishi@solmano24.com へご連絡ください。')});
+  });
 })();
-</script>
-<script>
 document.addEventListener('click',function(e){
-  var a=e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';
-  if(window.gtag&&(h.indexOf('oaMessage/@033rhllu')>-1||h.indexOf('lin.ee/')>-1))gtag('event','conversion',{send_to:'AW-18555472637/TAJACMHekrIdEP2V-I9F'});
-  if(!window.fbq)return;
-  if(h.indexOf('oaMessage/@033rhllu')>-1||(h.indexOf('mailto:')===0&&h.indexOf('body=')>-1))fbq('track','Lead');
-  else if(h.indexOf('lin.ee/')>-1)fbq('track','Contact');
-  else if(/\.pdf$/.test(h))fbq('track','ViewContent',{content_name:h});
+  var a=e.target.closest&&e.target.closest('a');if(!a||!window.fbq)return;var h=a.getAttribute('href')||'';
+  if(/\.pdf$/.test(h))fbq('track','ViewContent',{content_name:h});
 });
 </script>
 </body>

@@ -22,7 +22,14 @@ function doPost(e) {
   lock.waitLock(20000);
   try { sheet_().appendRow([new Date(), row.name, row.email, row.tel, row.company, row.area, row.timing, row.status, row.message, row.src, '未対応']); }
   finally { lock.releaseLock(); }
-  try { sendAutoReply_(row); } catch (err) { console.error(err); }
+  // 悪用対策：同じメールアドレスへの自動返信は6時間に1回、全体で1日80通まで
+  var cache = CacheService.getScriptCache(), key = 'm:' + email.toLowerCase();
+  var dayKey = 'n:' + Utilities.formatDate(new Date(), 'Asia/Tokyo', 'yyyyMMdd');
+  var sent = Number(cache.get(dayKey) || 0);
+  if (!cache.get(key) && sent < 80) {
+    cache.put(key, '1', 21600); cache.put(dayKey, String(sent + 1), 21600);
+    try { sendAutoReply_(row); } catch (err) { console.error(err); }
+  }
   try { notify_(row); } catch (err) { console.error(err); }
   return json_({ ok: true });
 }
