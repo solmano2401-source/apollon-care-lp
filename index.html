@@ -1009,7 +1009,7 @@ fbq('init','1127557746664253');fbq('track','PageView');
     </form>
     <div class="rthanks" id="rthanks" tabindex="-1">
       <h3>お申し込みありがとうございます</h3>
-      <p>ご入力のメールアドレスに、資料と事業説明（オンライン30分）のご案内をお送りしました。届かない場合は迷惑メールフォルダもご確認ください。</p>
+      <p>ご入力のメールアドレスに、資料と事業説明（オンライン30分）の予約リンクをお送りしました。下のボタンからすぐに日程を選ぶこともできます。届かない場合は迷惑メールフォルダもご確認ください。</p>
       <div class="acts">
         <a class="btn btn-gold" href="apollon-care-fc-guide.pdf" target="_blank" rel="noopener">加盟説明資料を今すぐ見る</a>
         <a class="btn btn-req" id="rbook" href="#" target="_blank" rel="noopener">事業説明（30分）の日程を選ぶ</a>
@@ -1074,7 +1074,7 @@ fbq('init','1127557746664253');fbq('track','PageView');
 <script>
 /* 資料請求フォーム：Apps Script に送信 → 自動返信メール＋本部へ通知 */
 (function(){
-  var ENDPOINT='https://script.google.com/macros/s/AKfycbz5yOFcDGU5zDIlPggTO2pK_teZXTHOYG5udELIF_O5TSN0g_yOaIpjc6geYvW-w9rDdQ/exec', BOOKING='__BOOKING_URL__', CONV='AW-18555472637/qPifCMrHs7UdEP2V-I9F';
+  var ENDPOINT='https://script.google.com/macros/s/AKfycbz5yOFcDGU5zDIlPggTO2pK_teZXTHOYG5udELIF_O5TSN0g_yOaIpjc6geYvW-w9rDdQ/exec', BOOKING='https://calendar.google.com/calendar/appointments/schedules/AcZssZ2LKufrku6lGS-IvxS71JYY_TBqPpoZv8UEtQYe6Li1SBZBEZLmx512vj4wRYg2CnI52Iw_P5LZ', CONV='AW-18555472637/qPifCMrHs7UdEP2V-I9F';
   var q=new URLSearchParams(location.search),src=q.get('src')||q.get('utm_source')||'';
   try{if(src)sessionStorage.setItem('apsrc',src);else src=sessionStorage.getItem('apsrc')||''}catch(e){}
   var f=document.getElementById('rform');if(!f)return;
