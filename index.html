@@ -479,14 +479,14 @@ b,strong{font-weight:900}
 .rflow li{background:var(--soft);border-radius:14px;padding:10px 6px;color:var(--ink)}
 .rflow li span{display:block;font-size:.72rem;color:var(--sun)}
 .rform{background:var(--card);border:2px solid var(--line);border-radius:var(--r);padding:22px 18px;display:grid;gap:14px}
-.rform label{display:grid;gap:6px;font-weight:900;font-size:.95rem;color:var(--ink)}
+.rform label{display:block;font-weight:900;font-size:.95rem;color:var(--ink)}
 .rform label em{font-style:normal;font-size:.72rem;font-weight:900;color:#fff;background:var(--red);border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:2px}
 .rform label i{font-style:normal;font-size:.72rem;color:var(--muted);margin-left:6px}
-.rform input,.rform select,.rform textarea{font:inherit;font-size:16px;font-weight:500;color:var(--ink);background:#fff;border:2px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
+.rform input,.rform select,.rform textarea{display:block;margin-top:6px;font:inherit;font-size:16px;font-weight:500;color:var(--ink);background:#fff;border:2px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
 .rform input:focus,.rform select:focus,.rform textarea:focus{outline:none;border-color:var(--sun)}
 .rform .two{display:grid;gap:14px}
 .rform .agree{display:flex;gap:8px;align-items:flex-start;font-weight:700;font-size:.86rem}
-.rform .agree input{width:auto;margin-top:4px}
+.rform .agree input{display:inline-block;width:auto;margin-top:4px}
 .rform .agree a{text-decoration:underline}
 .rform .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .rform button{border:0;cursor:pointer;font:inherit;font-weight:900;width:100%}
@@ -515,7 +515,7 @@ fbq('init','1127557746664253');fbq('track','PageView');
     <a class="brand" href="#top" aria-label="アポロンケア トップへ"><img src="assets/web/mascot.png" alt="アポロンケアのキャラクター アポロン君" width="40" height="40"><span>アポロンケア<small>訪問介護フランチャイズ｜株式会社solmano</small></span></a>
     <nav>
       <a class="nav-area" href="#zero">0次加盟</a>
-      <a class="btn btn-req" href="#request">資料請求（無料）</a>
+      <a class="btn btn-req" href="#request" style="white-space:nowrap">資料請求</a>
     </nav>
   </div>
 </header>
