@@ -80,7 +80,7 @@ function sendAutoReply_(r) {
 function notify_(r) {
   var to = prop_('NOTIFY_TO') || DEFAULT_NOTIFY;
   var body = [
-    '資料請求がありました。申込者には資料と事業説明の予約リンクを自動で送っています。',
+    '資料請求がありました。申込者には資料と事業説明のご案内を自動で送っています' + (prop_('BOOKING_URL') ? '（予約リンク付き）。' : '（予約ページ未設定のため、返信で日時を受け付ける文面）。'),
     '',
     'お名前：' + r.name,
     'メール：' + r.email,
