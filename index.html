@@ -486,8 +486,8 @@ b,strong{font-weight:900}
 .rform input,.rform select,.rform textarea{display:block;margin-top:6px;font:inherit;font-size:16px;font-weight:500;color:var(--ink);background:#fff;border:2px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
 .rform input:focus,.rform select:focus,.rform textarea:focus{outline:none;border-color:var(--sun)}
 .rform .two{display:grid;gap:14px}
-.rform .agree{display:flex;gap:8px;align-items:flex-start;font-weight:700;font-size:.86rem}
-.rform .agree input{display:inline-block;width:auto;margin-top:4px}
+.rform .agree{font-weight:700;font-size:.86rem;color:var(--muted)}
+.rform .more{border-top:1px dashed var(--line);padding-top:12px}.rform .more summary{cursor:pointer;font-weight:900;color:var(--muted);font-size:.9rem}.rform .more>*:not(summary){margin-top:14px}
 .rform .agree a{text-decoration:underline}
 .rform .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .rform button{border:0;cursor:pointer;font:inherit;font-weight:900;width:100%}
@@ -544,7 +544,7 @@ fbq('init','1127557746664253');fbq('track','PageView');
       </ul>
       <p class="kpi-note">※収支は加盟店モデル（3年目から定期巡回を追加するプラン）のシミュレーションで、成果・収益を保証するものではありません。</p>
       <div class="hero-cta">
-        <a class="btn btn-req" href="#request"><span>まずは加盟資料を請求する<span class="sub">資料24P＋収支シミュレーションをメールで無料送付</span></span></a>
+        <a class="btn btn-req" href="#request"><span>まずは加盟資料を請求する<span class="sub">お名前とメールだけ・30秒で資料24P＋収支シミュレーションが届きます</span></span></a>
         <a class="btn btn-ghost" href="#area">無料エリア診断について</a>
       </div>
       <div class="hero-pres"><img src="assets/lp/president.jpg" alt="代表 大西晃志" width="720" height="885"><p><b>「まずは気軽に話しましょう」</b><br>株式会社solmano 代表 大西晃志<br><small>介護業界12年・直営5店舗を運営</small></p></div>
@@ -1000,21 +1000,23 @@ fbq('init','1127557746664253');fbq('track','PageView');
         <label>お名前<em>必須</em><input name="name" autocomplete="name" required maxlength="60" placeholder="山田 太郎"></label>
         <label>メールアドレス<em>必須</em><input name="email" type="email" autocomplete="email" required maxlength="120" placeholder="example@mail.com"></label>
       </div>
+      <label>開業希望エリア<i>任意</i><input name="area" maxlength="80" placeholder="例：埼玉県さいたま市"></label>
+      <details class="more"><summary>電話番号・会社名・ご質問なども伝える（任意）</summary>
       <div class="two">
         <label>電話番号<i>任意</i><input name="tel" type="tel" autocomplete="tel" maxlength="30" placeholder="090-0000-0000"></label>
         <label>会社名<i>任意・予定でも可</i><input name="company" autocomplete="organization" maxlength="80"></label>
       </div>
       <div class="two">
-        <label>開業希望エリア<em>必須</em><input name="area" required maxlength="80" placeholder="例：埼玉県さいたま市"></label>
         <label>開業希望時期<i>任意</i><select name="timing"><option value="">選択してください</option><option>半年以内</option><option>1年以内</option><option>1年以上先</option><option>未定・情報収集中</option></select></label>
-      </div>
       <label>現在のご状況<i>任意</i><select name="status"><option value="">選択してください</option><option>介護事業を経営している</option><option>介護以外の事業を経営している</option><option>介護の仕事をしていて独立を検討</option><option>その他・会社員など</option></select></label>
+      </div>
       <label>ご質問・ご相談<i>任意</i><textarea name="message" rows="4" maxlength="2000"></textarea></label>
+      </details>
       <div class="hp" aria-hidden="true"><label>website<input name="website" tabindex="-1" autocomplete="off"></label></div>
       <input type="hidden" name="src" id="rsrc">
-      <label class="agree"><input type="checkbox" id="ragree" required><span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意します</span></label>
+      <p class="agree">送信すると<a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意したものとみなします。</p>
       <p class="err" id="rerr"></p>
-      <button class="btn btn-req" type="submit" id="rbtn"><span>無料で資料を受け取る<span class="sub">入力は1分・加盟の義務はありません</span></span></button>
+      <button class="btn btn-req" type="submit" id="rbtn"><span>無料で資料を受け取る<span class="sub">お名前とメールだけ・30秒／加盟の義務はありません</span></span></button>
     </form>
     <div class="rthanks" id="rthanks" tabindex="-1">
       <h3>お申し込みありがとうございます</h3>
@@ -1071,7 +1073,9 @@ fbq('init','1127557746664253');fbq('track','PageView');
 <script>
 (function(){
   var st=document.getElementById('sticky');
-  function onS(){st.classList.toggle('on',(window.scrollY||document.documentElement.scrollTop)>600)}
+  var rq=document.getElementById('request'),inRq=false;
+  if(rq&&'IntersectionObserver' in window)new IntersectionObserver(function(es){inRq=es[0].isIntersecting;onS()}).observe(rq);
+  function onS(){st.classList.toggle('on',!inRq&&(window.scrollY||document.documentElement.scrollTop)>600)}
   window.addEventListener('scroll',onS,{passive:true});onS();
   var els=document.querySelectorAll('[data-rv]');
   if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(function(e){e.classList.add('in')});return}
@@ -1094,9 +1098,8 @@ fbq('init','1127557746664253');fbq('track','PageView');
   f.addEventListener('submit',function(e){
     e.preventDefault();err.style.display='none';
     var d=new FormData(f);
-    if(!d.get('name')||!d.get('area'))return fail('お名前と開業希望エリアをご入力ください。');
+    if(!d.get('name'))return fail('お名前をご入力ください。');
     if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.get('email')||''))return fail('メールアドレスをご確認ください。');
-    if(!document.getElementById('ragree').checked)return fail('プライバシーポリシーへの同意をお願いします。');
     btn.disabled=true;btn.style.opacity=.6;
     fetch(ENDPOINT,{method:'POST',mode:'no-cors',body:new URLSearchParams(d)}).then(function(){
       document.getElementById('reqbox').classList.add('done');
