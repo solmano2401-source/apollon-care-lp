@@ -1106,6 +1106,7 @@ fbq('init','1127557746664253');fbq('track','PageView');
       document.getElementById('rthanks').focus();
       if(window.gtag&&CONV.indexOf('AW-')===0)gtag('event','conversion',{send_to:CONV});
       if(window.fbq)fbq('track','Lead');
+      setTimeout(function(){location.href='thanks.html'},900);
     }).catch(function(){btn.disabled=false;btn.style.opacity=1;fail('送信できませんでした。通信環境をご確認のうえ、もう一度お試しいただくか、k.onishi@solmano24.com へご連絡ください。')});
   });
 })();
