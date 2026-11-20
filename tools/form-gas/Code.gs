@@ -7,6 +7,8 @@
  */
 var LP = 'https://solmano2401-source.github.io/apollon-care-lp/';
 var DEFAULT_NOTIFY = 'k.onishi@solmano24.com';
+// 計測用に通知を受け取る追加の宛先（2026-11-20 大西さん依頼）
+var EXTRA_NOTIFY = ['fc.solmano@gmail.com', 'mayumi-shoji@solu.co.jp'];
 
 function doPost(e) {
   var p = (e && e.parameter) || {};
@@ -78,7 +80,7 @@ function sendAutoReply_(r) {
 }
 
 function notify_(r) {
-  var to = prop_('NOTIFY_TO') || DEFAULT_NOTIFY;
+  var to = [prop_('NOTIFY_TO') || DEFAULT_NOTIFY].concat(EXTRA_NOTIFY).join(',');
   var body = [
     '資料請求がありました。申込者には資料と事業説明のご案内を自動で送っています' + (prop_('BOOKING_URL') ? '（予約リンク付き）。' : '（予約ページ未設定のため、返信で日時を受け付ける文面）。'),
     '',
@@ -94,7 +96,7 @@ function notify_(r) {
     '',
     '一覧：' + SpreadsheetApp.openById(prop_('SHEET_ID')).getUrl()
   ].join('\n');
-  MailApp.sendEmail({ to: to, subject: '【資料請求】' + r.name + '様（' + (r.area || 'エリア未記入') + '）', body: body, replyTo: r.email });
+  MailApp.sendEmail({ to: to, subject: '【アポロンケアFC加盟】LP問い合わせ', body: body, replyTo: r.email });
 }
 
 function sheet_() {
