@@ -46,7 +46,7 @@ function sendAutoReply_(r) {
     'アポロンケア本部の大西です。',
     '加盟資料のご請求、ありがとうございます。さっそく資料をお送りします。',
     '',
-    '■ 加盟説明資料（全24ページ）',
+    '■ 加盟説明資料（全26ページ）',
     LP + 'apollon-care-fc-guide.pdf',
     '■ 3年間の収支シミュレーション（全10ページ）',
     LP + 'apollon-care-simulation.pdf',
