@@ -151,7 +151,7 @@ b,strong{font-weight:700}
 .diag li::before{content:"・"}
 
 /* message */
-.msg{display:grid;gap:24px;align-items:start}
+.msg{max-width:760px;border-left:3px solid var(--line);padding-left:20px}
 .msg img{width:180px;border-radius:4px;aspect-ratio:4/5;object-fit:cover}
 .msg p{color:var(--body);margin-bottom:12px}
 .msg .who{font-size:.9rem;color:var(--muted)}
@@ -216,7 +216,6 @@ b,strong{font-weight:700}
   .rform{padding:30px}
   .rform .two{grid-template-columns:1fr 1fr}
   .rthanks .acts{grid-template-columns:1fr 1fr}
-  .msg{grid-template-columns:180px 1fr;gap:36px}
   .keyline b{font-size:1.5rem}
 }
 @media(min-width:1000px){
@@ -473,7 +472,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div>
       <table class="tbl">
-        <thead><tr><th style="width:8em">起こりうること</th><th>本部の備え</th></tr></thead>
+        <thead><tr><th style="width:11em">起こりうること</th><th>本部の備え</th></tr></thead>
         <tbody>
           <tr><td><b>採用が進まない</b></td><td>求人原稿・媒体選び・面接資料・短時間パートの採用まで支援します。</td></tr>
           <tr><td><b>公募・指定が取れない</b></td><td>出店前に市役所へ相談し、別のエリアも一緒に検討します。</td></tr>
@@ -494,7 +493,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2>地域に訪問介護を残すために</h2>
     </div>
     <div class="msg">
-      <img src="assets/lp/president.jpg" alt="代表取締役 大西晃志" loading="lazy" width="720" height="885">
       <div>
         <p>介護業界で12年、現場と経営の両方に関わってきました。訪問介護は利用したい方が増えている一方で、人手不足や経営難で事業所が減っています。</p>
         <p>私たちは埼玉で事業所を運営し、採用や営業のやり方を少しずつ改善してきました。その方法を、同じように地域で訪問介護を続けたい方にお渡ししたいと考えています。まずは資料をお読みいただき、ご自身の地域で成り立つかを一緒に確かめさせてください。</p>
