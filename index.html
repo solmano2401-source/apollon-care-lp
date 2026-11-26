@@ -151,6 +151,7 @@ b,strong{font-weight:700}
 .diag li::before{content:"・"}
 
 /* message */
+.msg-photo{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:72% 30%;border-radius:4px;margin-bottom:28px}
 .msg{max-width:760px;border-left:3px solid var(--line);padding-left:20px}
 .msg img{width:180px;border-radius:4px;aspect-ratio:4/5;object-fit:cover}
 .msg p{color:var(--body);margin-bottom:12px}
@@ -217,6 +218,7 @@ b,strong{font-weight:700}
   .rform .two{grid-template-columns:1fr 1fr}
   .rthanks .acts{grid-template-columns:1fr 1fr}
   .keyline b{font-size:1.5rem}
+  .msg-photo{aspect-ratio:16/9;object-position:50% 25%}
 }
 @media(min-width:1000px){
   .gnav{display:flex}
@@ -230,6 +232,9 @@ b,strong{font-weight:700}
   .check{grid-template-columns:1fr 1.3fr;gap:48px;align-items:start}
   .req-grid{grid-template-columns:1fr 1.2fr;gap:56px;align-items:start}
   .sticky{display:none}
+  .founder-wrap{position:relative}
+  .founder-wrap .msg-photo{margin:0;aspect-ratio:16/10;object-position:50% 30%}
+  .founder-wrap .msg{position:absolute;left:48px;top:50%;transform:translateY(-50%);width:40%;border-left:3px solid rgba(31,35,40,.25)}
   .ftr{padding-bottom:40px}
 }
 @media(max-width:999px){.hero .wrap.hero-grid{padding:0}.hero-body{padding-left:20px;padding-right:20px}}
@@ -492,6 +497,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="no">09　代表あいさつ</span>
       <h2>地域に訪問介護を残すために</h2>
     </div>
+    <div class="founder-wrap">
+    <img class="msg-photo" src="assets/lp/onishi-studio-wide.webp" alt="株式会社solmano 代表取締役 大西晃志" loading="lazy" width="1440" height="900">
     <div class="msg">
       <div>
         <p>介護業界で12年、現場と経営の両方に関わってきました。訪問介護は利用したい方が増えている一方で、人手不足や経営難で事業所が減っています。</p>
@@ -499,6 +506,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="who"><b>株式会社solmano 代表取締役　大西 晃志</b></p>
         <div class="sns"><a class="lnk" href="https://note.com/o_koji" target="_blank" rel="noopener">note</a><a class="lnk" href="https://www.youtube.com/@solmano-ft9lb/shorts" target="_blank" rel="noopener">YouTube</a><a class="lnk" href="https://www.tiktok.com/@kaigohukushisi_koji" target="_blank" rel="noopener">TikTok</a></div>
       </div>
+    </div>
     </div>
   </div>
 </section>
